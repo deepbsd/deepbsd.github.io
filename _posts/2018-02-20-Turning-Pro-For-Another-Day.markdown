@@ -11,6 +11,8 @@ It's not that I haven't already turned pro.  It's that _Resistance_ is so immuta
 
 And sure enough, today there has been more distraction than usual.  So I have to fight harder with my enemy.  I had a temporary dental crown today, and I have an early dinner with a friend.  My schedule is a little more challenging today.  So, the opportunity to succumb to _Resistance_ and procrastinate is large.  It is large every day, but today is largest, because that is the only battle I can fight.  The one today.
 
+Oh, when I met my friend for a late lunch at Ted's Montana Grill in East Cobb, there was yet more resistance.  I broke my temporary crown right in the middle of chewing on a salad!  I had to forget about getting home to work after the meal and instead head across town (the wrong way, during rush hour) and go to the dentist.  Fortunately, they were extremely generous and squeezed me in.  They stayed late until I was taken care of.  Bless their hearts.  But this meant I needed to work until 9:30 or so tonight before I got my Two Pomodoro sets in!  Take _that_, _Resistance_!
+
 # Two Pomodoros a Day
 
 I consider a single Pomodoro to be 4 25-minute concentration sessions, each with a 5-minute break.  The second Pomodoro gets a 20-minute break.  That's 4.5 hours of concentrated work.  I call that a solid day's work in most 8-hour shifts at a company.  I think most companies would be ecstatic if they could get that much work out of each of their employees every day.  
