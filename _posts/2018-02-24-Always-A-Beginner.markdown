@@ -6,7 +6,7 @@ categories: programming, psychology, career, personal growth
 ---
 # Beginner's Perspective
 
-There have been many a famous martial artist who have wished to be burried in their white belts.  They knew they would beginners.  In fact, I have known some martial artists who would wear their white belts even after recently earning their black belts.  The point is, you never run out of something to learn, so never let your cup be too full of knowledge.  Always stay curious.
+There have been many a famous martial artist who have wished to be burried in their white belts.  They knew they would be beginners in their new relm.  In fact, I have known some martial artists who would wear their white belts even after recently earning their black belts.  The point is, you never run out of something to learn, so never let your cup be too full of knowledge.  Always stay curious.
 
 I haven't been learning JavaScript for that long.  Perhaps a little over a year now.  But I have thought I was pretty good.  Yet, after reading an online article, I thought I was gonna ace the questions at the end of the article.  I was doing fine until I got to an encapsulation question, and I flubbed it.  So I tried to fix it as as fast as possible, and I flubbed it again.  And a third time, then a fourth.  By now, I was embarrassed.
 
