@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+My name is David Jackson, and I've been using Linux as my daily driver since early 1996.  I'm currently a web developer and enjoy using Python, Javascript, Ruby, and Bash.  These are my notes as I continue my Journey.
+
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
