@@ -43,6 +43,8 @@ Over the years there have been many Mrs. Huffmans, and they each have a voice in
 
 # The Keisaku
 
+![Keisaku](http://www.emp.u-tokyo.ac.jp/e/news/2010/img/1125_06.jpg "Meditator receives Keisaku")  
+
 Perhaps the shame stick is a distortion of a much more compassionate idea.  In Zen meditation, there is a stick or slat made of flexible wood, called the _Keisaku_ in Japanese, that is the opposite of a shame stick.  _Keisaku_ can be translated as "warning stick" or "awakening stick" or "encouragement stick."  During long periods of meditation, the _keisaku_ is administered at the request of the meditator by bowing his or her head and putting the palms together in _gassho_, and then exposing each shoulder to be struck.  The stick is not a punishment.  It's a compassionate means to reinvigorate or awaken the meditator from distraction.
 
 When I'm doing my daily pomodoros, it's important to take those 5 minute breaks.  They are a sort of _keisaku_ to the shoulder.  Or I could just find a yard stick.
