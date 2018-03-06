@@ -6,7 +6,7 @@ categories: addiction turning_pro psychology
 ---
 # The Payoff
 
-Eric Berne died in 1970 I think, at the height of his career as a psychologist.  He wrote a book about something he called _Transactional Analysis_, and it became a best seller. The book was _The Games People _Play -- The Basic Hand Book of Transactional Analysis_. Perhaps when you consider that it is _still_ in print and is read by perhaps more lay people than by psychologists, I consider that book to be a blockbuster.
+Eric Berne died in 1970 I think, at the height of his career as a psychologist.  He wrote a book about something he called _Transactional Analysis_, and it became a best seller. The book was _The Games People Play -- The Basic Hand Book of Transactional Analysis_. Perhaps when you consider that it is _still_ in print and is read by perhaps more lay people than by psychologists, I consider that book to be a blockbuster.
 
 In it, Berne described the human condition of man wanting to live an authentic life but also knowing that it was impossible to be vulnerable all the time, because people would take advantage of you.  So Berne broke down human behavior into a series of transactions, where we do an action and expect another action.  He called what we desire a "stroke" and where we bid for these is the "stroke marketplace."  At the heart of everything was the conflict between wanting to be authentic and connected to other humans yet wanting to avoid being exploited while we're vulnerable.
 
