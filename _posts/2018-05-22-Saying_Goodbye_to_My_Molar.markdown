@@ -62,4 +62,17 @@ pushed out of the way.  We're talking about some serious surgery here, folks.  T
 trivial procedure, apparently.  It takes about 8-months after the extraction to get a working
 implant.
 
-The surgery is is done in the office, not the hospital, but there ya go.
+It's possible I won't be a candidate for this decision.  In that case, the only options will be
+to leave a hole or construct a bridge.  Sounds to me like constructing a bridge might be even
+more of a problem, because now you've got to kill two teeth that have been working fine.  And
+then you split the workload of three teeth across two teeth.  Not sure how that works out well.
+But perhaps we're at the stage of playing the cards we have left.  I'm not sure what's best in
+this case.  Is not getting a replacement tooth not an option?  That's what I don't know.
+
+Time was, it used to be the only option.  If you lost a tooth, you had a hole there.  But now
+there are solutions.  And sometimes the hi-tech solution is worse than the problem.  Not sure if
+that applies here, but I have to ask myself the question now.  
+
+Oh well, at least my skull isn't throbbing, so I'm a lot better off than I was 24 hours ago.
+
+Thanks for reading!
