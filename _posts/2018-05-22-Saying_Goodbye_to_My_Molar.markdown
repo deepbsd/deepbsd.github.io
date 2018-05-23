@@ -29,7 +29,7 @@ documented as far back as 2001.  So I've had it for at least 17 years, and he su
 pre-existing condition.  He asked if I had extractions when I was a young boy getting
 orthodonture work and braces.  I said I had.  He said that in the old days (yes, I am old)
 orthodontists did that, but they eventually realized this was a dumb idea.  Perhaps because it
-jeopardized surrounding teeth that no longer has the support for the root systems of nearby teeth
+jeopardized surrounding teeth that no longer had the support for the root systems of nearby teeth
 and could eventually cause fractures in surrounding teeth?  Well, I had one of those.
 
 # The Root Canal that Wasn't
@@ -61,6 +61,11 @@ Before that can happen, since this was on my upper jaw, not on my jawbone, my si
 pushed out of the way.  We're talking about some serious surgery here, folks.  This is not a
 trivial procedure, apparently.  It takes about 8-months after the extraction to get a working
 implant.
+
+I have an appointment with the oral surgeon tomorrow at 3pm.  I'm not sure what will happen then.
+I probably will have the tooth extracted at that time.  He will probably look at the underlying
+bone structure and sinus layout.  He will probably estimate the success probability of a bone
+graft and an implant.  I could be eating mush for a while.
 
 It's possible I won't be a candidate for this decision.  In that case, the only options will be
 to leave a hole or construct a bridge.  Sounds to me like constructing a bridge might be even
