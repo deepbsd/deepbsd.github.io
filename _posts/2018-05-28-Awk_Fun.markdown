@@ -1,0 +1,72 @@
+---
+layout: post
+title: Awk Fun
+date: 2018-05-28 16:46:30-04:00
+categories: awk unix cli
+---
+## Fun With Awk
+
+I recently set upon the task of learning `awk` or `gawk`, the gnu version of the
+old unix utility.  I'm making a little bit of progress.  It's named after Alfred
+J. Aho, Peter J. Weinberger, and Brian Kernighan.  It was created in 1977
+initially.  It's primarily a text-processing language, although it is limited
+when compared to many of today's languages, such as perl and python or ruby.
+Still, it fits a unique niche inside the UNIX command line.  It's very small and
+handy, and it's often just the thing for small text processing challenges.
+
+Sometimes it's used with `sed`, which is a stream editor.  Sometimes each of
+these lightweight utilities together are just the thing if you want to keep your
+project small uncomplicated.  I'm sure that having said that, there are many
+experienced users who would point to larger projects that they have used gawk to
+handle.  But at this point in time, awk seems to me too small to use on a
+project with hundreds of thousands of lines of code.  But maybe that's my
+limitation?
+
+Anyway, I'm just learning how to write awk scripts from a Lynda.com course.  I
+found I was using awk a fair amount in completing a Udemy course on shell
+scripting.  I'm almost done with that.  And the video length of the awk course
+was less than three hours.  But I can tell it's going to take more than three
+hours to get very good with awk.  Still, I'm working on it.
+
+For example, I should be able to rewrite the shell function that sets up this
+blog post with awk.  Currently, I have the following in my `.bashrc` that I run
+when I want to create a post.
+
+```
+# create a blogpost for jekyll in ~/public_html/daveblog/_posts
+createpost()
+{
+  date=$(date --rfc-3339='seconds')
+  day=$(date --rfc-3339='date')
+  echo "Enter title: "
+  read title
+  echo "Categories? "
+  read categories
+  filename="${day}-${title}.markdown"
+  directory="$HOME/public_html/daveblog/_posts/"
+
+  cat > $directory/$filename <<End_of_Post
+---
+layout: post
+title: ${title}
+date: ${date}
+categories: ${categories}
+---
+End_of_Post
+  
+echo "Your post ${filename} has been created!"
+}
+```
+
+How would I rewrite that just using awk?  Not sure, but it might be a fun
+exercise.
+
+How would I rewrite a number of other functions in my `.bashrc` using awk?  For
+example, I have a function that finds the CPU in a MacOS or a Linux machine.
+Also, there's a function for returning just the IP address from `ifconfig`.  I
+have something to return a git branch and keep it inside my `$PS1` whenever I'm
+in a git repo.  I could create some functions that parsed log files, for
+example?  That checked on remote systems and returned an uptime, for example.  I
+guess if I think about it, there are lots of possibilities.
+
+So what am I waiting for?  I'd better get to work!
