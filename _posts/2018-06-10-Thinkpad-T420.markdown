@@ -1,0 +1,67 @@
+---
+layout: post
+title: Thinkpad T420
+date: 2018-06-10 20:26:19-04:00
+categories: laptop linux manjaro i3wm
+---
+
+## Still Going Strong
+
+Surprisingly, this little laptop still works quite well for most tasks.  I could
+easily accomplish most of my daily tasks with this little machine, all by
+itself.  There are two areas where it could use an upgrade.  The first is
+memory.  The max this machine can accept is 8G of RAM, 2x4G sticks.  And the
+second is wifi speed.  It caps out at 802.11n speeds.  
+
+Most of the time, though, I wind up plugging it into a dock of sorts where I
+plug into the onboard ethernet port.  Also, I use an external monitor at 1080p
+and a wonderful mechanical keyboard and mouse.  The mouse is great, but since I
+use a tiling window manager I don't use the mouse so much.
+
+I use a computer for writing and programming the most, although I still like to
+stream whatever shows or videos I'm in the mood for.  At times like this,
+802.11n might seem to be a little slow.  And if I have 30 tabs open in Chrome,
+then 8G RAM might wind up being too little.  Otherwise, this machine is plenty
+for my needs.
+
+# The Specs
+
+I think I paid about $200 or less for this laptop.  It had an i5-520M and 4G of
+RAM.  There was a 250G hard disk.  I could actually upgrade the CPU to an i7.
+And I put in a 250G SSD and added another stick of 4G of RAM to boost the total
+to 8G of RAM.  I hadn't looked into it, but I might even be able to upgrade the
+wireless card as well.  I'm not sure.  The best part about older Thinkpads is
+how easy they are to upgrade.
+
+# Manjaro i3wm
+
+Normally, i3wm might take a minute to configure the way you want.  But the folks
+at Majaro have created a community edition of i3 that is terrific!  From the
+moment you fire up the first boot, you'll probably be in love with just how
+everything looks and works from the start.  And whatever you want to change, i3
+makes that quite easy.  Simply edit a configuration file or two.  That's all I
+had to do, and I'm not sure I can improve anymore on the out-of-the-box
+configuration.
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/deepbsd/40913406450/in/dateposted-public/" title="screenFetch-2018-06-10_20-47-25"><img src="https://farm2.staticflickr.com/1732/40913406450_3e63f71527_h.jpg" width="1600" height="900" alt="screenFetch-2018-06-10_20-47-25"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+As you can see the default configuration has some decent defaults, much better
+than the normal defaults of i3 right out of the box.  The fonts are terrific,
+the colors are good, and Conky works instantly.  There's a help reminder in the
+lower left.  There are three menuing systems and numerous handy packages already
+configured that would normally take you many hours--but they're already
+complete!  
+
+The only thing I had to change was the _meta_ key.  I happen to prefer the ALT
+key as my _meta_ key.  I also happen to like workspace 9 and 10, and ALT-0
+already had a binding.  So I had to change one or two keybindings.  No big deal.
+
+Lots of everyday apps already come installed by default on this distro, such as
+Nitrogen, Pale Moon, Arandr, Ranger, and lots of others.  Someone has really put
+their thinking cap on in designing this distro for the CLI addict.  It probably
+already has what you use day-to-day, and if not, it's easy to add with either
+Pacman or Yaourt.  
+
+This Manjaro i3 Community Edition is probably my new favorite default Linux distribution.  
+I would love to install this on everything!  Manjaro is just a terrific Linux
+distro, it seems to me.  No muss, no fuss, but lots of stability and power.
