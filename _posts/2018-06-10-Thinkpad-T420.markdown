@@ -27,7 +27,7 @@ for my needs.
 # The Specs
 
 I think I paid about $200 or less for this refurbished laptop.  It had an
-i5-520M and 4G of RAM.  There was a 250G hard disk.  I could actually upgrade
+i5-2520M and 4G of RAM.  There was a 250G hard disk.  I could actually upgrade
 the CPU to an i7.  And I put in a 250G SSD and added another stick of 4G of RAM
 to boost the total to 8G of RAM.  I hadn't looked into it, but I might even be
 able to upgrade the wireless card as well.  I'm not sure.  The best part about
