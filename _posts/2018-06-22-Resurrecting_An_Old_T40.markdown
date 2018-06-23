@@ -95,12 +95,13 @@ computer language.  A person might easily learn to use the Linux command line an
 on this old laptop.  None of that requires a graphical interface!  In fact, this old beast might
 be just the ticket.
 
-This laptop is substantially more powerful than the computational power used in calculating
-the moon missions.  Our cell phones probably have thousands of times more computational power
-than were applied to those trajectory and thrust calculations (I don't even know what all the
+This laptop is substantially more powerful than the computational power used in calculating the
+moon missions.  Our cell phones probably have thousands of times more computational power than
+were applied to those trajectory and thrust calculations (I don't even know what all the
 calculations were).  So forgive me if I'm not so quick to throw this old T40 on top of the
-recycling pile.  I wrote my first BASIC programs on a C-64, and this beats the pants off that old
-thing.  If this can run a BSD or Linux shell, I can be in hog heaven.
+recycling pile.  I wrote my first BASIC programs on a C-64, my first Pascal programs on an Apple
+II, and this beats the pants off those old things.  If this can run a BSD or Linux shell, I can
+be in hog heaven.
 
 I'll let you know what happens in the future when I get some more RAM in there.  This old war
 horse isn't done for yet.  I think there could be quite a bit of life for this thing in the right
