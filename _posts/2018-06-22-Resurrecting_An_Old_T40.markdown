@@ -9,12 +9,14 @@ categories: pc vintage_computing
 
 I recently found my wife's old work laptop, a vintage IBM Thinkpad T40.  This would have been
 from about 2004 or so.  It was the bee's knees at the time.  It was a very popular business
-notebook computer.  This particular example came with a Pentium M mobile CPU with a Radeon Mobile
-7500 video adapter (soldered to the logic board) with about 16-32MB of video RAM.  The hard disk
-was a 30G HD with an IDE connector.  There was a built-in modem, 100BT RJ45 connector,  a couple
-of PCMCIA slots, a PS/2 connector, an RJ11 connector for the dialout.  The XGA display was
-capable of 1024X768 pixels.  The OS was a 32-bit Windows XP.  By today's standards, this was a
-humble machine, but it was a slick machine in its day.
+notebook computer.  This particular example came with a 1.5Ghz Pentium M mobile CPU with a Radeon
+Mobile 7500 video adapter (soldered to the logic board) with about 16-32MB of video RAM.  The
+hard disk was a 30G spinning HD with an IDE connector.  There was a built-in 56k modem, an
+802.11a/b wifi adapter (WEP was all we had then), 100BT RJ45 connector,  a couple of PCMCIA
+slots, a PS/2 connector, an RJ11 connector for the dialout.  I think there were two USB
+connectors. (I believe this was even before USB2.) The XGA display was capable of 1024X768
+pixels.  The OS was a 32-bit version of Windows XP.  By today's standards, this was humble
+hardware, but it was a slick machine in its day.
 
 # The First Power-On
 
@@ -42,8 +44,10 @@ As you can see, the new fan assembly went right in without a problem.
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/deepbsd/42961135021/in/dateposted-public/" title="T40 New Fan"><img src="https://farm2.staticflickr.com/1824/42961135021_ab236c0985_k.jpg" width="2048" height="1536" alt="T40 New Fan"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 That shiny copper-colored thing is the new fan/heatsink.  I needed to remove the old thermal
-paste from the CPU and apply a dab of new paste, which I happen to have lying around.  I put in
-the new fan, and the next thing ya know, I'm looking at a Windows XP boot up screen.
+paste from the CPU and apply a dab of new paste, which I happen to have had lying around.  I put
+in the new fan, and the next thing ya know, I'm looking at a Windows XP boot up screen.
+
+Looking at my old desktop was like traveling back in time!
 
 Now, this computer is very slow.  I mainly wanted to see whether it could boot and run anything
 at all.  It passed that test!
@@ -61,13 +65,16 @@ will help.  Some of the parts have already arrived (the wifi card and the hard d
 still waiting on the RAM.  
 
 Is this machine worth $60?  Probably not.  Will it actually be able to do anything?  Well, I'm
-hoping it can run a copy of Linux, perhaps.  The HD that arrived today is 120GB, and the wifi
-card will do up to 802.11g.  So it should be able to talk to my router using WPA2/AES I hope.
+hoping it can run a copy of Linux, perhaps.  If so, that's a game changer.  The HD that arrived
+today is 120GB, and the wifi card will do up to 802.11g.  So it should be able to talk to my
+router using WPA2/AES I hope.  I can plug in an 802.11ac USB wifi adapter.  That actually works.
+But, since USB was actually slower than this wifi protocol, 802.11ac is actually overkill.
 
 The RAM, at 2GB, should be enough to run some kind of 32-bit linux distro.  I'm pretty sure
 Slackware will work if nothing else.  The RAM is really the go/no go piece of it.  I can use a
 very simple window manager that won't tax the video memory, I hope.  FVWM is still out there, and
-it ran on graphics chipsets even more modest than this one.
+it ran on graphics chipsets even more modest than this one.  I'm sure I can find something that
+will work in that tiny video RAM space.
 
 # Humble Hardware
 
