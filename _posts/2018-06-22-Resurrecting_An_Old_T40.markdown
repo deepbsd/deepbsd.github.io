@@ -69,3 +69,32 @@ Slackware will work if nothing else.  The RAM is really the go/no go piece of it
 very simple window manager that won't tax the video memory, I hope.  FVWM is still out there, and
 it ran on graphics chipsets even more modest than this one.
 
+# Humble Hardware
+
+You know, we're pretty spoiled today by all of our powerful hardware.  But if you think about it,
+this is the first time in history that we have personal computing devices whose power dwarfs our
+needs in using them.  They're so powerful that we have no idea what to do with all that power,
+and we take it for granted.  Or we spend it doing things like playing games or making home
+movies.  Before in history, people solved their problems with pen and paper.  Computers were
+reserved for the elite and only the erudite who could write programs actually used their
+computers.  Really, we're just now starting to create uses for our personal computers.  But we're
+still in our infancy with them and are only starting to use them up to their potential.
+
+In fact, I would say computer programming is the New Literacy.  If you don't know how to program,
+it's similar to not being able to read in the 18th or 19th century.  We take it for granted now
+that people can read, write and do simple math in at least one language.  I believe it will soon
+be expected of a productive citizen to be able to write some simple programs in at least one
+computer language.  A person might easily learn to use the Linux command line and write scripts
+on this old laptop.  None of that requires a graphical interface!  In fact, this old beast might
+be just the ticket.
+
+This laptop is substantially more powerful than the computational power used in calculating
+the moon missions.  Our cell phones probably have thousands of times more computational power
+than were applied to those trajectory and thrust calculations (I don't even know what all the
+calculations were).  So forgive me if I'm not so quick to throw this old T40 on top of the
+recycling pile.  I wrote my first BASIC programs on a C-64, and this beats the pants off that old
+thing.  If this can run a BSD or Linux shell, I can be in hog heaven.
+
+I'll let you know what happens in the future when I get some more RAM in there.  This old war
+horse isn't done for yet.  I think there could be quite a bit of life for this thing in the right
+hands.
