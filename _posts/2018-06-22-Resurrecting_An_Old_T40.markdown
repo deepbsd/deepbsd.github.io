@@ -106,3 +106,25 @@ be in hog heaven.
 I'll let you know what happens in the future when I get some more RAM in there.  This old war
 horse isn't done for yet.  I think there could be quite a bit of life for this thing in the right
 hands.
+
+# Update: Now Running AntiX Linux!
+
+Talk about a resurrection!  I'm now running a _modern_ OS on this old beast!  There are kernel
+drivers that can control the antique wifi card, and I'm actually connecting with my router! I'm
+connecting at 802.11b speeds, but hey!  I'm connecting at least!  
+
+My new RAM sticks have not arrived for this machine yet.  When they do and I upgrade my RAM, I
+should be operating with 2GB of RAM.  But until then, it's working fine!
+
+AntiX is based on Debian Stretch. It's very stable. And I just ran `sudo apt update -y && sudo
+apt upgrade` and the command just completed.  You can see this below:
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/deepbsd/43042029011/in/dateposted-public/" title="Running AntiX in 256MB of RAM!"><img src="https://farm2.staticflickr.com/1803/43042029011_512ff72c5a_k.jpg" width="1536" height="2048" alt="Running AntiX in 256MB of RAM!"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+Now, this machine didn't win any speed contests completing this command.  In fact, I'm pretty
+sure the download part timed out at least once because the speed was so slow.  But, it finally
+completed.  It's a miracle that this thing is not on some junk heap anyway.  Any machine this old
+that is still running deserves a round of applause.  
+
+So thanks to the folks at AntiX!
+
