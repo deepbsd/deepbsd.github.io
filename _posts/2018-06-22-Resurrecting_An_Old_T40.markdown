@@ -128,3 +128,24 @@ that is still running deserves a round of applause.
 
 So thanks to the folks at AntiX!
 
+# Replacing the Wifi and HDD
+
+Replacing the IDE HDD to a 120GB version was not a challenge.  Replacing the Wifi card was a
+different story.
+
+It turns out that IBM white-listed various wifi cards to run on the system, and unless you
+install only one of those white-listed cards, you will not be able to boot properly.  The boot
+process will halt and give you a `ERROR 1802` and complain that you must unplug the new wifi card
+from the miniPCI slot.  And that's what I would up choosing to do.
+
+I reinstalled the original card into the slot, and the system booted normally.  Hurray.
+
+But this does seem like a cheapo tactic for IBM/Lenovo to have done.  I think they're still doing
+this balogna too, if you can believe it.  But, at least under AntiX, the old wifi card actually
+works, albeit slowly.  
+
+# Replacing the RAM
+
+This still has not happened yet.  My new SODIMMS have not yet arrived.  I'll let you know when I
+upgrade the system.
+
