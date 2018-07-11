@@ -45,4 +45,18 @@ Also, for something like word processing, you don't need very much power.  In fa
 instead of an actual word processor and letting Ruby translate my markdown to html, I need even less.  I don't even
 need a true word processor.
 
+# Appropriate Workflow
 
+It would be inappropriate to try to do intensive gaming on this laptop. The graphics and memory are not strong enough.
+Light gaming, sure.  That would be okay.  But don't try to get this machine to play the latest immersive game with
+high or ultra settings.  However, writing a computer program would be just fine.  Writing your novel or short story,
+no problem.  You might even be able to stream a television show or two without over heating.  But you'd probably
+better not plan on making a day of it on this machine.  If you want to binge watch _Game of Thrones_, forget it.
+You'll probably get high thermals and get throttled or shutdown.  
+
+However, if you wanted to spend a day doing homework for a programming class, that would probably work fine, as long
+as your project was not too big.  But there's probably room for anything you would be doing by yourself.
+
+In short this computer feels like a true work horse, one that is comfortable and eager to please.  And it cost me less
+than $30 with shipping.  It's old.  But it's not dead.  Plenty of strength to do most of what I need to do in this
+machine.
