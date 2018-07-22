@@ -24,14 +24,21 @@ stream whatever shows or videos I'm in the mood for.  At times like this,
 then 8G RAM might wind up being too little.  Otherwise, this machine is plenty
 for my needs.
 
+Here's a picture of Manjaro updating itself on this valiant old
+beastie:
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/deepbsd/42855551564/in/dateposted-public/" title="Thinkpad T410"><img src="https://farm2.staticflickr.com/1808/42855551564_04218f5841_z.jpg" width="480" height="640" alt="Thinkpad T410"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 # The Specs
 
-I think I paid about $200 or less for this refurbished laptop.  It had an
-i5-520M and 4G of RAM.  There was a 250G hard disk.  I could actually upgrade
-the CPU to an i7.  And I put in a 250G SSD and added another stick of 4G of RAM
-to boost the total to 8G of RAM.  I hadn't looked into it, but I might even be
-able to upgrade the wireless card as well.  I'm not sure.  The best part about
-older Thinkpads is how easy they are to upgrade.
+I think I paid about $200 or less for this refurbished laptop.  It
+had an i5-520M and 4G of RAM.  There was a 250G hard disk.  I could
+actually upgrade the CPU to an i7.  And I put in a 250G SSD and
+added another stick of 4G of RAM to boost the total to 8G of RAM.
+8G of RAM is the maximum amount of RAM this old machine will take.
+I hadn't looked into it, but I might even be able to upgrade the
+wireless card as well.  I'm not sure.  The best part about older
+Thinkpads is how easy they are to upgrade.
 
 # Manjaro i3wm
 
