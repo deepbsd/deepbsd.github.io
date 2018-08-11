@@ -151,6 +151,8 @@ By the way, line 22 immediately above would have been written as a ternary after
 posnum=`posnum%2 == 0 ? posnum/2 : posnum*3+1`
 ```  
 
+Actually, I just tried something like this on my command line, and it didn't work.  I'm going to have to experiment for a minute on that.  Probably has to do with integers and `let` I'm guessing.  I'll figure it out!
+
 # My Conclusion 
 
 The Collatz Conjecture is a terrific student for a slightly experienced to more-advanced student of bash, because: it requires some arithmatic skills at the commandline; it requires ability with conditional logic; and
