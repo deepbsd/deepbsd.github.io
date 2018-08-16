@@ -11,18 +11,17 @@ If you'll recall about a month or two ago, I tried upgrading the CPU in the T60 
 Intel T2400 in it.  Not a bad CPU for its day, but that level of technology is dirt cheap these days, and
 the supply is rather plentiful, so why not upgrade?  I think the Intel T7600 that I upgraded to cost me
 about $30 or so?  It was pretty cheap, in other words.  Anyway, that upgrade did not work.  It turned out
-that my bios revision was pretty old.  Upgrading that to a version from 2011 made the difference, and this
-time when I powered up, everything behaved as expected.  No more blank screen of unknowing from the T60.
+that my bios version was pretty old.  Upgrading to a version from 2011 made all the difference, and this
+time when I powered up, everything behaved as expected.  No more blank _screen of unknowing_ from the T60.
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/deepbsd/44015487162/in/dateposted-public/" title="T60 with new T7600 64bit CPU"><img src="https://farm2.staticflickr.com/1799/44015487162_245f24ca6d_k.jpg" width="2048" height="1536" alt="T60 with new T7600 64bit CPU"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>"
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/deepbsd/44015487162/in/dateposted-public/" title="T60 with new T7600 64bit CPU"><img src="https://farm2.staticflickr.com/1799/44015487162_245f24ca6d_k.jpg" width="2048" height="1536" alt="T60 with new T7600 64bit CPU"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 As you can see above, the new CPU is a _memrom_ 64-bit T7600.  That's the max CPU that this old T60 can
 handle.  And, being a 64-bit CPU, it can see all of the RAM installed in the DIMM slots.  Prior to this
 CPU, only 3 Gigs of RAM registered in the bios.  So this is an added bonus.
 
-Currently, the OS is Linux LXLE, and it's a Legacy version of 32-bit architecture.  So it will only see 3
-Gigs of RAM.  If I update to a 64-bit version, then all 4 Gigs will be available.  Yay.  But this is enough
-work for today.  
+Currently, the OS is Linux LXLE, and it's a legacy 32-bit version.  So it will only see 3 Gigs of RAM.  If
+I upgrade to a 64-bit version, then all 4 Gigs will be available.  Yay.  But this is enough work for today.  
 
 # Upgrading the BIOS
 
@@ -30,13 +29,14 @@ It turns out this was the hardest part.  So, in case you didn't know, the BIOS i
 motherboard.  It's the part of the firmware flashed into the ROM chips on your motherboard that lets your
 CPU talk to the operating system, and lets the operating system talk to the display and memory and disks
 and so on.  In other words, it's a critical piece of hardware/software (firmware) that your PC must have to
-function.  
+function.  If something is wrong with the BIOS, your system will probably not even turn on or power up
+properly.  
 
 The BIOS stands in between the bare metal and the operating system.  It's extremely important.  If
 something goes wrong during the process of flashing a new BIOS onto those chips, you've basically bricked
-your laptop or desktop motherboard.  You probably wouldn't be able to recover it.  You'd probably have to
-buy a new logic board (laptop) or motherboard (desktop).  So, there is some risk involved anytime you
-update your BIOS.
+your laptop or desktop motherboard.  You probably wouldn't be able to recover from the event.  You'd
+probably have to buy a new logic board (laptop) or motherboard (desktop).  So, there is some risk involved
+anytime you update your BIOS.
 
 Since I run Linux, I was a little unsure about how Lenovo wanted me to update my BIOS.  They don't make a
 tool for Linux.  They support Windows in various versions.  Not Linux.  There are work arounds, but work
@@ -62,8 +62,8 @@ And 3 Gigs of RAM available.  Maybe a little longer.  After the required reboots
 Before you can update the BIOS, you have to apply all the necessary OS updates.  As I mentioned, there were
 well over 1200 of them.  On such legacy hardware, these updates took a surprisingly long time.  It took
 about 9 hours before the OS was updated, and once that was done, the BIOS was updated (reflashed) in about
-15-20 minutes or so.  Not bad at all.  And, thank God, I didn't brick my laptop.  The Windows 7 tool worked
-like a charm.  
+15-20 minutes or so.  Not bad at all.  And, thank God, I didn't brick my laptop.  The Windows 7 tool from
+Lenovo worked like a charm.  
 
 I don't know if it would have worked as cleanly if I had not updated the OS.  But, like I said, I didn't
 care to risk it.  Rather than risk damaging my laptop during the BIOS upgrade, I followed Lenovo
