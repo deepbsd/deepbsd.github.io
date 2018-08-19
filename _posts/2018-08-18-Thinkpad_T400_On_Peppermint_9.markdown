@@ -25,7 +25,9 @@ changes
 
 For example this was the first Thinkpad with a widescreen format.  At this point, the 4:3 aspect ratio became a thing of the past.   Also, this machine had an extensive internal roll cage.  I guess people were trying to put Lenovo to the durability to the test.  When you start disassembling this machine, you can see what I mean.
 
-It's hard for me to say whether this machine is a really fancy T60 or a not-so-impressive T410.  I'll go ahead and call it the former.  It's just that the improvements are incremental here, and they're not so obvious.  I can't see them that much, except for what I've mentioned.  I'm sure there are lots more improvements that I'm overlooking.  I think Lenovo was trying to be careful and not destroy a very successful product line by changing it very much.  At this point, I think they are flying solo.  No IBM involvement. 
+This machine was the first machine that could take 8 Gigs of RAM.  And recognize and address all of it.  The DIMMs didn't come in 8 Gig sticks when this machine came out, but they can be added now.
+
+It's hard for me to say whether this machine is a really fancy T60 or a not-so-impressive T410.  I'll go ahead and call it the former.  It's just that the improvements are incremental here, and they're not so obvious.  Technology doesn't grow exponentially each year.  This year was a year for incremental improvements.  I can't see them that much, except for what I've mentioned.  I'm sure there are lots more improvements that I'm overlooking.  I think Lenovo was trying to be careful and not destroy a very successful product line by changing it very much.  At this point, I think they are flying solo.  No IBM involvement. 
 
 I've heard people criticize the keyboard on this machine.  It's essentially just like the one on my T60.  Perhaps it was another one of those things they did *not* want to change too soon.  And indeed, Lenovo would go on to change the keyboard later on for the worse.  At least in the minds of many fans of the product line, including Yours Truly.  But the next iteration of the product, the T410, I *loved* the change on the keyboard!  They made the `Delete` and the `Escape` keys larger, and they made a few other welcome changes.  But this *perfect* keyboard only lasted for two more product cycles before they introduced the Gawd Awful chiclet keyboard with the T430.  Of course, that's just my opinion. 
 
@@ -55,6 +57,6 @@ Third, it looks spiffy!  And I can find my way around.  These days, there's a fa
 
 My one complaint so far is that the two-fingered scrolling does not seem to work on my touchpad yet.  I'm still researching on why this might be.  Is it possible that this Synaptics TouchPad product was a bit peculiar and the driver was not upgraded as it was for other Thinkpads?  I don't know.  Is it a Peppermint problem?  I doubt it.  It could just as easily be a problem with my particular installation.  Edge scrolling works, at least, and with the touchpad not working exactly right, I get a chance to use the TrackPoint a little bit more.  Small blessings.
 
-
+All in all, this is a terrific little laptop.  It's got enough compute power to make me happy and do my work.  It doesn't have the dreaded chiclet keyboard yet, at least.  And the screen lets me stream Brit detective shows like I love to do.  The 802.11n wifi is fast enough to let me do that.  And the Peppermint distro lets me do it quickly and also look good doing it.
 
 
