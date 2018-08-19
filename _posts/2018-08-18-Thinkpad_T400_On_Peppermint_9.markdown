@@ -23,9 +23,9 @@ changes
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/deepbsd/44072935332/in/dateposted-public/" title="Thinkpad T400 with Peppermint 9"><img src="https://farm2.staticflickr.com/1839/44072935332_2a39a6ee7e_k.jpg" width="1536" height="2048" alt="Thinkpad T400 with Peppermint 9"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-For example this was the first Thinkpad with a widescreen format.  At this point, the 4:3 aspect ratio became a thing of the past.   Also, this machine had an extensive internal roll cage.  I guess people were trying to put Lenovo to the durability to the test.  When you start disassembling this machine, you can see what I mean.
+For example this was the first Thinkpad with a widescreen format.  At this point, the 4:3 aspect ratio became a thing of the past.   Also, this machine had an extensive internal roll cage.  I guess people were trying to put Lenovo durability to the test.  When you start disassembling this machine, you can see what I mean.
 
-This machine was the first machine that could take 8 Gigs of RAM.  And recognize and address all of it.  The DIMMs didn't come in 8 Gig sticks when this machine came out, but they can be added now.
+This machine was the first machine that could take 8 Gigs of RAM.  And recognize and address all of it.  The DIMM slots can't recognize more than 4 gigs per slot however.  8 Gigs is the limit on this machine.  Same as on the T410.  The T420 can take 16 Gigs, however.
 
 It's hard for me to say whether this machine is a really fancy T60 or a not-so-impressive T410.  I'll go ahead and call it the former.  It's just that the improvements are incremental here, and they're not so obvious.  Technology doesn't grow exponentially each year.  This year was a year for incremental improvements.  I can't see them that much, except for what I've mentioned.  I'm sure there are lots more improvements that I'm overlooking.  I think Lenovo was trying to be careful and not destroy a very successful product line by changing it very much.  At this point, I think they are flying solo.  No IBM involvement. 
 
