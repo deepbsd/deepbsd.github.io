@@ -24,7 +24,7 @@ the BIOS which mode gets attempted first.)  Kinda different I think.  I just hav
 of my installation drama.
 
 Third, some distros work better with some laptops.  I've installed a lot of Linux distros.  Most of the time, there was no problem.  But
-occasionally I do hit a wall.  This was one of those times.  I first installed Solus Mate.  A fine distro.  I had already upgraded the
+occasionally I do hit a speedbump.  This was one of those times.  I first installed Solus Mate.  A fine distro.  I had already upgraded the
 laptop with 16G of Ballistix RAM and a 500G 860EVO from Samsung.  At first Solus installed effortlessly as I would have predicted, and
 then the filesystem kept going into read-only mode.  Basically, if the entire file system remounts itself in read-only mode, you are
 hosed.  I did the requisite googling and tried the top 10 fixes, but basically I chalked this experience up to Solus not playing nicely
