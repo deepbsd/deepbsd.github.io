@@ -49,11 +49,12 @@ much better than most laptop keyboards, but that original 7-row Thinkpad keyboar
 keyboard _and_ an i7 Coffee Lake processor -- well, _that_ would be amazing.  I'm not so sure that keyboard will work out though.  It's
 apparently not a drop in replacement.  I think there needs to be a BIOS hack or three.  But more on that at some other time.
 
-This laptop has made some other changes as well.  The first thing was that it's very easy to crack open.  There's one fewer screw on the
-front side bottom.  Lenovo have replaced a screw with a clip in that location.  And, it turns out, the clip is _not_ resilient.  It broke
-probably before I even got the laptop.  (I bought it used.)  This little clip was simply of poor design in my humble opinion.  It was not
-designed to survive more than a few openings and closings, near as I can tell.  There probably should have been a screw here instead.
-Now, there's a small area where the seam between the bottom cover and the body of the laptop don't fit snugly.  It's not a huge deal.
+This laptop has made some other changes as well.  The first thing was that it's very easy to crack open.  You simply invert the laptop and
+take off the bottom cover, which is held in place by 8 screws and some plastic friction clips.  There's one fewer screw on the front side
+bottom.  Lenovo have replaced a screw with two clips in that location.  And, it turns out, those clips are _not_ resilient.  One broke
+probably before I even got the laptop.  (I bought it used.)  These little clips were simply of poor design in my humble opinion.  They were
+not designed to survive more than a few openings and closings, near as I can tell.  There probably should have been a screw here instead.
+Now, there's a small area where the seam between the bottom cover and the body of the laptop doesn't fit snugly.  It's not a huge deal.
 Doesn't affect performance or heating, I don't think.  But I know it's there.  It bugs me.  But not overly much, because I know all the
 other good stuff this laptop has to offer.
 
