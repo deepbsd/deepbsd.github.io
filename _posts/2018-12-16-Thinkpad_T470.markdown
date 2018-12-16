@@ -69,4 +69,18 @@ seem perfectly at ease on this keyboard.  It's not a ten-key keyboard.  But it f
 nice feeling.  Also, I'm typing early in the morning in my kitchen with only a nite light on near the stove.  The illuminated keyboard
 light makes this easy to do.  Very nice keyboard light.
 
+# Some Final Thoughts
+
+This is my most modern Thinkpad, and I wonder how BIOS/UEFI evolution has affected Linux on Laptops.  There are probably lots of articles
+about that topic that I haven't read yet, but I think I'll start. I'm troubled that some of my other favorite distros seemed to have such
+problems with this hardware.  It could be user error.  But I actually suspect it's the BIOS/UEFI after reading so many Stack Overflow and
+other articles about the errors I was getting and the troubles I was having with Manjaro/Antergos/Arch distros I was trying compared to
+the ease of the LM install.
+
+This is a luxurious laptop.  It has far more power than I actually need to do my work.  If I were doing video editing or something that
+intensive, perhaps it would be a closer call.  But I'm a web developer and programmer.  And unless I'm cracking crypto keys, I'm probably
+not pushing this hardware very hard.  If I were compiling source trees of, say, Linux kernels or something, perhaps that would be a
+different story.  But as far as laptops go, this is a beauty.  I imagine there are some gaming laptops out there that would humble this
+spec.  But still, this is a very respectable hardware spec, and I think it will suit my personal needs just fine!
+
 
