@@ -1,0 +1,72 @@
+---
+layout: post
+title: Thinkpad T470
+date: 2018-12-16 06:34:15-05:00
+categories: Thinkpad Linux
+---
+
+# Linux on the Thinkpad T470
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/deepbsd/31385806427/in/dateposted-public/" title="T470 with 500gb SSD and Ballistix Memory"><img src="https://farm5.staticflickr.com/4907/31385806427_7cbcfe20cd_k.jpg" width="2048" height="1536" alt="T470 with 500gb SSD and Ballistix Memory"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+Well, I finally got something that I've been wanting a long time: a Thinkpad T470. So far the entire experience has not been without
+drama.  There has been a little.  But I think things are starting to turn in this story.
+
+First, The T470 is a little dearer on eBay that I expected, so I had to pay a bit more money than I thought I would.  Prices will probably
+drop after the Holidays.  Everyone will be in "paying off credit card" mode.  I expect demand will start to fall off.  But I wanted to
+treat myself for Christmas.
+
+Second, configurations have changed a bit, and this laptop surprised me a bit.  For example, some versions of this model have an M.2 nvme
+ssd.  Other's simply have a SATA 3 ssd.  This one turned out to be the latter.  This laptop came with 8G of DDR4 2400, and I ordered 16G
+of DDR4 2666, but it seems to be running well under 2400.  Not sure what the issue there is.  Also, the BIOS/UEFI comes in a dual mode
+where apparently it first tries to run in Legacy Mode, and then it runs in UEFI mode if that doesn't work out.  Kinda different I think.
+I just haven't seen that before.  This may have been related to some of my installation drama.
+
+Third, some distros work better with some laptops.  I've installed a lot of Linux distros.  Most of the time, there was no problem.  But
+occasionally I do hit a wall.  This was one of those times.  I first installed Solus Mate.  A fine distro.  I had already upgraded the
+laptop with 16G of Ballistix RAM and a 500G 860EVO from Samsung.  At first Solus installed effortlessly as I would have predicted, and
+then the filesystem kept going into read-only mode.  Basically, if the entire file system remounts itself in read-only mode, you are
+hosed.  I did the requisite googling and tried the top 10 fixes, but basically I chalked this experience up to Solus not playing nicely
+with this hardware.  When I installed Linux Mint, I didn't have to change any BIOS settings, and the distro installed with no hiccups and
+no more warnings of the file system remounting itself read-only.
+
+I've also tried several other distros, and they each had different problems.  A couple of Manjaro DVDs would not even boot to the desktop
+installer portion and give me a live distro experience.  Antergos Cinchi would start installing but not complete.  Elementary would start
+installing just fine, but then I decided I didn't really want Elementary, but it made me think about the Ubuntu family of distros.  
+
+I already have a bunch of Linux Mint installations.  I didn't really need another one.  I wanted some variety.  But I installed Mint, and
+it was on the machine with no drama faster than I knew I had started the installation.  It's like the laptop and the distro were meant to
+be.  I don't really know what else to say, except who am I to argue with two lovebirds who were just meant for each other?
+
+# More Notes about the T470
+
+The reason the T470 stood out in my mind was that it's the first Thinkpad to go faster than the T430 back on the Intel i7 3rd Gen
+processor.  The T470 is based clocked at 2.8GHz.  It can keep up with the T430 and even go a bit faster.  Cool!  Also, I had read of
+someone using the T25 Thinkpad's keyboard on a T470.  _That_ would be the *Holy Grail* as far as I'm concerned.  That's the same keyboard
+layout as we found on the T410 and the T420, two of the best Thinkpads ever.  Now, this Island Keyboard gets a lot of praise, and it's
+much better than most laptop keyboards, but that original 7-row Thinkpad keyboard was the best in the history of laptops.  To have _that_
+keyboard _and_ an i7 Coffee Lake processor -- well, _that_ would be amazing.  I'm not so sure that keyboard will work out though.  It's
+apparently not a drop in replacement.  I think there needs to be a BIOS hack or three.  But more on that at some other time.
+
+This laptop has made some other changes as well.  The first thing was that it's very easy to crack open.  There's one fewer screw on the
+front side bottom.  Lenovo have replaced a screw with a clip in that location.  And, it turns out, the clip is _not_ resilient.  It broke
+probably before I even got the laptop.  (I bought it used.)  This little clip was simply of poor design in my humble opinion.  It was not
+designed to survive more than a few openings and closings, near as I can tell.  There probably should have been a screw here instead.
+Now, there's a small area where the seam between the bottom cover and the body of the laptop don't fit snugly.  It's not a huge deal.
+Doesn't affect performance or heating, I don't think.  But I know it's there.  It bugs me.  But not overly much, because I know all the
+other good stuff this laptop has to offer.
+
+Some things that are just terrific:  The Display!  It's a true 1080p.  My old eyes can actually see it!  Yay!  I've heard some people say
+that the display is too dark.  I don't find that to be the case.  In fact, I most often use dark themed desktops.  So, perhaps it's just
+my personal preference, but I don't think this display is too dark.  Perhaps some units just come with darker displays?  Not sure.  This
+one's fine.
+
+There's room for a 2nd SSD.  It's one of those very small M.2 SSDs.  I wasn't sure this laptop came with such an extra slot.  I'm not sure
+I'll put one in there, but it's nice to know I could.  I actually think I have one around somewhere.
+
+This laptop is lightweight!  It's an ultrabook, as they say.  And Lenovo has really made this an easy-to-carry package.  My larger hands
+seem perfectly at ease on this keyboard.  It's not a ten-key keyboard.  But it feels like a larger than ten-key-less keyboard.  That's a
+nice feeling.  Also, I'm typing early in the morning in my kitchen with only a nite light on near the stove.  The illuminated keyboard
+light makes this easy to do.  Very nice keyboard light.
+
+
