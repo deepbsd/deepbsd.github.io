@@ -20,7 +20,7 @@ Second, configurations have changed a bit, and this laptop surprised me.  For ex
 ssd.  Other's simply have a SATA 3 ssd.  This one turned out to be the latter.  This laptop came with 8G of DDR4 2400, and I ordered 16G
 of DDR4 2666, but it seems to be running well under 2400.  Not sure what the issue there is.  Also, the BIOS/UEFI comes in a dual mode
 where apparently it first tries to run in Legacy Mode, and then it runs in UEFI mode if that doesn't work out.  (It's configurable in 
-the BIOS which mode gets attempted first.)Kinda different I think.  I just haven't seen that before.  This may have been related to some 
+the BIOS which mode gets attempted first.)  Kinda different I think.  I just haven't seen that before.  This may have been related to some 
 of my installation drama.
 
 Third, some distros work better with some laptops.  I've installed a lot of Linux distros.  Most of the time, there was no problem.  But
