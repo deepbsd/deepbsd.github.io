@@ -50,7 +50,7 @@ keyboard _and_ an i7 Coffee Lake processor -- well, _that_ would be amazing.  I'
 apparently not a drop in replacement.  I think there needs to be a BIOS hack or three.  But more on that at some other time.
 
 This laptop has made some other changes as well.  The first thing was that it's very easy to crack open.  You simply invert the laptop and
-take off the bottom cover, which is held in place by 8 screws and some plastic friction clips.  There's one fewer screw on the front side
+take off the bottom cover, which is held in place by 6 screws and some plastic friction clips.  There's one fewer screw on the front side
 bottom.  Lenovo have replaced a screw with two clips in that location.  And, it turns out, those clips are _not_ resilient.  One broke
 probably before I even got the laptop.  (I bought it used.)  These little clips were simply of poor design in my humble opinion.  They were
 not designed to survive more than a few openings and closings, near as I can tell.  There probably should have been a screw here instead.
