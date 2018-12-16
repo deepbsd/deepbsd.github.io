@@ -51,12 +51,12 @@ apparently not a drop in replacement.  I think there needs to be a BIOS hack or 
 
 This laptop has made some other changes as well.  The first thing was that it's very easy to crack open.  You simply invert the laptop and
 take off the bottom cover, which is held in place by 6 screws and some plastic friction clips.  There's one fewer screw on the front side
-bottom.  Lenovo have replaced a screw with two clips in that location.  And, it turns out, those clips are _not_ resilient.  One broke
-probably before I even got the laptop.  (I bought it used.)  These little clips were simply of poor design in my humble opinion.  They were
-not designed to survive more than a few openings and closings, near as I can tell.  There probably should have been a screw here instead.
-Now, there's a small area where the seam between the bottom cover and the body of the laptop doesn't fit snugly.  It's not a huge deal.
-Doesn't affect performance or heating, I don't think.  But I know it's there.  It bugs me.  But not overly much, because I know all the
-other good stuff this laptop has to offer.
+bottom.  Lenovo have replaced a screw with two clips in that location. (Lenovo, if you're reading this, please put back that screw!) And, it
+turns out, those clips are _not_ resilient.  One broke probably before I even got the laptop.  (I bought it used.)  These little clips were
+simply of poor design in my humble opinion.  They were not designed to survive more than a few openings and closings, near as I can tell.
+There probably should have been a screw here instead.  Now, there's a small area where the seam between the bottom cover and the body of the
+laptop doesn't fit snugly.  It's not a huge deal.  Doesn't affect performance or heating, I don't think.  But I know it's there.  It bugs
+me.  But not overly much, because I know all the other good stuff this laptop has to offer.  (But Lenovo, just put back that screw, please.)
 
 Some things that are just terrific:  The Display!  It's a true 1080p.  My old eyes can actually see it!  Yay!  I've heard some people say
 that the display is too dark.  I don't find that to be the case.  In fact, I most often use dark themed desktops.  So, perhaps it's just
