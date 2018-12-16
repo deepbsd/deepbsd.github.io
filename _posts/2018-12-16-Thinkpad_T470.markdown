@@ -5,7 +5,7 @@ date: 2018-12-16 06:34:15-05:00
 categories: Thinkpad Linux
 ---
 
-# Linux on the Thinkpad T470
+## Linux on the Thinkpad T470
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/deepbsd/31385806427/in/dateposted-public/" title="T470 with 500gb SSD and Ballistix Memory"><img src="https://farm5.staticflickr.com/4907/31385806427_7cbcfe20cd_k.jpg" width="2048" height="1536" alt="T470 with 500gb SSD and Ballistix Memory"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
