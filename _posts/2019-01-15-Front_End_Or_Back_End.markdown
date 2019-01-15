@@ -67,7 +67,7 @@ between the day spent moving the pixel resulting in frustration or in the change
 
 I think the answer lies in your state of consciousness.  
 
-If you're already sufficiently suffering, the pain required for maximum desire and effort is closer than if you're already comfortable.  You have to already be in some kind of pain,
+If you're already sufficiently suffering, the pain required for maximum desire and effort is closer than if you're comfortable.  You have to already be in some kind of pain,
 or be closer to being in some kind of pain.  Or perhaps you have to resist pain less.  Perhaps this means that you make friends with pain and suffering, so you don't resist it as
 much as you would if you were very comfortable.  In any event, if you're suffering enough already, spending all day moving a pixel doesn't seem so bad.  
 
