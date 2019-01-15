@@ -1,0 +1,62 @@
+---
+layout: post
+title: T60 In Action
+date: 2018-07-10 23:46:07-04:00
+categories: vintagepc thinkpad
+---
+
+## Composing on the T60
+
+One thing I like about this old laptop is the new keyboard.  Well, it's new, but its design is old.  In a way, this
+keyboard is the laptop equivalent of the Model M keyboard by IBM, it was a classic favorite.  It just fit your hand
+and had an unmistakable feel.  You didn't want to stop typing.  That's about hos this keyboard feels.  But it didn't
+come with the laptop.
+
+The keyboard that _did_ come with the laptop had food particles stuck under the keys.  There was some sort of liquid
+that had been spilled over the tops of many of the keys.  And there was a grungy and sticky feel to the keyboard. So I
+ordered a new replacement keyboard.  And this one is terrific.
+
+The replacement wrist pad is also new.  This one doesn't have a fingerprint reader, which never has seemed to work
+correctly under Linux anyway.  But the new wrist pad feels delightful against my palms.  It feels clean and fresh.  It
+cost more than the entire laptop when I bought it from ebay.  So did the keyboard.  
+
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/deepbsd/28465606487/in/dateposted-public/" title="Best Laptop Keyboard Ever!"><img src="https://farm2.staticflickr.com/1809/28465606487_eb6b901155_k.jpg" width="2048" height="1536" alt="Best Laptop Keyboard Ever!"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> 
+
+# Modern Classics
+
+I keep coming back to this, but some ideas are so good that you pay a price for moving beyond them.  For example, many
+laptops moved away from the 4:3 aspect ratio when DVD movies moved to an HD widescreen format.  But watching DVDs on
+your laptop is not what a laptop should be made for.  If you have to do work at your display, many people still prefer
+a taller format rather than a wider one.  Watching movies, wider is fine.  But doing work on a taller format is still
+preferable to many.
+
+Also, the modern keyboard is a chicklet style of keypress, without very much tactile feedback.  It's not always a sure
+thing whether your key has actualy been pressed, because the feedback to your fingers is often inconsistent or too
+slight.  Not so with a classic Thinkpad keyboard.  There you _know_ whether your key got pressed.  Your fingers know
+whether they pressed the wrong key, because the keys tell them.  
+
+In the old days of typing, typewriters had stiff keys. If you couldn't afford an electric typewriter, it was the
+physical press on the key that determined how evenly the letter would appear on the paper.  Your keystrokes had to be
+even yet sturdy.  You had to apply sufficient force to make the key strike the paper and the ribbon sufficiently hard
+that the ink got transferred evenly to the paper.
+
+Also, for something like word processing, you don't need very much power.  In fact, for me, since I'm typing into Vim
+instead of an actual word processor and letting Ruby translate my markdown to html, I need even less.  I don't even
+need a true word processor.
+
+# Appropriate Workflow
+
+It would be inappropriate to try to do intensive gaming on this laptop. The graphics and memory are not strong enough.
+Light gaming, sure.  That would be okay.  But don't try to get this machine to play the latest immersive game with
+high or ultra settings.  However, writing a computer program would be just fine.  Writing your novel or short story,
+no problem.  You might even be able to stream a television show or two without over heating.  But you'd probably
+better not plan on making a day of it on this machine.  If you want to binge watch _Game of Thrones_, forget it.
+You'll probably get high thermals and get throttled or shutdown.  
+
+However, if you wanted to spend a day doing homework for a programming class, that would probably work fine, as long
+as your project was not too big.  But there's probably room for anything you would be doing by yourself.
+
+In short this computer feels like a true work horse, one that is comfortable and eager to please.  And it cost me less
+than $30 with shipping.  It's old.  But it's not dead.  Plenty of strength to do most of what I need to do in this
+machine.

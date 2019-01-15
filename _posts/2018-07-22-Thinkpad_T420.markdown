@@ -1,0 +1,135 @@
+---
+layout: post
+title: Thinkpad T420
+date: 2018-07-22 13:44:21-04:00
+categories: thinkpad retro_pc linux
+---
+
+## New Thinkpad T420
+
+Turns out the laptop I thought I had before was a T410 after all.  I have been calling it a T420 for
+a long time.  Oops.  
+
+I need to update the previous article and correct my mistake!
+
+They're similar machines, but they take a completely different generation of
+hardware, so most parts are not compatible.  The technology for each is roughly equivalent though,
+in terms of USB and Wifi speeds.  They both have the coveted 7-row keyboard, loved by Thinkpad
+geeks.  They have roughly the same ports and display options, although the newer (2nd) generation
+CPU offers a slightly newer version of integrated graphics.  But neither one is going to be greater
+than standard HiDef, so about 1980x1200 I believe.  If you have a 4k monitor, neither of these
+machines will take advantage of it.
+
+The real story of the T420 is that *this* is the last Thinkpad you can get that supports the best
+keyboard ever put on a Thinkpad, and it still has Intel's 2nd Generation CPU architecture.  (We're
+up to 8th generation nowadays, in case you didn't know).  So this still qualifies as an old
+computer.  However, lots of people still use old computers.  Most people don't need new computers.  
+
+I bought this computer off of ebay for about $80 I think.  Not too bad.  It was missing some things,
+like a hard drive (which I usually have several of lying around), and it came with a low hardware
+spec.  That's okay too, because I have lots of old hardware lying around.  I did want to order a
+stronger CPU for it, though.  I found an i7-2640 on ebay for $40.  They were selling for $100 or
+more on Amazon, but most people don't understand the differences I guess.  Anyway, the CPU arrived
+about the same day the laptop itself did, so it got a full make over the day it arrived.
+
+Here's a photo:
+
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/deepbsd/41763867700/in/dateposted-public/" title="Upgrading CPU on T420"><img src="https://farm2.staticflickr.com/1770/41763867700_235a934996_k.jpg" width="2048" height="1536" alt="Upgrading CPU on T420"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+As you can see, the new CPU is in a small see-through container to the left of the machine, and the
+old CPU is still in its little socket, with thermal paste on it.  I think the previous owner had
+just put fresh thermal paste on there, because normally that stuff is baked on.  This wasn't.  I
+think the fan had just been cleaned out, because there weren't any dust bunnies living in there.
+All in all, the insides were pretty tidy for any machine this old.  Someone had been taking care of
+it.
+
+# New Specs
+
+The "new" version of this machine contains a 500GB SSD, an i7-2640M CPU, 16G DDR3 Dimms, and a new
+9-cell battery and 90W Lenovo power adapter.  (I replaced the cheap knockoff charger and battery
+that came with the unit.)  
+
+I installed my current favorite Linux distro (Manjaro i3wm community distro).  This distro has my
+favorite tiling window manager and also uses the beloved Arch Linux user repositories.  Just about
+any application that you can think of that is capable of running on Linux can be acquired there as a
+source tree that builds on your hardware, if that hardware can run Arch Linux.  Manjaro is an
+Arch-based distro.
+
+Again, the best part about this laptop is the keyboard.  It's the newest laptop that you can get
+that still has this wonderful legacy keyboard.
+
+# Thinkpad 25 Anniversary Model
+
+Lenovo recently (late 2017?) came out with an Anniversary model called the _Thinkpad25_.  Or just
+the Anniversary Model.  It's a T470 with 7th Gen Kaby Lake Intel architecture.  It also has a modern
+remake of the classic 7-row keyboard.  Here's Lenovo's <a
+href="https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/ThinkPad-25/p/20K70004US?cid=us:cse:qza7ob&utm_source=CSE&utm_medium=Banner&utm_campaign=CSE__Connexity">website</a> with a write up.
+
+Hopefully this website will still be available when you're reading this.  In case it isn't,
+hopefully I can provide another example here.
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/deepbsd/29701720278/in/dateposted-public/" title="Thinkpad 25th Anniversary"><img src="https://farm1.staticflickr.com/861/29701720278_9a766aaf74_z.jpg" width="590" height="444" alt="Thinkpad 25th Anniversary"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> 
+
+As you can see, this model also contains the old keyboard design.  When the T430 and other Lenovo
+lines stopped offering the classic keyboard design, Thinkpad fans were very disappointed.  I'm sure
+most of us tried to soldier on and pretend the new design was just as good.  But it wasn't.  
+
+If anyone from Lenovo is reading this, please make this new keybaord standard, or *at least* make it
+an available upgrade to newer models!  The modern keyboard just doesn't compare.  But this
+anniversary keyboard *should* be the new standard.  If there's any justice in the world.  
+
+Of course, this Anniversary Edition sold out right away.  I've been looking, but every time I google
+for this Anniversary Edition Thinkpad, it's sold out.  So I'm hoping Lenovo gets the message.  
+
+Bring Back the Classic Keyboard!
+
+# Design Cues
+
+Here are some aspects of the older design that I really miss on newer models:
+
+1. Scalloped cutouts under the directional keys
+
+2. Oversized Delete key
+
+3. Oversized Escape key (I'm a Vim user!)
+
+4. ThinkVantage button
+
+5. Original locations for Fn key functions
+
+Perhaps my tastes are uncommon.  But if that were true, why did the Anniversary Edition sell out so
+quickly?  I don't think my tastes are uncommon.  I think anyone with a functioning Pre Frontal
+Cortex will appreciate the classic design and keyboard, but the modern CPU architecture and Wifi.
+
+# Older Tech Still Works
+
+The truth is that we live in an age of technology fads.  It takes time and mistakes to find out what
+does *not* work and to return to designs that *do* work.  We most often learn through making
+*mistakes*.  
+
+I'm an older geezer now, but the newer generation can see the difference between many things that
+they grew up with and the disappearance of those things, such as flip phones, DVDs, and probably
+many other things that I haven't even thought of.  Many of them have become minimalists out of
+conscience and a healthy respect for our planet and the dangers of a "throw away" mentality.  
+
+There's also this stubborn aspect to that mentality also: 
+
+> Lots of times the newer thing is inferior to the thing it's replacing.  There's a reason people
+> still drive classic cars and buy antique furniture.
+
+I was surprised to find out I was not the only one who preferred an IBM Model M keyboard for my
+desktop computer.  It turned out that an entire industry grew up around mechanical keyboards.  Turns
+out lots of people prefer a mechanical keyboard.
+
+Now I also prefer the newer 802.11AC wifi speeds to the older N model and previous model speeds.  So
+there's still plenty of good that comes from the newer technology.  But it pays to pay attention and
+compare.  
+
+So, this old T420 may not be as fast and powerful as the Lenovo Anniversary 25, but it still works
+for what I do.  I can compile programs on this.  I can write this article.  I can browse websites
+and read email.  I can do lots of other things just fast enough.  My old T60 can do some things
+(although it gets hotter sooner), but this model does the things I need more easily than older
+computers.  And I get to keep my beloved 7-row keyboard.
+
+
