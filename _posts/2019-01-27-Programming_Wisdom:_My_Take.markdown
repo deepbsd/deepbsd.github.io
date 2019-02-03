@@ -29,13 +29,14 @@ work correctly and re-written so that they can be refactored and maintained.
 
 ## Lesson 2: Programmers Must Be Resilient and Persistent
 
-It helps if you're a great problem solver, but honestly, even geniuses have bad days.  If you have a an IQ of
-180 and throw in the towel on a tough problem after 6 hours, the person who got it done after 10 hours
-provided more value to his or her company than the genius did, even if that IQ was 125 (and assuming the
-person wasn't being paid as a genius).
+It helps if you're a great problem solver, but honestly, even geniuses have bad
+days.  If you have a an IQ of 180 and throw in the towel on a tough problem
+after 6 hours, the person who got it done after 10 hours provided more value to
+his or her company than the genius did, even if that IQ was 125 (and assuming
+the person wasn't being paid as a genius).
 
-My point is, it's not enough to be really smart.  It's better to be pretty smart and persistent and
-resilient.
+My point is, it's not enough to be really smart.  It's better to be pretty smart
+and persistent and resilient.
 
 ## Lesson 3: Get Really Good at the Basics
 
