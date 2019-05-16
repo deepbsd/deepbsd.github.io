@@ -106,6 +106,7 @@ you're doing, since you already know that Vim is powerful and will do exactly wh
 Vimgrep is just one option to use for searching your projects.  There are external tools, like 
 `Ggrep` from Tim Pope's 'Fugitive', `Ack.vim` and the `:Ack` command and the `:Ag` command from 
 `ag.vim`.  These are widely used tools, but I recommend starting with the built-in `:vimgrep`.  
+I have not yet outgrown just using `:vimgrep`.
 
 Also, can also use the entire UNIX toolset for populating your arglist as well with 
 ```
