@@ -110,11 +110,13 @@ I have not yet outgrown just using `:vimgrep`.
 
 Also, can also use the entire UNIX toolset for populating your arglist as well with 
 ```
-:args find . -type f -name 'pattern'
+:args `find . -type f -name 'pattern'`
 ```
 for example, which would probably be too big a list.  You could also simply go 
-`:args grep pattern **/*.scss` if you simply wanted
-to recursively search all your SASS files for 'pattern'.  
+```
+:args `grep pattern **/*.scss`  
+```
+if you simply wanted to recursively search all your SASS files for 'pattern'.  
 
 # More Information
 
