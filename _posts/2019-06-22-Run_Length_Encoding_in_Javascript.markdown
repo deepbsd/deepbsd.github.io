@@ -135,7 +135,7 @@ def encode(text):
 ```
 ## Final Solution in Javascript
 
-It turns out you can get pretty succinct and expressive simply by using ES6 syntax:
+It turns out you can get pretty succinct and expressive simply by using ES6 syntax and picking the right JS method:
 
 ```javascript
 export const decode = (text) => {
