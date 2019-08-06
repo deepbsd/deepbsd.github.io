@@ -44,14 +44,14 @@ Mind you, there are many more ways than this to use lambda expressions in Python
 
 I'm using a terminal with Node running in it for these examples just like I was running python3 in a terminal for the previous examples.  Typing the following in a Node terminal:
 ```
-let robin = str => { return "Holy "+str+", Batman!" }
+let robin = str =>  "Holy "+str+", Batman!" 
 ```
 You'll get the above mentioned effect in Node.  If you enter `robin('television addiction')` you will also get `Holy television addiction, Batman!` just as in Python.  Officially, I think you could call this a lambda
 expression in Javascript.
 
 You could go:
 ```
-const sumit = (total, num) => { return total + num }
+const sumit = (total, num) => total + num 
 ```
 and then you could say:
 ```
@@ -61,7 +61,7 @@ and then you could say:
 But I don't see that as the same thing.  First of all, we don't have list comprehensions in Javascript. But wait, JS has an `arguments` variable and the 'rest' variable `(...args)`, so I wonder what we could do with that?
 
 ```
-const sumit = (...args) => { return args.reduce((x,y) => x+y) }
+const sumit = (...args) => args.reduce((x,y) => x+y ) 
 ```
 
 Now, if we call `sumit(1,2,3,4)` we get the right answer.  
