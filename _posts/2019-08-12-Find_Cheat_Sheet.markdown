@@ -62,7 +62,11 @@ changed.  Changetime is the last time the file or its metadata (such as permissi
 * __regex__: `find ~/Pictures -iregex '*self*' -ctime -100` -- find all selfies newer than 100 days in Pictures
 * __readable__ (also -executable, -writeable): `find /etc -readable -type f` -- find all readable files by current user in /etc
 * __newer__: `find ~ -newer ~/.bashrc -name ".bash*"` -- find bash-related config files newer than your .bashrc in your
-  home directory and below
+  home directory and below.  _Note_: You can also use `-newer{acm}t` on this.  For example, to find all files modified on
+  the July 4th, 2014:  
+  ```
+  find / -type f -newermt 2014-07-04 ! -newermt 2014-07-05
+  ```
 * __not__ (!): `find ~ ! -user username` -- find all files and dirs in my home file structure not owned by username
 * __and/or__: `find / -type d -a -name 'python*'` -- find all directories below root that start with python. (-o means
   'or'). Example: `find / -type d -name 'python*' -o -name 'perl*'`
