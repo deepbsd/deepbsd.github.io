@@ -40,6 +40,9 @@ The pathspec `.` means recursively search the current directory structure, but y
 or whatever you want.  You can use the `-mindepth` and `-maxdepth` arguments to specify how deep you want to
 search the filesystem.
 
+You can supply more than one pathspec:  `find /var /etc -mtime 0` -- find all files in both /var and /etc that have been
+modified in the last 24 hours.  (-mtime 0 means less than 1 day)
+
 # Arguments for `find`: How can you find files?
 
 * __name__:  `find . -name "*waldo*"` -- find all files with 'waldo' in the filename
@@ -76,6 +79,11 @@ single mp3 file.  Very different results, so you probably mean to do the '+' rat
   need a pipe ('|') with xargs.
 * __execdir__: Executes the command on the directory the file found exists in. Not sure to use this myself
 * __ls__: `find / -type f -size +1G -ls` -- Simply lists files largers than 1G so you can view details about the file
+* __print__: `find /opt -type f -executable -print` -- Show all executable files beneath /opt.  _Note_: Sometimes special 
+characters in filenames could cause the terminal some grief.  If the output is going to a terminal rather than a file, you
+may want to choose a formated output, using `-fprint` or `-fprintf`.  If you want to disregard any side effects to the
+terminal and print characters regardless of the terminal, you could use `-print0` or `-fprint0`.  Read the manpage for more
+information on this.
 
 # Error Messages
 
@@ -100,7 +108,7 @@ usually don't have to use `-a` because it's oftentimes implicit.  If you have
 find . -user 'joe' -type f
 ``` 
 it is implicit that you want only files owned by joe.  You don't need a `-a` here.  But, let's say you wanted to see all
-files owned by 'joe' that are older than 90 days but not older than 100 days, or only those files that were modified within
+files owned by 'joe' that were modified than 90 days but not more than 100 days ago, or only those files that were modified within
 the last 4 days?  As the logic becomes a little more complex, the '(' and ')' can come to the rescue: 
 ```
 find / -user 'joe' '(' -mtime +90 -a ! -mtime +100 ')' -o '(' -mtime -4 ')'
