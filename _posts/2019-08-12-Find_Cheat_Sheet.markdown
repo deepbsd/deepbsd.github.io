@@ -67,7 +67,8 @@ changed.  Changetime is the last time the file or its metadata (such as permissi
   ```
   find / -type f -newermt 2014-07-04 ! -newermt 2014-07-05
   ```
-* __not__ (!): `find ~ ! -user username` -- find all files and dirs in my home file structure not owned by username
+* __not__ (!): `find ~ ! -user username` -- find all files and dirs in my home file structure not owned by username. `-not`
+  and `!` are the same
 * __and/or__: `find / -type d -a -name 'python*'` -- find all directories below root that start with python. (-o means
   'or'). Example: `find / -type d -name 'python*' -o -name 'perl*'`
 
