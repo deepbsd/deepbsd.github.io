@@ -112,9 +112,9 @@ usually don't have to use `-a` because it's oftentimes implicit.  If you have
 ```
 find . -user 'joe' -type f
 ``` 
-it is implicit that you want only files owned by joe.  You don't need a `-a` here.  But, let's say you wanted to see all
-files owned by 'joe' that were modified than 90 days but not more than 100 days ago, or only those files that were modified within
-the last 4 days?  As the logic becomes a little more complex, the '(' and ')' can come to the rescue: 
+it is implicit that you want only files owned by joe.  You don't need a `-a` here.  But, let's say you wanted to see all files owned by
+'joe' that were modified more than 90 days ago but not more than 100 days ago, or only those files that were modified within the last 4
+days?  As the logic becomes a little more complex, the '(' and ')' can come to the rescue: 
 ```
 find / -user 'joe' '(' -mtime +90 -a ! -mtime +100 ')' -o '(' -mtime -4 ')'
 ```
