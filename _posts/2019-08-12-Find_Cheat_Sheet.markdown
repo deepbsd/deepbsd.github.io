@@ -116,7 +116,7 @@ it is implicit that you want only files owned by joe.  You don't need a `-a` her
 'joe' that were modified more than 90 days ago but not more than 100 days ago, or only those files that were modified within the last 4
 days?  As the logic becomes a little more complex, the '(' and ')' can come to the rescue: 
 ```
-find / -user 'joe' '(' -mtime +90 -a ! -mtime +100 ')' -o '(' -mtime -4 ')'
+find / -user joe '(' -mtime +90 -a ! -mtime +100 ')' -o '(' -mtime -4 ')'
 ```
 
 # Conclusion
