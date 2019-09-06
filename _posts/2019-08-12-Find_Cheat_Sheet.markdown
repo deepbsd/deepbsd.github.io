@@ -51,7 +51,7 @@ modified in the last 24 hours.  (-mtime 0 means less than 1 day)
 * types (c, d, s, l, p, b): files, directories, sockets, symlinks, named pipes, block file. 
 * __permissions__: `find . -type f -perm 775` -- find all files with permissions of 755. _Note_: can also use
 the `-perm u=rwx,g=rx,o=rx` type of syntax.
-* __access__:  `find /etc -atime -3 -name "*conf*"` -- all files in /etc accessed within last 3 days named "*conf*"
+* __access__:  `find /etc -atime -3 -name "*conf"` -- all files in /etc accessed within last 3 days named "*conf*"
 * __access/modification/created times__:  `find /var/log -atime -3 -mtime -3 -ctime -3 ` -- less than 3 days ago
 _Note_: Accesstime is the last time the file was read.  Modificationtime is the last time the content of the file was
 changed.  Changetime is the last time the file or its metadata (such as permissions or ownership) were changed
