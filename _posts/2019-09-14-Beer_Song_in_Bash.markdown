@@ -37,74 +37,74 @@ put in some comments, so hopefully you can follow my thinking:
 # My Solution:
 
 ```
-  1	#!/usr/bin/env bash
-  2	
-  3	input=("$@")    # snarf the arguments
-  4	
-  5	error(){
-  6	    echo "1 or 2 arguments expected" && exit 1
-  7	}
-  8	
-  9	error1(){
- 10	    echo "Start must be greater than End" && exit 1
- 11	}
- 12	
- 13	# throw an error if get too few or too many arguments
- 14	[[ ${#input[@]} -gt 0 && ${#input[@]} -lt 3 ]] || error
- 15	# check that verses are in right order
- 16	[[ ${#input[@]} -gt 1 && $1 -lt $2 ]] && error1
- 17	
- 18	say_verse(){
- 19	
- 20	    count1=$1
- 21	    count2=$((count1-1))
- 22	    singular="bottle"
- 23	    plural="bottles"
- 24	    verse2="Take one down and pass it around,"
- 25	    verse3="Go to the store and buy some more,"
- 26		verse4="Take it down and pass it around,"
- 27	 
- 28	   if [[ $count1 -gt 2 ]]; then
- 29	        bottles1=${plural}
- 30	        bottles2=${plural}
- 31	    fi
- 32	
- 33	    if [[ $count1 -eq 2 ]]; then
- 34	        bottles1=${plural}
- 35	        bottles2=${singular}
- 36	    fi
- 37	 
- 38	    if [[ $count1 -eq 1 ]]; then
- 39	        count2="no more"
- 40			verse2=${verse4}
- 41	        bottles1=${singular}
- 42	        bottles2=${plural}
- 43	    fi
- 44	
- 45	    if [[ $count1 -eq 0 ]]; then
- 46	        count1="no more"
- 47	        count2=99
- 48	        bottles1=${plural}
- 49	        bottles2=${plural}
- 50	        verse2=${verse3}
- 51	    fi
- 52	
- 53	    verse="${count1} ${bottles1} of beer on the wall, ${count1} ${bottles1} of beer. \n${verse2} ${count2} ${bottles2} of beer on the wall.\n"
- 54	
- 55	    printf "${verse^}"
- 56	}
- 57	
- 58	# If the range is a single verse
- 59	[[ ${#input[@]} -eq 1 ]] && say_verse $input && exit 0;
- 60	
- 61	# If the range is more than a single verse
- 62	while [[ $input -ge $2 ]]; do
- 63	    say_verse $input
- 64	    echo
- 65	    input=$((input-1))
- 66	done
- 67	
- 68	exit 0
+ 1	#!/usr/bin/env bash
+ 2	
+ 3	input=("$@")    # snarf the arguments
+ 4	
+ 5	error(){
+ 6	    echo "1 or 2 arguments expected" && exit 1
+ 7	}
+ 8	
+ 9	error1(){
+10	    echo "Start must be greater than End" && exit 1
+11	}
+12	
+13	# throw an error if get too few or too many arguments
+14	[[ ${#input[@]} -gt 0 && ${#input[@]} -lt 3 ]] || error
+15	# check that verses are in right order
+16	[[ ${#input[@]} -gt 1 && $1 -lt $2 ]] && error1
+17	
+18	say_verse(){
+19	
+20	    count1=$1
+21	    count2=$((count1-1))
+22	    singular="bottle"
+23	    plural="bottles"
+24	    verse2="Take one down and pass it around,"
+25	    verse3="Go to the store and buy some more,"
+26		verse4="Take it down and pass it around,"
+27	 
+28	   if [[ $count1 -gt 2 ]]; then
+29	        bottles1=${plural}
+30	        bottles2=${plural}
+31	    fi
+32	
+33	    if [[ $count1 -eq 2 ]]; then
+34	        bottles1=${plural}
+35	        bottles2=${singular}
+36	    fi
+37	 
+38	    if [[ $count1 -eq 1 ]]; then
+39	        count2="no more"
+40			verse2=${verse4}
+41	        bottles1=${singular}
+42	        bottles2=${plural}
+43	    fi
+44	
+45	    if [[ $count1 -eq 0 ]]; then
+46	        count1="no more"
+47	        count2=99
+48	        bottles1=${plural}
+49	        bottles2=${plural}
+50	        verse2=${verse3}
+51	    fi
+52	
+53	    verse="${count1} ${bottles1} of beer on the wall, ${count1} ${bottles1} of beer. \n${verse2} ${count2} ${bottles2} of beer on the wall.\n"
+54	
+55	    printf "${verse^}"
+56	}
+57	
+58	# If the range is a single verse
+59	[[ ${#input[@]} -eq 1 ]] && say_verse $input && exit 0;
+60	
+61	# If the range is more than a single verse
+62	while [[ $input -ge $2 ]]; do
+63	    say_verse $input
+64	    echo
+65	    input=$((input-1))
+66	done
+67	
+68	exit 0
 ```
 
 Basically, I generate the same verse over and over again, but I change several keywords based on the number
