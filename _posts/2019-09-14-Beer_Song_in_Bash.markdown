@@ -33,6 +33,9 @@ were easier to follow than mine.  But they were easier for me to follow, because
 thinking about the problem as I had.  So I don't know whether my solution was any better or not.  But I did
 put in some comments, so hopefully you can follow my thinking:
 
+
+# My Solution:
+
 ```
 #!/usr/bin/env bash
 
