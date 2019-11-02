@@ -21,7 +21,10 @@ But there are a few things that still need to happen. Here's a recipe for conver
 Antergos installation into a working Arch installation:
 
 1. Logout of you desktop so you see your X display manager login.  Then hit 
-   ```ALT-CTL-F2``` and log into your account and become root: ```su -```
+   ```ALT-CTL-F2``` and log into your account and become root: 
+   ```
+   su -
+   ```
 2. Change to multi-user (non-graphical) run level.
     ```
     # systemctl start multi-user.target
@@ -79,9 +82,9 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
    ```
    If there are no errors, you should be good for a reboot, almost. 
 10. Restart your graphical target run level.
-   ```
-   # systemctl start graphical.target
-   ```
+```
+# systemctl start graphical.target
+```
    If there are any missing X related packages, you can troubleshoot your errors and
    straighten them out.
 11. When youre ready, reboot your computer, if you dare!
