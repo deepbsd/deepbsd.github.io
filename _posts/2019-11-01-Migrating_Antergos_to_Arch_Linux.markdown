@@ -69,7 +69,7 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
    overwrite your existing antergos ```/etc/default/grub.cfg```.  If not, there should be
    another grub.cfg in /etc/default that has a different name, like grub.cfg.pacman or
    something.  Look at them both and make sure the correct one is in ```/etc/default/grub.cfg```.
-   I would also install a grub theme, such as ```grub2-theme-archlinux```
+   I would also install a grub theme, such as grub2-theme-archlinux.
    ```
    # yay -S grub2-theme-archlinux
    ```
@@ -91,9 +91,10 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
 If you installed Antergos using LVM, you'll still see `Antergos` in your LVM names.  There
 are still some packages on your system, such as webkit-theme-antergos, and you can see some
 more using ```updatedb && locate antergos```.  But for all intents and purposes, you now
-should have an arch linux installation.  Those remaining files can be removed manually I
-think without affecting the rest of the system.  But I'm not sure.  For now, they're not
-bothering me.  Maybe I'll remove them later.
+should have an arch linux installation.  Those remaining files weren't removed when antergos
+packages were removed, but they can be removed manually I think without affecting the rest of
+the system.  But I'm not sure.  For now, they're not bothering me.  Maybe I'll remove them
+later.
 
 I've changed my icons around to reflect the change, in my start menu for example.  Neofetch
 and Screenfetch now report an Arch installation.  And really, there's just very little left
