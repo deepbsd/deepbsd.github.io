@@ -56,16 +56,51 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
 
 7. Make sure you have all required files for your desktop environment, including all Xorg and related
    files, video drivers, mesa, etc etc, which are now coming from Arch repos.  May need to
-   re-install from new repos.
-
-
+   re-install from new repos.  One of my machines had Cinnamon (desktop) antergos repos, so I
+   had to remove all of those and get regular arch packages.  Just to be safe, I re-installed
+   all my xorg packages along with lightdm packages and my video drivers.  This time I knew
+   they all came from arch repos.  
+   [This article](https://www.tecmint.com/install-cinnamon-desktop-in-arch-linux)
+   explains the process for Cinnamon. This particular article is good, but it is old (2014).
+   Packages names can change a lot!
 
 8. Change grub theme to an arch linux theme, if that's what you want. Remove Antergos grub
-   theme.  Might need to update /etc/default/grub.cfg.
+   theme.  (Should already be gone.) When you install grub from arch repos, it may not
+   overwrite your existing antergos ```/etc/default/grub.cfg```.  If not, there should be
+   another grub.cfg in /etc/default that has a different name, like grub.cfg.pacman or
+   something.  Look at them both and make sure the correct one is in ```/etc/default/grub.cfg```.
+   I would also install a grub theme, such as ```grub2-theme-archlinux```
+   ```
+   # yay -S grub2-theme-archlinux
+   ```
+   Then, run
+   ```
+   # grub-mkconfig -o /boot/grub/grub.cfg
+   ```
+   If there are no errors, you should be good for a reboot, almost. 
 9. Restart your graphical target run level.
-10. Reboot your computer, if you dare!
+   ```
+   # systemctl start graphical.target
+   ```
+   If there are any missing X related packages, you can troubleshoot your errors and
+   straighten them out.
+10. When youre ready, reboot your computer, if you dare!
 
+# Leftovers
 
+If you installed Antergos using LVM, you'll still see `Antergos` in your LVM names.  There
+are still some packages on your system, such as webkit-theme-antergos, and you can see some
+more using ```updatedb && locate antergos```.  But for all intents and purposes, you now
+should have an arch linux installation.  Those remaining files can be removed manually I
+think without affecting the rest of the system.  But I'm not sure.  For now, they're not
+bothering me.  Maybe I'll remove them later.
+
+I've changed my icons around to reflect the change, in my start menu for example.  Neofetch
+and Screenfetch now report an Arch installation.  And really, there's just very little left
+of Antergos in the installation.  Linux distros are simply a collection of choices, and
+Antergos was mainly a collection of very nice styling decisions and special packages, and
+those packages are now replaced by Arch packages.  And you're free to keep the best choices
+for your indidualized Arch installation!
 
 
 
