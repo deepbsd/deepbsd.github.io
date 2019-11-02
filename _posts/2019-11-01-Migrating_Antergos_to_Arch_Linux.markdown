@@ -5,8 +5,6 @@ date: 2019-11-01 11:23:07-04:00
 categories: linux arch antergos
 ---
 
-## Note: This is just a beginning draft...
-
 # Migrating Antergos Linux to Arch Linux
 
 Since the Antergos project eneded, those of us who have loved Antergos have been sad. 
