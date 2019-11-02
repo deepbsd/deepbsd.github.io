@@ -27,15 +27,15 @@ Antergos installation into a working Arch installation:
    ```
 2. Change to multi-user (non-graphical) run level.
     ```
-    # systemctl start multi-user.target
+# systemctl start multi-user.target
     ```
 3. Remove the pamac graphical package manager.
     ```
-    # kill -s SIGKILL $(pgrep pamac) && pacman -R pamac
+# kill -s SIGKILL $(pgrep pamac) && pacman -R pamac
     ```
 4. Remove all antergos packages (if you want a pure Arch installation).
     ```
-    # pacman -Rddnus $(pacman -Qq | grep antergos)
+# pacman -Rddnus $(pacman -Qq | grep antergos)
     ```
 5. Modify /etc/pacman.conf to remove references to Antergos repos.
 Just comment out all sections with `[antergos]` or `[antergos-staging]`
@@ -54,10 +54,16 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
 
 7. Update your system: 
     ```
-    pacman -Syyu
+# pacman -Syyu
     ```
 
-8. Make sure you have all required files for your desktop environment, including all Xorg and related
+8. If when you run neofetch or screenfetch you still see Antergos, then you should re-install
+   the lsb-release package
+   ```
+# pacman -S lsb-release
+   ```
+
+9. Make sure you have all required files for your desktop environment, including all Xorg and related
    files, video drivers, mesa, etc etc, which are now coming from Arch repos.  May need to
    re-install from new repos.  One of my machines had Cinnamon (desktop) antergos repos, so I
    had to remove all of those and get regular arch packages.  Just to be safe, I re-installed
@@ -67,27 +73,27 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
    explains the process for Cinnamon. This particular article is good, but it is old (2014).
    Packages names can change a lot!
 
-9. Change grub theme to an arch linux theme, if that's what you want. Remove Antergos grub
+10. Change grub theme to an arch linux theme, if that's what you want. Remove Antergos grub
    theme.  (Should already be gone.) When you install grub from arch repos, it may not
    overwrite your existing antergos ```/etc/default/grub.cfg```.  If not, there should be
    another grub.cfg in /etc/default that has a different name, like grub.cfg.pacman or
    something.  Look at them both and make sure the correct one is in ```/etc/default/grub.cfg```.
    I would also install a grub theme, such as grub2-theme-archlinux.
    ```
-   # yay -S grub2-theme-archlinux
+# yay -S grub2-theme-archlinux
    ```
    Then, run
    ```
-   # grub-mkconfig -o /boot/grub/grub.cfg
+# grub-mkconfig -o /boot/grub/grub.cfg
    ```
    If there are no errors, you should be good for a reboot, almost. 
-10. Restart your graphical target run level.
+11. Restart your graphical target run level.
 ```
 # systemctl start graphical.target
 ```
    If there are any missing X related packages, you can troubleshoot your errors and
    straighten them out.
-11. When youre ready, reboot your computer, if you dare!
+12. When youre ready, reboot your computer, if you dare!
 
 # Leftovers
 
