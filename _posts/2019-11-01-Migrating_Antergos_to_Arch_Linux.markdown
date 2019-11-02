@@ -20,8 +20,8 @@ been updates that have helped to change existing Antergos installations into Alm
 But there are a few things that still need to happen. Here's a recipe for converting your
 Antergos installation into a working Arch installation:
 
-1. Logout of you desktop so you see your X display manager login.
-
+1. Logout of you desktop so you see your X display manager login.  Then hit 
+   ```ALT-CTL-F2``` and log into your account and become root: ```su -```
 2. Change to multi-user (non-graphical) run level.
     ```
     # systemctl start multi-user.target
