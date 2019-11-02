@@ -9,9 +9,9 @@ categories: linux arch antergos
 
 Since the Antergos project eneded, those of us who have loved Antergos have been sad. 
 
-And there was Antergos forum post about future updates magically updating or migrating
-Antergos installations to Arch Linux installations.  Well, that may not have happened to so
-magically, and I guess no one every really promised us Linux magic, especially with an Arch
+And there was an Antergos forum post about future updates magically updating or migrating
+Antergos installations to Arch Linux installations.  Well, that may not have happened so
+magically, and I guess no one ever really promised us Linux magic, especially with an Arch
 related distro, so we have to spin up our own magic I guess.  Hopefully, this article can
 provide a bit of that.
 
@@ -20,22 +20,24 @@ been updates that have helped to change existing Antergos installations into Alm
 But there are a few things that still need to happen. Here's a recipe for converting your
 Antergos installation into a working Arch installation:
 
-1. Change to multi-user (non-graphical) run level.
+1. Logout of you desktop so you see your X display manager login.
+
+2. Change to multi-user (non-graphical) run level.
     ```
     # systemctl start multi-user.target
     ```
-2. Remove the pamac graphical package manager.
+3. Remove the pamac graphical package manager.
     ```
     # kill -s SIGKILL $(pgrep pamac) && pacman -R pamac
     ```
-3. Remove all antergos packages (if you want a pure Arch installation).
+4. Remove all antergos packages (if you want a pure Arch installation).
     ```
     # pacman -Rddnus $(pacman -Qq | grep antergos)
     ```
-4. Modify /etc/pacman.conf to remove references to Antergos repos.
+5. Modify /etc/pacman.conf to remove references to Antergos repos.
 Just comment out all sections with `[antergos]` or `[antergos-staging]`
 
-5. Change entries in /etc/os-release (which is a symlink /usr/lib/os-release) over to Arch values
+6. Change entries in /etc/os-release (which is a symlink /usr/lib/os-release) over to Arch values
     ```
     NAME="Arch Linux"
     PRETTY_NAME="Arch Linux"
@@ -47,12 +49,12 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
     BUG_REPORT_URL="https://bugs.archlinux.org"
     ```
 
-6. Update your system: 
+7. Update your system: 
     ```
     pacman -Syyu
     ```
 
-7. Make sure you have all required files for your desktop environment, including all Xorg and related
+8. Make sure you have all required files for your desktop environment, including all Xorg and related
    files, video drivers, mesa, etc etc, which are now coming from Arch repos.  May need to
    re-install from new repos.  One of my machines had Cinnamon (desktop) antergos repos, so I
    had to remove all of those and get regular arch packages.  Just to be safe, I re-installed
@@ -62,7 +64,7 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
    explains the process for Cinnamon. This particular article is good, but it is old (2014).
    Packages names can change a lot!
 
-8. Change grub theme to an arch linux theme, if that's what you want. Remove Antergos grub
+9. Change grub theme to an arch linux theme, if that's what you want. Remove Antergos grub
    theme.  (Should already be gone.) When you install grub from arch repos, it may not
    overwrite your existing antergos ```/etc/default/grub.cfg```.  If not, there should be
    another grub.cfg in /etc/default that has a different name, like grub.cfg.pacman or
@@ -76,13 +78,13 @@ Just comment out all sections with `[antergos]` or `[antergos-staging]`
    # grub-mkconfig -o /boot/grub/grub.cfg
    ```
    If there are no errors, you should be good for a reboot, almost. 
-9. Restart your graphical target run level.
+10. Restart your graphical target run level.
    ```
    # systemctl start graphical.target
    ```
    If there are any missing X related packages, you can troubleshoot your errors and
    straighten them out.
-10. When youre ready, reboot your computer, if you dare!
+11. When youre ready, reboot your computer, if you dare!
 
 # Leftovers
 
