@@ -50,13 +50,13 @@ An example of an overclock is taking an i5-4790K cpu on an ASRock Z97 Extreme6 b
 little more expensive motherboard that is good at overclocking) and changing the default
 multiplier in the BIOS so that the CPU speed goes from 3.5GHz to 4.5GHz.  Core voltage
 could need to go up an extra 0.125 volts or so to keep this clock stable.  So instead of
-an idle temperature of, say, 30 degrees Centigrade, perhaps your now running closer to
+an idle temperature of, say, 30 degrees Centigrade, perhaps you're now running closer to
 40 degrees at idle.  You haven't spent a dime, unless you've upgraded some of your
 components.  
 
 This boost from 3.5GHz to 4.5GHz is almost a 30% increase in CPU speed.  And it's
-costing you perhaps an extra in your monthly energy bill.  Can you begin to see why the
-idea might be attractive to people?
+costing you perhaps an extra few pennies in your monthly energy bill.  Can you begin to
+see why the idea might be attractive to people?
 
 # But is it Practical?
 
@@ -70,11 +70,11 @@ For me, sometimes I write computer programs that require compute power.  For exa
 I'm searching for prime numbers, I can easily bring a system to its knees.  These are
 just intensive calculations, and some operations can take a very long time.  In fact,
 there's a "Great Search for Mersenne Primes" on the internet, and it requires so much
-compute power that there are thousands (or more?) volunteers sharing their computers
+compute power that there are thousands (or more?) volunteers sharing their computers'
 extra CPU cycles in the search.  The software you download is great for stress testing
 your system for stability.  If you can run the stress test and keep your system stable
 at higher clocks and voltages, searching for prime numbers is a great way to test your
-experimental settings.  This software is called (Prime95)[https://mersenne.org/download].
+experimental settings.  This software is called [Prime95](https://mersenne.org/download).
 
 First and foremost, it's fun.  Overclocking is like hot rodding your computer.  You may
 or may not notice the performance gains you'll realize.
@@ -103,19 +103,27 @@ dissipate thermal energy more efficiently than air, or so I hear.  But if you're
 comparing a small 120mm water cooler to a huge heat sink with multiple fans moving air
 through the heat sink, then the air cooler will be better.  
 
+TDP or "thermal design profile" is a measurement of the maximum heat a CPU or a Cooler
+can handle.  It can be a basic indicator for how much cooling capability a cooler has.
+If your air cooler can handle 150W TDP and your 120mm AIO can handle 130W TDP, then your
+air cooler is a better solution.  But is it so big that it doesn't fit into your box?
+Maybe the biggest heat sink that fits into your box has a TDP of 120W.  
+
 This brings up an interesting point:  there are a LOT of great cooling solutions these
 days in either water or liquid coolers.  In general, air coolers must sit on top of the
 CPU, which limits the size of the heat sink that can be used.  Water coolers can use
 tubes to move the hot water through radiators that can be placed anywhere in the
 computer.  You can even use multiple radiators if you so desire.  So liquid coolers have
 more potential in terms of how much heat they can dissipate in your system.  But all
-this depends on your use case?  Do you just want to run a massive overclock and build a
+this depends on your use case.  Do you just want to run a massive overclock and build a
 custom loop cooling solution just so you can show off your high clocks to your friends?
 You'll probably want to build a custom loop with multiple radiators, and perhaps you can
 even overclock your GPU (graphics card) also and include that in your custom loop?
 
 But if all your after is a 10-15% increase in clock speed, there are lots of air coolers
-that will keep your system simple and do the cooling job reliably.
+that will keep your system simple and do the cooling job reliably.  There are also
+exceptional air coolers with smaller form factors.  And there are AIOs for nearly every
+case.  But, size will be a factor in your solution.
 
 # Why Linux?
 
@@ -146,13 +154,13 @@ been packaged to other distros.
 # First Steps
 
 It's going to start with your particular hardware.  Are you using hardware that is
-capable of overclocking?  
+capable of overclocking?  If not, you're done.
 
 Is the payoff worth the risk in your case?  If you're already a tinkerer and have
 hardware you can afford to experiment with, then great.  If you don't want to risk your
 hardware, then stop now.
 
-Start with Google.  I googled "Overclocking on Linux" and came up with LOTS of very
+If you're good to go, start with Google.  I googled "Overclocking on Linux" and came up with LOTS of very
 interesting links worth reading.  Lots of opinions out there.  
 
 Watch YouTubes about overclocking on Windows too.  Overclocking happens really more at
