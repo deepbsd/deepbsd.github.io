@@ -12,7 +12,7 @@ do this, because it seemed like a great way to ruin perfectly good hardware and 
 money down the drain.  So, no overclocking for me.  Until now.
 
 I looked around and saw that I simply had too much hardware.  And it has finally begun
-to dawn on me that there is quite a bit of headroom built into CPU these days.  No one
+to dawn on me that there is quite a bit of headroom built into CPUs these days.  No one
 can predict the performance potential of a randomly binned CPU.  So there is a sort of
 CPU lottery.  Maybe you win, or maybe you don't.  But there is going to be at least some
 potential performance your CPU in your computer will have beyond what it's currently
@@ -35,16 +35,16 @@ about what you're doing.  After all, you could have paid many hundreds of dollar
 those components, so why would you want to cook them inside of your tower case?
 
 Well depending on your specific CPU and motherboard, you could get a 10-20% performance
-bump in your system.  For free, basically.  I've finally had some systems that are 10
+bump in your system.  For free, basically.  I've finally had some systems that are 15
 plus years old die on me.  Either a drive controller or mobo component dies or
 something, but this has been long *after* that system has been a highly useful system
 for me.  My point is, why not get more use out of that hardware since you're going to
-upgrade it long before it physically dies anyway?  Overclocking is one way to do that.
+replace it long before it physically dies anyway?  Overclocking is one way to do that.
 
 Specifically, to overclock, you must have an unlocked CPU (one that allows you to change
 speeds and voltages) and a motherboard that supports overclocking.  Likewise, you're
 going to need a good power supply with at least a Bronze level rating, and also a good
-cooling solution, probably an after market cooler, to handle the increased heat.
+cooling solution, probably an after market cooler, to dissipate the increased heat.
 
 An example of an overclock is taking an i5-4790K cpu on an ASRock Z97 Extreme6 board (a
 little more expensive motherboard that is good at overclocking) and changing the default
@@ -63,7 +63,7 @@ see why the idea might be attractive to people?
 That depends.  If all you do is surf the web and read email, then probably not.  If you
 just want to watch YouTube videos on your machine, then overclocking probably won't be
 of interest to you.  But, if you use your CPU cycles on things, such as playing
-intensive computer games or rendering videos or compling source trees or something, then
+intensive computer games or rendering videos or compiling source trees or something, then
 overclocking your CPU might be something of interest to you.  
 
 For me, sometimes I write computer programs that require compute power.  For example, if
@@ -71,10 +71,10 @@ I'm searching for prime numbers, I can easily bring a system to its knees.  Thes
 just intensive calculations, and some operations can take a very long time.  In fact,
 there's a "Great Search for Mersenne Primes" on the internet, and it requires so much
 compute power that there are thousands (or more?) volunteers sharing their computers'
-extra CPU cycles in the search.  The software you download is great for stress testing
-your system for stability.  If you can run the stress test and keep your system stable
-at higher clocks and voltages, searching for prime numbers is a great way to test your
-experimental settings.  This software is called [Prime95](https://mersenne.org/download).
+extra CPU cycles in the search.  The software you download is also great for stress
+testing your system for stability.  If you can run the stress test and keep your system
+stable at higher clocks and voltages, searching for prime numbers is a great way to test
+your experimental settings.  This software is called [Prime95](https://mersenne.org/download).
 
 First and foremost, it's fun.  Overclocking is like hot rodding your computer.  You may
 or may not notice the performance gains you'll realize.
@@ -151,6 +151,8 @@ You can google "CPU-Z for Linux" or "HWMonitor for Linux" and find lots of alter
 If you're running Ubuntu you may have a few graphical options available that haven't
 been packaged to other distros.
 
+I frequently just use GKrellM or Conky.
+
 # First Steps
 
 It's going to start with your particular hardware.  Are you using hardware that is
@@ -160,8 +162,8 @@ Is the payoff worth the risk in your case?  If you're already a tinkerer and hav
 hardware you can afford to experiment with, then great.  If you don't want to risk your
 hardware, then stop now.
 
-If you're good to go, start with Google.  I googled "Overclocking on Linux" and came up with LOTS of very
-interesting links worth reading.  Lots of opinions out there.  
+If you're good to go, start with Google.  I googled "Overclocking on Linux" and came up
+with LOTS of very interesting links worth reading.  Lots of opinions out there.  
 
 Watch YouTubes about overclocking on Windows too.  Overclocking happens really more at
 the BIOS level, so the OS is really more of a window to whatever is happening at that
