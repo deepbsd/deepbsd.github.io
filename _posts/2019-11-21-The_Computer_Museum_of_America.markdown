@@ -91,6 +91,9 @@ also they can afford to store them.  I'm guessing that would be akin to collecti
 vintage race cars or airplanes or large military vehicles.  It's a rich man's
 hobby.
 
-
+So, not only will I keep going back to see new things.  I will also go back to
+keep trying to plough deeper into the simplest of exhibits there.  I didn't pay
+close enough attention to the devices when I first saw them.  I didn't realize how
+cool they were when they were new.  Now that they old, I'm fascinated by them!  
 
 
