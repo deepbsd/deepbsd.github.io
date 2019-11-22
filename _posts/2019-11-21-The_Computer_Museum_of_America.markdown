@@ -80,7 +80,16 @@ it on the supercomputer.  (Understanding it is the key ingredient there.)
 
 # I'll Be Back
 
-
+If a measure of a museum's greatness is your intention to go back, then give CMOA
+a bunch of stars!  I could spend days in any of the sections of the museum.  One
+of the fascinating factums is that what you see in the museum (hundreds of
+machines) only represents a small fraction of the owned exhibits.  There are far
+more computers that are unseen than there are seen in this museum.  I'm not sure
+where they are all stored.  My guess is that the owners are very financially well
+off, and they can afford to not only buy pet supercomputers and mainframes, but
+also they can afford to store them.  I'm guessing that would be akin to collecting
+vintage race cars or airplanes or large military vehicles.  It's a rich man's
+hobby.
 
 
 
