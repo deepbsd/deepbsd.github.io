@@ -268,4 +268,20 @@ all about.  What do you think?
 
 ## Going Forward
 
+I really want to get this running in i3blocks.  I'm not sure whether it's possible to
+get it running in i3status.  So far no luck.  I'll keep at it.
+
+I've still got some comments in the code to remind me to think about things, like the
+'goal' string variable.  Is there a way to display the unicode characters for
+hourglass or watch in Urxvt for example?  Not sure yet.  
+
+I think Sox is a pretty universal sound player.  It rarely comes pre-packaged with
+Linux distributions anymore, but I think it's available in almost all repos, and has
+few if any dependencies.  
+
+This little application has already taken a surprising amount of time to complete thus
+far.  And it still doesn't run in i3blocks!  But I've been using it for my
+productivity in using i3wm, and it's easy to run inside of a narrow terminal.  
+
+Hopefully, I'll get it running inside i3blocks *real soon now!* 
 
