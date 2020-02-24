@@ -245,3 +245,27 @@ I'm not sure this script will stand, but it seems to work for now.  The idea was
 pass a '-b' argument if it should run in the bar, and pass no arguments if it should
 just run in the terminal.  So far, it just runs in the terminal, either in a single
 line or on multiple lines.
+
+Also, I thought I could paste in little watch glyphs using Unicode characters, but
+then those didn't show up on some of my simpler terminal emulators.  So I went back to
+just using asterisks.  
+
+There was also the need to check whether the Sox 'play' command was installed and
+issue a warning if it wasn't.  The `command -v` command was of use here.  
+
+The entire script relies on a while loop at the bottom of the script, which calls the
+other functions as required.  
+
+## Pause?
+
+Strictly speaking, I don't think I need a pause command.  The whole idea of Pomodoro
+is to concentrate on what you're doing and *not* get side tracked.  If the phone
+rings, let the caller leave a message.  If wifey texts, look at it during a break.  If
+your kid is stuck by the side of the road, then handle it during a break.  If your
+boss interrupts you, well, then it's up to you how you handle it.  But it seems to me
+that adding a pause function is counter-intuitive to what the Pomodoro Technique is
+all about.  What do you think?
+
+## Going Forward
+
+
