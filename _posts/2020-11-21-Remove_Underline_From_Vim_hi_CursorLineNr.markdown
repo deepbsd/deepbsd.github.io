@@ -24,6 +24,7 @@ of your color theme is.  But what really needs modifying is the colorscheme file
 Here is what mine looks like:
 
 ```
+{% raw %}
      1	" Vim color file
      2	"
      3	" Name:       xoria256.vim
@@ -182,6 +183,7 @@ Here is what mine looks like:
    156	hi link helpNumber String
    157	hi helpURL ctermfg=110 guifg=#87afdf                           cterm=underline gui=underline
    158	hi link helpHyperTextEntry helpURL
+{% endraw %}
 ```
 
 You can see on lines 42-44 above, I have replaced the `hi CursorLineNr` command.  In Vim script double quotes 
@@ -197,7 +199,7 @@ Note that the color choices must be from the normal 8-bit color choices you have
 
 ## Conclusion
 
-Find your color theme file from your callout in your `.vimrc`.  Edit that file to define your `hi CursorLine` 
-and `hi CursorLineNr` values.  Define your `cterm` values for `CursorLine` and your `ctermfg` and ctermbg` 
+Find your color theme file from your callout in your `.vimrc`.  Edit that file (the color file) to define your `hi CursorLine` 
+and `hi CursorLineNr` values.  Define your `cterm` values for `CursorLine` and your `ctermfg` and `ctermbg` 
 values for your `hi CursorLineNr` lines.  Then close and reopen vim.  That should do it!  Voila!  Annoying
 underline is now removed and replaced with a nice color combo of your chosing.
