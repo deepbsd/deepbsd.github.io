@@ -23,7 +23,6 @@ of your color theme is.  But what really needs modifying is the colorscheme file
 
 Here is what mine looks like:
 
-```
 {% raw %}
      1	" Vim color file
      2	"
@@ -184,7 +183,6 @@ Here is what mine looks like:
    157	hi helpURL ctermfg=110 guifg=#87afdf                           cterm=underline gui=underline
    158	hi link helpHyperTextEntry helpURL
 {% endraw %}
-```
 
 You can see on lines 42-44 above, I have replaced the `hi CursorLineNr` command.  In Vim script double quotes 
 are comments.  So I commented out the old command and copied the same command with a new argument.  When
