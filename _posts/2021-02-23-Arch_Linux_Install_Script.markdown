@@ -312,5 +312,8 @@ You should probably experiement with this and see what works best for you.
 
 ## Conclusion
 
-
+Hopefully this will get you started with installing Arch linux automatically.  When I first
+started, I simply used `cfdisk /dev/sda` to create my partitions.  So even `simplest.sh` has
+evolved.  Feel free to check out the Farchi and Darchi scripts.  The idea is to create a
+script that works for you and your needs.  Enjoy!
 
