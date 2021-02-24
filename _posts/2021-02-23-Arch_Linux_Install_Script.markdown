@@ -42,7 +42,8 @@ Obviously, my username on Github is deepbsd.  The name of the repo is farchi. An
 to snag the master branch of that repo.
 
 Here's my `simplest.sh` script, which should just give you a starting place for your own
-script.  This script does not install X.  You can have that as a future exercise!
+script.  This script does not install X.  You can have that as a future exercise!  Or you can
+use my `install_x.sh` script if you need ideas.
 
 ```
  1	#!/usr/bin/env bash
