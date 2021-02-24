@@ -27,6 +27,15 @@ use this format, or they are capable of branching to install with GPT disk label
 partitioning scheme according to whether a fully compliant EFI bios exists.  I'll revisit
 this later.
 
+When you boot up the `archiso` disk image from your thumbdrive or ISO file, you'll need to
+fetch this script.  From a terminal, you can get it by typing
+`curl -O https://raw.githubusercontent.com/deepbsd/farchi/master/simplest.sh`
+The `simplest.sh` file will appear in your root directory.  You should edit the variables to
+conform to your preferences.  For example, if you have a 20G virtual drive (or hard drive)
+and 4G of RAM, you'll perhaps want 10G of root partition and 8G of swap partition.  You'll
+want your own hostname and so on.  You'll need to edit the script before you run it,
+obviously.
+
 Here's my `simplest.sh` script, which should just give you a starting place for your own
 script.  This script does not install X.  You can have that as a future exercise!
 
@@ -240,5 +249,63 @@ script.  This script does not install X.  You can have that as a future exercise
 
 As I mentioned, I'm using an MBR disk label.  You'll want to change this if you're installing
 to a newer motherboard or BIOS.  
+
+The first thing to do is set up my variable names as preferences.  Things like partition
+names and sizes, hostname, wifi driver, video chipset driver, swap space size, root partition
+size (I assume a 30G VM disk to start with), timezone, keyboard layout (us is assumed), and 
+locale and filesystem format (I assume ext4).
+
+I normally include a few extra packages with dependencies, like printing and networking
+utilities, a few multimedia things and some development goodies.  I could easily include X
+and an appropriate display manager and desktop environment or window manager.  I happen to
+like Cinnamon, but I normally install XFCE and i3wm as well, just to have options (sometimes
+I like to switch things up!).  For this script, I opted out of installing X, but you can
+check out my Farchi script or my Darchi script.  You can see how I branch conditionally from
+preferences.  I figure you'll want to just see if the script works, first of all.  
+
+If you want to modify the script to create create GPT partitions, you could use `sgdisk`.  
+That's what I use in the Farchi and Darchi scripts.  You could create all the partitions with
+simply using `cfdisk`, but I think it's a good exercise to automate it.  Plus, `sfdisk` and
+`sgdisk` are really fast.  You can create volume groups and partitions in 2 or 3 seconds.
+It's wicked fast!
+
+You could use a phrase something like this to create partitions using sgdisk:
+
+```
+ 1	 if $(efi_boot_mode); then
+ 2	     sgdisk -Z "$IN_DEVICE"
+ 3	     sgdisk -n 1::+"$EFI_SIZE" -t 1:ef00 -c 1:EFI "$IN_DEVICE"
+ 4	     sgdisk -n 2::+"$ROOT_SIZE" -t 2:8300 -c 2:ROOT "$IN_DEVICE"
+ 5	     sgdisk -n 3::+"$SWAP_SIZE" -t 3:8200 -c 3:SWAP "$IN_DEVICE"
+ 6	     sgdisk -n 4 -c 4:HOME "$IN_DEVICE"
+ 7   ...
+```
+
+Of course, these variables would have to be defined, and so on.  You'd have to define the
+efi\_boot\_mode function something like I did in the `simplest.sh` script.  And you'd have to
+complete the rest of the conditional accordingly.
+
+Further, you'd need to install the EFI boot manager instead of a normal non-efi boot loader.
+I typically use GRUB with the `efi-bootmanager` package.  Works fine for me.  
+
+When you're installing packages and their dependencies, you'll want to pause at certains
+times to see if any packages installed with a non-zero exit status.  You'll want to take note
+of any errors and determine whether they are significant. Normally they are not.  For
+example, sometimes a package gets installed twice, but this is not a problem.  Pacman is
+happy to reinstall packages usually.  But I've included some `read` statements to allow
+seeing the final notes of a process before the screen clears and any errors or information
+scrolls past, away from your notice.
+
+I like to use 'here' documents.  You'll see me using arrays and associative arrays in bash.  
+Also I use `&&` instead of `if/then` where it saves time and doesn't obscure readability.  I
+like to pipe unneccesary output to `/dev/null` when I'm checking exit statuses for functions.
+Finally, I'm still experimenting with `systemd-homed` and `pambase`.  I've had some problems
+when installing X, I have trouble using `sudo` from an X terminal.  Not sure why that is, but
+reinstalling `pambase` and `systemd-homed` solved the problem.  I'm still not sure why this
+problem got started in the first place, but I assumed there was a package change somewhere.
+You should probably experiement with this and see what works best for you.  
+
+## Conclusion
+
 
 
