@@ -36,6 +36,11 @@ and 4G of RAM, you'll perhaps want 10G of root partition and 8G of swap partitio
 want your own hostname and so on.  You'll need to edit the script before you run it,
 obviously.
 
+The same applies to the Farchi script.  
+`curl -O https://raw.githubusercontent.com/deepbsd/farchi/master/farchi.sh`
+Obviously, my username on Github is deepbsd.  The name of the repo is farchi. And you'll want
+to snag the master branch of that repo.
+
 Here's my `simplest.sh` script, which should just give you a starting place for your own
 script.  This script does not install X.  You can have that as a future exercise!
 
