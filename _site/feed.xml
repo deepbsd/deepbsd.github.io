@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:3050/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:3050/" rel="alternate" type="text/html" /><updated>2019-11-25T19:12:42-05:00</updated><id>http://localhost:3050/</id><title type="html">DeepBSD’s Blog</title><subtitle>This is my programmer's blog, where I write about what projects I'm working on and where I share the problems I'm working through.  However, I can also talk about my sysadmin tasks here on dsj.net, my local home network.</subtitle><entry><title type="html">The Computer Museum of America</title><link href="http://localhost:3050/computing/2019/11/21/The_Computer_Museum_of_America.html" rel="alternate" type="text/html" title="The Computer Museum of America" /><published>2019-11-21T11:32:36-05:00</published><updated>2019-11-21T11:32:36-05:00</updated><id>http://localhost:3050/computing/2019/11/21/The_Computer_Museum_of_America</id><content type="html" xml:base="http://localhost:3050/computing/2019/11/21/The_Computer_Museum_of_America.html">&lt;h2 id=&quot;computer-museum-in-georgia&quot;&gt;Computer Museum in Georgia&lt;/h2&gt;
+
+&lt;p&gt;I was truly surprised at how awesome this museum is.  It’s a fairly new museum, less than
+three years old, and yet it has a massive collection of not just personal machines, but
+also super computers and mainframe computers.  There’s also a collection of early DEC
+computers, such as the PDP-8 and others, that really bring back memories.  Those were
+computers that I had always heard about but had never seen up close.  Those were
+computers the elite hackers used and worked on.  In fact, I believe it was a PDP-7 that
+Dennis Ritchie and Ken Thompson wrote UNIX on mostly.  Then later they ported it to the
+new PDP-11 at Bell labs.  Later they rewrote Unix in the new C language.&lt;/p&gt;
+
+&lt;p&gt;You can read about it &lt;a href=&quot;https://bell-labs.com/var/articles/invention-unix/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The website for the Computer Museum of America is &lt;a href=&quot;https://computermuseumofamerica.org&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As you can see from the website, there’s a lot to see.  There are a lot of old
+personal computers and calculators that might be of interest (they were to me),
+but what you cannot tell from the website is the depth of the individual exhibits.
+It’s one thing to see a picture of a Cray XMP, like we all did in the computer
+magazines, but to stand right next to one and look inside a glass side panel is a
+completely different experience.  There are a number of Cray’s there in the super
+computer exhibit.  There are probably 20 or 30 machines from the late 80s up til
+the early 2000s, and a few more recent machines.&lt;/p&gt;
+
+&lt;p&gt;I thought I was computer literate, but looking at those larger machines,
+especially the super computers, I felt like I knew nothing.  My experience has
+been with microcomputers.  And after looking at those super computers, I feel like
+my experience has been very micro.&lt;/p&gt;
+
+&lt;p&gt;For example, I was looking at a heat exchanger from the early 90s, and now I see
+that liquid cooling is nothing new on computers.  This heat exchanger was the size
+of a small trailer, and it would have been part of the cooling solution.  But it
+had see-through panels to you could at least get an idea of what was involved.  I
+thought I was cool because I used a liquid AIO to cool my overclocked i7-6700K.
+Well, never mind.  I’ll close my mouth and sit quietly after seeing some of these
+machines.&lt;/p&gt;
+
+&lt;h1 id=&quot;my-one-criticism&quot;&gt;My One Criticism&lt;/h1&gt;
+
+&lt;p&gt;I could spend days just with the super computers, or perhaps one or two.  It would
+be nice to have a kiosk handy with some YouTubes about some of these machines.
+The proprietors are not able to leave the panels off of the machines.  And there
+cannot always be someone around to answer questions.  But there are so many
+questions about these machines, it would be nice to have a FAQ about them.&lt;/p&gt;
+
+&lt;p&gt;Or perhaps there are some more placards on the wall I just haven’t seen that
+explain many of these questions.&lt;/p&gt;
+
+&lt;p&gt;One of the questions I have is How do you interface with these machines?  I’m
+guessing you log in through a terminal and basically get a terminal prompt, or
+perhaps something like an ncurses-type interface.  Occasionally I have logged into
+a mainframe, and that’s how it has been with them.  BTW, that’s how it was back in
+the 80s too I think.  I didn’t get a lot of mainframe time then, but I got some,
+and my exposure was through a TTY emulator.  Perhaps that has not changed?&lt;/p&gt;
+
+&lt;h1 id=&quot;hands-on&quot;&gt;Hands On?&lt;/h1&gt;
+
+&lt;p&gt;My guess is that it takes a lot to get one of these things up and going.  And to
+keep it going.  It would probably be easier to get a terminal to a vm running on a
+connected Linux box that looks like a supercomputer.  Most people would not
+imagine that there’s a difference.&lt;/p&gt;
+
+&lt;p&gt;But some of us are programmers of one kind or another.  I would get a kick out of
+writing a fizzbuzz program and running it on a supercomputer.  I imagine others
+would too?&lt;/p&gt;
+
+&lt;p&gt;In any event, these supercomputers are like alien technology.  It would be nice to
+have a little more background on how they actually work.  Maybe fire one up for a
+few minutes?  Solve a complicated math problem on it and compare it to a PCs
+number crunching ability?  There’d have to be a really impossible problem to do on
+a PC that I could understand and appreciate how much power it would take to solve
+it on the supercomputer.  (Understanding it is the key ingredient there.)&lt;/p&gt;
+
+&lt;h1 id=&quot;ill-be-back&quot;&gt;I’ll Be Back&lt;/h1&gt;
+
+&lt;p&gt;If a measure of a museum’s greatness is your intention to go back, then give CMOA
+a bunch of stars!  I could spend days in any of the sections of the museum.  One
+of the fascinating factums is that what you see in the museum (hundreds of
+machines) only represents a small fraction of the owned exhibits.  There are far
+more computers that are unseen than there are seen in this museum.  I’m not sure
+where they are all stored.  My guess is that the owners are very financially well
+off, and they can afford to not only buy pet supercomputers and mainframes, but
+also they can afford to store them.  I’m guessing that would be akin to collecting
+vintage race cars or airplanes or large military vehicles.  It’s a rich man’s
+hobby.&lt;/p&gt;
+
+&lt;p&gt;So, not only will I keep going back to see new things.  I will also go back to
+keep trying to plough deeper into the simplest of exhibits there.  I didn’t pay
+close enough attention to the devices when I first saw them.  I didn’t realize how
+cool they were when they were new.  Now that they old, I’m fascinated by them!&lt;/p&gt;</content><author><name></name></author><summary type="html">Computer Museum in Georgia</summary></entry><entry><title type="html">Debian Testing</title><link href="http://localhost:3050/linux/debian/2019/11/20/Debian_Testing.html" rel="alternate" type="text/html" title="Debian Testing" /><published>2019-11-20T16:05:08-05:00</published><updated>2019-11-20T16:05:08-05:00</updated><id>http://localhost:3050/linux/debian/2019/11/20/Debian_Testing</id><content type="html" xml:base="http://localhost:3050/linux/debian/2019/11/20/Debian_Testing.html">&lt;h2 id=&quot;running-debian-testing-as-a-daily-driver&quot;&gt;Running Debian Testing as a Daily Driver&lt;/h2&gt;
+
+&lt;p&gt;I am told this is not a great idea.  However, I’m already running several rolling release 
+distros, such as Tumbleweed, Manjaro, and Arch.  My thinking is that Debian Testing branch
+is no more unstable than these distros.  Besides, I’ve been at this a while.  I’ve seen a
+lot of update-induced problems and have fixed most of them.  Almost all of them in fact.
+So since Testing is not even as full of land mines as Debian Unstable, I thought I would
+try it out, and it’s been maybe three months?  So far so good.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-about-stable-releases&quot;&gt;What About Stable Releases?&lt;/h1&gt;
+
+&lt;p&gt;Not a problem.  When an Testing release gets moved into the Stable branch, Unstable gets
+moved into Testing.  You can read about how the release system works in the Debian Faq.&lt;/p&gt;
+
+&lt;p&gt;Basically, you’ve got the Stable branch.  It is absolutely stable, but if you’re a desktop
+user who wants to use very recent software, this branch will leave you feeling left
+behind when it comes to the latest software release versions.  For this reason, some
+people follow the Testing branch, which provides more recent versions.  However, prior to
+a new Debian release, the Testing branch is “frozen”, meaning that little to no changes
+are admitted into the Testing branch of Debian.  During this period, developers are
+pounding the snot out of the Testing branch to ensure that it is as absolutely stable as
+it can possibly be.  Only after this phase does the Testing branch get moved into Stable
+in preparation for a new release.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-the-risk&quot;&gt;Why The Risk?&lt;/h1&gt;
+
+&lt;p&gt;It’s purely about running more recent software.  There are many people who do &lt;em&gt;not&lt;/em&gt; need
+the latest software, and these people often choose to run the Stable branch.  They
+couldn’t care less about running the latest software, and frankly, they couldn’t tell the
+difference if you showed them, usually.  That’s fine.  That’s just what you want for
+running a rack full of servers.  Those boxes get security updates and that’s about it.
+Sometimes they will have uptimes measured in years.  Or at least they used to before
+Virtual Machines and containers.  But if you’re running Linux on a home server and you
+just want it to do its job for years, then you probably are running the Stable branch.&lt;/p&gt;
+
+&lt;p&gt;However, I want the latest LibreOffice, the latest Nodejs and Python, the latest Cinnamon
+desktop, and so on.  I want the latest Nvidia drivers, the latest browsers, and the latest
+whizbang goodies.  That’s just me.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-not-run-another-distro-instead&quot;&gt;Why Not Run Another Distro Instead?&lt;/h1&gt;
+
+&lt;p&gt;I do run other distros.  But Debian is one of my old favorites.  I feel I need to stay on
+top of that one.  Debian is the launchpad for all of the Ubuntu distros.  And lots of
+other Linux distros too.  Staying on top of Debian is essential for keeping your finger on
+the upstream pulse of all of those related distros for which Debian is the ancestor.&lt;/p&gt;
+
+&lt;p&gt;The main objection folks have against Debian is that it tends to lag behind on software
+versions.  But that’s if you’re running on the Stable branch.  Not so much if you’re
+running on Testing.&lt;/p&gt;
+
+&lt;p&gt;Another objection can be related to non-free software.  If you want to run non-free
+software, you simply enable non-free repos in your &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apt/sources.list&lt;/code&gt; file.  If you
+want to run software like Google Chrome and VLC, you can do this.&lt;/p&gt;
+
+&lt;p&gt;Another option to the non-free problem is to use Snap packages.  I prefer snap packages
+when running a Debian/Ubuntu distro and Flatpaks when using an RPM distro.  If I’m running
+an Arch distro, I normally can find everything I need in the AUR.&lt;/p&gt;
+
+&lt;h1 id=&quot;spotify&quot;&gt;Spotify&lt;/h1&gt;
+
+&lt;p&gt;This is one of those packages that can be kind of confusing, especially if you play files
+locally a lot.  Basically, you need legacy versions of ffmpeg decoding software to
+translate locally saved files into a version compatible with the latest Spotify version.
+Since I play a lot of local files from my Music library, I encounter the &lt;code class=&quot;highlighter-rouge&quot;&gt;can't play local
+files&lt;/code&gt; bug a lot.  It hasn’t been a problem with a Snap package on Debian so far.  The
+standard Debian package did not include the proprietary codecs I needed to play all my
+files.  But the Snap did, right off the bat.&lt;/p&gt;
+
+&lt;p&gt;Normally, on other distros, it takes some tinkering to play local files, because each
+distro will probably handle these proprietary codecs differently.  But Debian, being one
+of the most conservative distros when it comes to non-free software, was a perfect
+candidate for the Spotify Snap package.&lt;/p&gt;
+
+&lt;h1 id=&quot;problems&quot;&gt;Problems&lt;/h1&gt;
+
+&lt;p&gt;There have been a few problems.  One fairly large problem was a result of damaging a file
+system from repeated overclocking attempts that left the filesystem with lots of errors.
+I cannot blame that on Debian or even Linux.  I basically didn’t take enough precautions
+with my overclocking (such as maintaining a separate rescue partition).&lt;/p&gt;
+
+&lt;p&gt;Another problem happened when I was upgrading a module from the Nvidia driver.  It turned
+out that one of the kernel modules wouldn’t build, and it quietly bombed out and resulted
+in a driver module that couldn’t be inserted into the current kernel.&lt;/p&gt;
+
+&lt;p&gt;This was an easy fix, once I read the errors and googled them.  Fortunately, this time,
+that particular error was the result of a change in how the linux kernel manages video
+drivers.  After a certain kernel version, a version check must be made to see whether it
+is appropriate to build a module dependency or not.  Prior to that kernel version, it was
+the default behavior to build that module.  After that version, you would not build the
+module with the same dependencies.  This change resulted in placing an if/then statement
+around the block of code where this module dependency was built before.  I think it was
+four lines of code that needed to be added.  The github issues page I was reading
+contained the four lines of code, so I added them to my nvidia module’s source tree.
+Poof!  The modules built and installed flawlessly after that.  No problems.&lt;/p&gt;
+
+&lt;p&gt;A week or two later, this fix was included in a formal update for the Testing branch.  I
+would have been good to go in about a week and a half anyway.  Fortunately, I didn’t have
+to wait that long.&lt;/p&gt;
+
+&lt;h1 id=&quot;who-should-run-testing&quot;&gt;Who Should Run Testing?&lt;/h1&gt;
+
+&lt;p&gt;I would say run testing if you need the latest software versions.  But be advised that
+you’ll get problems.  If you’re okay with working through problems, then fine.&lt;/p&gt;
+
+&lt;p&gt;Be sure to keep a backup of your system!!!&lt;/p&gt;
+
+&lt;p&gt;That said, I have really just had these two little problems.  Well, the first one resulted
+in a reinstall, because I didn’t keep backups on this machine!  (It’s a machine that I
+overclock on a fair amount!)&lt;/p&gt;
+
+&lt;p&gt;The nvidia problem was a typical problem that you might get on the Testing branch.  There
+could be other ones, and those problems might not get resolved with 10 minutes of
+Googling.  I can take longer.  I’ve been fortunate.  But this is how I treat any rolling
+release distribution.  I normally don’t get many problems from them, but when they happen,
+they are not fun.  If you do not have backups or have alternate machines you can use to
+get work done, it ain’t fun.  I have lots of alternative machines I can use.  If one
+breaks, it’s not a problem for me to use another until I get the broken machine fixed.  In
+fact, I normally have &lt;em&gt;at least one&lt;/em&gt; machine that is broken.&lt;/p&gt;
+
+&lt;p&gt;So, the Testing branch is not a problem for me.  I still can curse when it breaks, but I
+realize I have said yes to these problems when I run a bleeding edge release.&lt;/p&gt;
+
+&lt;p&gt;For absolute stability, I recommend an LTS release of Ubuntu which are based on Debian
+Stable.  Also, Linux Mint tends to be based on an LTS release and inherits great stability
+from Debian.  And then running Debian Stable itself is about as stable as you can get.&lt;/p&gt;
+
+&lt;p&gt;If you really don’t mind running software versions that are &lt;em&gt;not&lt;/em&gt; the lastest and
+greatest, you should try out Debian Stable.  If it turns out it’s not recent enough, try
+running Debian Testing and see what happens!  All the best in your journey!&lt;/p&gt;</content><author><name></name></author><summary type="html">Running Debian Testing as a Daily Driver</summary></entry><entry><title type="html">Overclocking On Linux</title><link href="http://localhost:3050/linux/overclocking/2019/11/15/Overclocking_On_Linux.html" rel="alternate" type="text/html" title="Overclocking On Linux" /><published>2019-11-15T09:25:10-05:00</published><updated>2019-11-15T09:25:10-05:00</updated><id>http://localhost:3050/linux/overclocking/2019/11/15/Overclocking_On_Linux</id><content type="html" xml:base="http://localhost:3050/linux/overclocking/2019/11/15/Overclocking_On_Linux.html">&lt;h2 id=&quot;linux-as-an-overclocking-platform&quot;&gt;Linux as an Overclocking Platform&lt;/h2&gt;
+
+&lt;p&gt;I’ve recently gotten into overclocking some of my computers.  I’ve always been weary to
+do this, because it seemed like a great way to ruin perfectly good hardware and throw
+money down the drain.  So, no overclocking for me.  Until now.&lt;/p&gt;
+
+&lt;p&gt;I looked around and saw that I simply had too much hardware.  And it has finally begun
+to dawn on me that there is quite a bit of headroom built into CPUs these days.  No one
+can predict the performance potential of a randomly binned CPU.  So there is a sort of
+CPU lottery.  Maybe you win, or maybe you don’t.  But there is going to be at least some
+potential performance your CPU in your computer will have beyond what it’s currently
+doing if you are willing to push it a little bit.  And, frankly, I got curious.  That’s
+how these things always start for me.  I get curious.&lt;/p&gt;
+
+&lt;p&gt;There is one more aspect to all this.  I made a promise to myself to not buy anymore
+computers.  I probably have about 20 or more towers at my house, mostly all running
+linux.  I figured if I’m not buying any more new CPUs, I’ve got to stay busy with what
+I’ve got, and my attention turned to performance.  If I can get some of these boards and
+CPUs to wear out or something, then I might buy new stuff???&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-overclocking-anyway&quot;&gt;What is Overclocking Anyway?&lt;/h1&gt;
+
+&lt;p&gt;There’s really nothing special about overclocking.  It’s simply pushing your CPU a
+little harder for greater speed, and that usually requires more voltage.  Since CPUs and
+the chips on your motherboard are so small, they are vulnerable to heat, so small
+increases in voltage can place your motherboard and CPU at some risk if you don’t think
+about what you’re doing.  After all, you could have paid many hundreds of dollars for
+those components, so why would you want to cook them inside of your tower case?&lt;/p&gt;
+
+&lt;p&gt;Well depending on your specific CPU and motherboard, you could get a 10-20% performance
+bump in your system.  For free, basically.  I’ve finally had some systems that are 15
+plus years old die on me.  Either a drive controller or mobo component dies or
+something, but this has been long &lt;em&gt;after&lt;/em&gt; that system has been a highly useful system
+for me.  My point is, why not get more use out of that hardware since you’re going to
+replace it long before it physically dies anyway?  Overclocking is one way to do that.&lt;/p&gt;
+
+&lt;p&gt;Specifically, to overclock, you must have an unlocked CPU (one that allows you to change
+speeds and voltages) and a motherboard that supports overclocking.  Likewise, you’re
+going to need a good power supply with at least a Bronze level rating, and also a good
+cooling solution, probably an after market cooler, to dissipate the increased heat.&lt;/p&gt;
+
+&lt;p&gt;An example of an overclock is taking an i5-4790K cpu on an ASRock Z97 Extreme6 board (a
+little more expensive motherboard that is good at overclocking) and changing the default
+multiplier in the BIOS so that the CPU speed goes from 3.5GHz to 4.5GHz.  Core voltage
+could need to go up an extra 0.125 volts or so to keep this clock stable.  So instead of
+an idle temperature of, say, 30 degrees Centigrade, perhaps you’re now running closer to
+40 degrees at idle.  You haven’t spent a dime, unless you’ve upgraded some of your
+components.&lt;/p&gt;
+
+&lt;p&gt;This boost from 3.5GHz to 4.5GHz is almost a 30% increase in CPU speed.  And it’s
+costing you perhaps an extra few pennies in your monthly energy bill.  Can you begin to
+see why the idea might be attractive to people?&lt;/p&gt;
+
+&lt;h1 id=&quot;but-is-it-practical&quot;&gt;But is it Practical?&lt;/h1&gt;
+
+&lt;p&gt;That depends.  If all you do is surf the web and read email, then probably not.  If you
+just want to watch YouTube videos on your machine, then overclocking probably won’t be
+of interest to you.  But, if you use your CPU cycles on things, such as playing
+intensive computer games or rendering videos or compiling source trees or something, then
+overclocking your CPU might be something of interest to you.&lt;/p&gt;
+
+&lt;p&gt;For me, sometimes I write computer programs that require compute power.  For example, if
+I’m searching for prime numbers, I can easily bring a system to its knees.  These are
+just intensive calculations, and some operations can take a very long time.  In fact,
+there’s a “Great Search for Mersenne Primes” on the internet, and it requires so much
+compute power that there are thousands (or more?) volunteers sharing their computers’
+extra CPU cycles in the search.  The software you download is also great for stress
+testing your system for stability.  If you can run the stress test and keep your system
+stable at higher clocks and voltages, searching for prime numbers is a great way to test
+your experimental settings.  This software is called &lt;a href=&quot;https://mersenne.org/download&quot;&gt;Prime95&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;First and foremost, it’s fun.  Overclocking is like hot rodding your computer.  You may
+or may not notice the performance gains you’ll realize.&lt;/p&gt;
+
+&lt;h1 id=&quot;is-it-safe&quot;&gt;Is It Safe?&lt;/h1&gt;
+
+&lt;p&gt;I believe that depends on you.  Are you safe?  Can you experiment safely?  If you can
+trust yourself to be careful and pay attention and be patient, then yes, overclocking is
+safe.  If you tend to do things like run around with sharp knives or drive too fast or
+hit live ammunition with hammers just for fun, then overclocking your computer may not
+be for you.  However, if you can do research and learn the meanings of BIOS/UEFI
+settings for your motherboard, then you can safely realize these performance gains from
+overclocking.&lt;/p&gt;
+
+&lt;p&gt;Basically, you’ll &lt;em&gt;need&lt;/em&gt; the things I mentioned earlier:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;An unlocked CPU&lt;/li&gt;
+  &lt;li&gt;A motherboard that supports overclocking&lt;/li&gt;
+  &lt;li&gt;A good power supply (80 plus Bronze or better)&lt;/li&gt;
+  &lt;li&gt;A good cooling solution&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;is-water-cooling-necessary&quot;&gt;Is Water Cooling Necessary?&lt;/h1&gt;
+
+&lt;p&gt;Water cooling is not necessary but it can be more efficient than air cooling.  Water can
+dissipate thermal energy more efficiently than air, or so I hear.  But if you’re
+comparing a small 120mm water cooler to a huge heat sink with multiple fans moving air
+through the heat sink, then the air cooler will be better.&lt;/p&gt;
+
+&lt;p&gt;TDP or “thermal design profile” is a measurement of the maximum heat a CPU or a Cooler
+can handle.  It can be a basic indicator for how much cooling capability a cooler has.
+If your air cooler can handle 150W TDP and your 120mm AIO can handle 130W TDP, then your
+air cooler is a better solution.  But is it so big that it doesn’t fit into your box?
+Maybe the biggest heat sink that fits into your box has a TDP of 120W.&lt;/p&gt;
+
+&lt;p&gt;This brings up an interesting point:  there are a LOT of great cooling solutions these
+days in either water or liquid coolers.  In general, air coolers must sit on top of the
+CPU, which limits the size of the heat sink that can be used.  Water coolers can use
+tubes to move the hot water through radiators that can be placed anywhere in the
+computer.  You can even use multiple radiators if you so desire.  So liquid coolers have
+more potential in terms of how much heat they can dissipate in your system.  But all
+this depends on your use case.  Do you just want to run a massive overclock and build a
+custom loop cooling solution just so you can show off your high clocks to your friends?
+You’ll probably want to build a custom loop with multiple radiators, and perhaps you can
+even overclock your GPU (graphics card) also and include that in your custom loop?&lt;/p&gt;
+
+&lt;p&gt;But if all your after is a 10-15% increase in clock speed, there are lots of air coolers
+that will keep your system simple and do the cooling job reliably.  There are also
+exceptional air coolers with smaller form factors.  And there are AIOs for nearly every
+case.  But, size will be a factor in your solution.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-linux&quot;&gt;Why Linux?&lt;/h1&gt;
+
+&lt;p&gt;Well for me, I use Linux.  Linux is as familiar to me as Mac and Windows are to many
+people.  But most people who post on overclocking forums seem to be using Windows.  I’m
+not aware of anyone who overclocks on Mac, unless we’re talking about Hackintoshes.  And
+I’m not sure Apple hardware even has a BIOS that you can change settings on.  So that
+would prevent overclocking on Apple hardware I think.  But since most people who
+overclock do it on Windows, you just need the Linux equivalents of those software
+choices for your Linux machine:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Prime95&lt;/li&gt;
+  &lt;li&gt;CPU-Z for linux&lt;/li&gt;
+  &lt;li&gt;HWMonitor for Linux&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Slight problem.  CPU-Z and HWMonitor (available for Windows at cpuid.com) are not
+available for Linux.  However, there are alternatives for these options on Linux.  It’s
+not worth it for me to run Windows just so I can run these pieces of software.&lt;/p&gt;
+
+&lt;p&gt;Prime95 is available as a CLI program on Linux.  I can monitor fan speeds, temperatures,
+clock cycles and load percentages also with CLI programs or scripts.  If you’re willing
+to do that, then you can get about the same information on Linux as you can on Windows.
+You can google “CPU-Z for Linux” or “HWMonitor for Linux” and find lots of alternatives.&lt;/p&gt;
+
+&lt;p&gt;If you’re running Ubuntu you may have a few graphical options available that haven’t
+been packaged to other distros.&lt;/p&gt;
+
+&lt;p&gt;I frequently just use GKrellM or Conky.&lt;/p&gt;
+
+&lt;h1 id=&quot;first-steps&quot;&gt;First Steps&lt;/h1&gt;
+
+&lt;p&gt;It’s going to start with your particular hardware.  Are you using hardware that is
+capable of overclocking?  If not, you’re done.&lt;/p&gt;
+
+&lt;p&gt;Is the payoff worth the risk in your case?  If you’re already a tinkerer and have
+hardware you can afford to experiment with, then great.  If you don’t want to risk your
+hardware, then stop now.&lt;/p&gt;
+
+&lt;p&gt;If you’re good to go, start with Google.  I googled “Overclocking on Linux” and came up
+with LOTS of very interesting links worth reading.  Lots of opinions out there.&lt;/p&gt;
+
+&lt;p&gt;Watch YouTubes about overclocking on Windows too.  Overclocking happens really more at
+the BIOS level, so the OS is really more of a window to whatever is happening at that
+lower level of the machine.  You can learn a lot from Windows TechTubers, such as
+JayzTwoCents, Pauls Hardware, Bitwit, LinusTechTips, and many, many others.  There are
+tons of people out there doing this, so you are joining a huge group of people who have
+been overclocking for a long time.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;If you’re the type of person who likes building computers or building things with
+software, you might also be the type of person who enjoys hot rodding their computer.&lt;/p&gt;
+
+&lt;p&gt;There’s some risk.  But you could also drop a $500 CPU on the hardwood floor while
+you’re building a computer.  Or you could accidentally spill your milkshake on your
+motherboard.  If you have been willing to handle those risks, then overclocking might
+not be much more of a risk for you.&lt;/p&gt;
+
+&lt;p&gt;If you’ve ever run benchmarks on your system to see “how did I do?” then you might be a
+candidate for overclocking.  Overclocking your computer is a great way to get higher
+scores on various benchmarks.  It’s also a great way to measure your performance gains
+from overclocking.  There are lots of benchmarks out there, and Google is your friend
+here.&lt;/p&gt;
+
+&lt;p&gt;Linux has tended to be a production type of platform, especially for servers and getting
+work done in the background.  But if you’ve been using Linux as a desktop solution
+instead of Windows or Mac, then why change to Windows just for overclocking?&lt;/p&gt;
+
+&lt;p&gt;Finally, I have not mentioned specific software solutions for CPU-Z and HWMontor.
+That’s because your choices would probably not be my choices.  Desktop Linux is full of
+different environments and window managers and toolkits and technology stacks.  There
+isn’t one solution that fits everybody.  If you’re already using Linux then you probably
+already know this.  CPU-X may or may not work as a substitute for CPU-Z on Windows.  You
+may well find that writing your own script that monitors &lt;code class=&quot;highlighter-rouge&quot;&gt;/proc/cpuinfo&lt;/code&gt; works better
+than anything else.  Sometimes Conky or GKrellM is enough for me to watch while I
+overclock.  Your mileage may vary!&lt;/p&gt;
+
+&lt;p&gt;One thing I can tell you, I have been having lots of fun overclocking on Linux.&lt;/p&gt;</content><author><name></name></author><summary type="html">Linux as an Overclocking Platform</summary></entry><entry><title type="html">Migrating Antergos to Arch Linux</title><link href="http://localhost:3050/linux/arch/antergos/2019/11/01/Migrating_Antergos_to_Arch_Linux.html" rel="alternate" type="text/html" title="Migrating Antergos to Arch Linux" /><published>2019-11-01T11:23:07-04:00</published><updated>2019-11-01T11:23:07-04:00</updated><id>http://localhost:3050/linux/arch/antergos/2019/11/01/Migrating_Antergos_to_Arch_Linux</id><content type="html" xml:base="http://localhost:3050/linux/arch/antergos/2019/11/01/Migrating_Antergos_to_Arch_Linux.html">&lt;h1 id=&quot;migrating-antergos-linux-to-arch-linux&quot;&gt;Migrating Antergos Linux to Arch Linux&lt;/h1&gt;
+
+&lt;p&gt;Since the Antergos project eneded, those of us who have loved Antergos have been sad.&lt;/p&gt;
+
+&lt;p&gt;And there was an Antergos forum post about future updates magically updating or migrating
+Antergos installations to Arch Linux installations.  Well, that may not have happened so
+magically, and I guess no one ever really promised us Linux magic, especially with an Arch
+related distro, so we have to spin up our own magic I guess.  Hopefully, this article can
+provide a bit of that.&lt;/p&gt;
+
+&lt;p&gt;I’m writing this on the first day of November, 2019, and the project ended in late May.  So there have
+been updates that have helped to change existing Antergos installations into Almost Arch installations.
+But there are a few things that still need to happen. Here’s a recipe for converting your
+Antergos installation into a working Arch installation:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Logout of you desktop so you see your X display manager login.  Then hit
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ALT-CTL-F2&lt;/code&gt; and log into your account and become root:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;su -
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Change to multi-user (non-graphical) run level.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# systemctl start multi-user.target
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Remove the pamac graphical package manager.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# kill -s SIGKILL $(pgrep pamac) &amp;amp;&amp;amp; pacman -R pamac
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Remove all antergos packages (if you want a pure Arch installation).
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# pacman -Rddnus $(pacman -Qq | grep antergos)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Modify /etc/pacman.conf to remove references to Antergos repos.
+Just comment out all sections with &lt;code class=&quot;highlighter-rouge&quot;&gt;[antergos]&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;[antergos-staging]&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Change entries in /etc/os-release (which is a symlink /usr/lib/os-release) over to Arch values
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; NAME=&quot;Arch Linux&quot;
+ PRETTY_NAME=&quot;Arch Linux&quot;
+ ID=archlinux
+ ID_LIKE=archlinux
+ ANSI_COLOR=&quot;0;36&quot;
+ HOME_URL=&quot;https://archlinux.org/&quot;
+ SUPPORT_URL=&quot;https://bbs.archlinux.org/&quot;
+ BUG_REPORT_URL=&quot;https://bugs.archlinux.org&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Update your system:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# pacman -Syyu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If when you run neofetch or screenfetch you still see Antergos, then you should re-install
+the lsb-release package
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# pacman -S lsb-release
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make sure you have all required files for your desktop environment, including all Xorg and related
+files, video drivers, mesa, etc etc, which are now coming from Arch repos.  May need to
+re-install from new repos.  One of my machines had Cinnamon (desktop) antergos repos, so I
+had to remove all of those and get regular arch packages.  Just to be safe, I re-installed
+all my xorg packages along with lightdm packages and my video drivers.  This time I knew
+they all came from arch repos.&lt;br /&gt;
+&lt;a href=&quot;https://www.tecmint.com/install-cinnamon-desktop-in-arch-linux&quot;&gt;This article&lt;/a&gt;
+explains the process for Cinnamon. This particular article is good, but it is old (2014).
+Packages names can change a lot!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Change grub theme to an arch linux theme, if that’s what you want. Remove Antergos grub
+   theme.  (Should already be gone.) When you install grub from arch repos, it may not
+   overwrite your existing antergos &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/default/grub.cfg&lt;/code&gt;.  If not, there should be
+   another grub.cfg in /etc/default that has a different name, like grub.cfg.pacman or
+   something.  Look at them both and make sure the correct one is in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/default/grub.cfg&lt;/code&gt;.
+   I would also install a grub theme, such as grub2-theme-archlinux.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# yay -S grub2-theme-archlinux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Then, run&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# grub-mkconfig -o /boot/grub/grub.cfg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;If there are no errors, you should be good for a reboot, almost.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Restart your graphical target run level.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# systemctl start graphical.target
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;If there are any missing X related packages, you can troubleshoot your errors and
+   straighten them out.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When youre ready, reboot your computer, if you dare!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;leftovers&quot;&gt;Leftovers&lt;/h1&gt;
+
+&lt;p&gt;If you installed Antergos using LVM, you’ll still see &lt;code class=&quot;highlighter-rouge&quot;&gt;Antergos&lt;/code&gt; in your LVM names.  There
+are still some packages on your system, such as webkit-theme-antergos, and you can see some
+more using &lt;code class=&quot;highlighter-rouge&quot;&gt;updatedb &amp;amp;&amp;amp; locate antergos&lt;/code&gt;.  But for all intents and purposes, you now
+should have an arch linux installation.  Those remaining files weren’t removed when antergos
+packages were removed, but they can be removed manually I think without affecting the rest of
+the system.  But I’m not sure.  For now, they’re not bothering me.  Maybe I’ll remove them
+later.&lt;/p&gt;
+
+&lt;p&gt;I’ve changed my icons around to reflect the change, in my start menu for example.  Neofetch
+and Screenfetch now report an Arch installation.  And really, there’s just very little left
+of Antergos in the installation.  Linux distros are simply a collection of choices, and
+Antergos was mainly a collection of very nice styling decisions and special packages, and
+those packages are now replaced by Arch packages.  And you’re free to keep the best choices
+for your indidualized Arch installation!&lt;/p&gt;</content><author><name></name></author><summary type="html">Migrating Antergos Linux to Arch Linux</summary></entry><entry><title type="html">Beer Song in Bash</title><link href="http://localhost:3050/bash/2019/09/14/Beer_Song_in_Bash.html" rel="alternate" type="text/html" title="Beer Song in Bash" /><published>2019-09-14T22:34:41-04:00</published><updated>2019-09-14T22:34:41-04:00</updated><id>http://localhost:3050/bash/2019/09/14/Beer_Song_in_Bash</id><content type="html" xml:base="http://localhost:3050/bash/2019/09/14/Beer_Song_in_Bash.html">&lt;h2 id=&quot;beer-song-in-bash&quot;&gt;Beer Song in Bash&lt;/h2&gt;
+
+&lt;p&gt;This was a fun little project, just to try and stay fluent in Bash.  I’ve been working enough in 
+Javascript that I tend to get forgetful in other languages.  Fortunately, Exercism comes to the rescue.
+It’s not that I’m a great whiz in Bash, but I feel it’s a language I want to try and stay conversant in.&lt;/p&gt;
+
+&lt;h1 id=&quot;basic-problem&quot;&gt;Basic Problem&lt;/h1&gt;
+
+&lt;p&gt;You’re supposed to programatically generate all 100 versus of the beer song and pass a suite of tests where
+your script is asked to generate the song at a verse number and continue to another verse number.  You’re
+supposed to be able to generate the song from start to finish, including the parts that change depending on
+singular or plural values, such as “bottle” vs “bottles” and “no more bottles of beer on the wall” for the
+last bottle, followed by “Go to the store and buy some more, “ and so forth.&lt;/p&gt;
+
+&lt;p&gt;So, if your script is called with &lt;code class=&quot;highlighter-rouge&quot;&gt;beer_song.sh 99 0&lt;/code&gt; then the entire song should be reproduced verbatim.
+if your script is called with &lt;code class=&quot;highlighter-rouge&quot;&gt;beer_song.sh 99&lt;/code&gt; then just the first verse should be reproduced.  But you must
+also be able to produce verse 3 if called with the number 3 or verses 0 - 3 if called as &lt;code class=&quot;highlighter-rouge&quot;&gt;beer_song.sh 3 0&lt;/code&gt;
+for example.  The first parameter will always be greater than the second, and you must throw an error if that
+is not the case.&lt;/p&gt;
+
+&lt;h1 id=&quot;other-solutions&quot;&gt;Other Solutions&lt;/h1&gt;
+
+&lt;p&gt;Well the best part about exercism is being able to look at other people’s solutions.  There were a few that
+were longer than mine.  But a lot of the solutions were shorter.  But not many of those shorter solutions
+were easier to follow than mine.  But they were easier for me to follow, because I had grown accustomed to
+thinking about the problem as I had.  So I don’t know whether my solution was any better or not.  But I did
+put in some comments, so hopefully you can follow my thinking:&lt;/p&gt;
+
+&lt;h1 id=&quot;my-solution&quot;&gt;My Solution:&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1	#!/usr/bin/env bash
+ 2	
+ 3	input=(&quot;$@&quot;)    # snarf the arguments
+ 4	
+ 5	error(){
+ 6	    echo &quot;1 or 2 arguments expected&quot; &amp;amp;&amp;amp; exit 1
+ 7	}
+ 8	
+ 9	error1(){
+10	    echo &quot;Start must be greater than End&quot; &amp;amp;&amp;amp; exit 1
+11	}
+12	
+13	# throw an error if get too few or too many arguments
+14	[[ ${#input[@]} -gt 0 &amp;amp;&amp;amp; ${#input[@]} -lt 3 ]] || error
+15	# check that verses are in right order
+16	[[ ${#input[@]} -gt 1 &amp;amp;&amp;amp; $1 -lt $2 ]] &amp;amp;&amp;amp; error1
+17	
+18	say_verse(){
+19	
+20	    count1=$1
+21	    count2=$((count1-1))
+22	    singular=&quot;bottle&quot;
+23	    plural=&quot;bottles&quot;
+24	    verse2=&quot;Take one down and pass it around,&quot;
+25	    verse3=&quot;Go to the store and buy some more,&quot;
+26		verse4=&quot;Take it down and pass it around,&quot;
+27	 
+28	   if [[ $count1 -gt 2 ]]; then
+29	        bottles1=${plural}
+30	        bottles2=${plural}
+31	    fi
+32	
+33	    if [[ $count1 -eq 2 ]]; then
+34	        bottles1=${plural}
+35	        bottles2=${singular}
+36	    fi
+37	 
+38	    if [[ $count1 -eq 1 ]]; then
+39	        count2=&quot;no more&quot;
+40			verse2=${verse4}
+41	        bottles1=${singular}
+42	        bottles2=${plural}
+43	    fi
+44	
+45	    if [[ $count1 -eq 0 ]]; then
+46	        count1=&quot;no more&quot;
+47	        count2=99
+48	        bottles1=${plural}
+49	        bottles2=${plural}
+50	        verse2=${verse3}
+51	    fi
+52	
+53	    verse=&quot;${count1} ${bottles1} of beer on the wall, ${count1} ${bottles1} of beer. \n${verse2} ${count2} ${bottles2} of beer on the wall.\n&quot;
+54	
+55	    printf &quot;${verse^}&quot;
+56	}
+57	
+58	# If the range is a single verse
+59	[[ ${#input[@]} -eq 1 ]] &amp;amp;&amp;amp; say_verse $input &amp;amp;&amp;amp; exit 0;
+60	
+61	# If the range is more than a single verse
+62	while [[ $input -ge $2 ]]; do
+63	    say_verse $input
+64	    echo
+65	    input=$((input-1))
+66	done
+67	
+68	exit 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Basically, I generate the same verse over and over again, but I change several keywords based on the number
+of the verse being recited.  I suspect there are much more efficient ways of doing this.  But this was what I
+came up with.&lt;/p&gt;
+
+&lt;p&gt;By the way, after reading all this code, is anyone feeling thirsty?  First one’s on me!&lt;/p&gt;</content><author><name></name></author><summary type="html">Beer Song in Bash</summary></entry><entry><title type="html">Find Cheat Sheet</title><link href="http://localhost:3050/linux/cli_utilities/2019/08/12/Find_Cheat_Sheet.html" rel="alternate" type="text/html" title="Find Cheat Sheet" /><published>2019-08-12T11:15:50-04:00</published><updated>2019-08-12T11:15:50-04:00</updated><id>http://localhost:3050/linux/cli_utilities/2019/08/12/Find_Cheat_Sheet</id><content type="html" xml:base="http://localhost:3050/linux/cli_utilities/2019/08/12/Find_Cheat_Sheet.html">&lt;h2 id=&quot;find-cheat-sheet&quot;&gt;&lt;em&gt;Find&lt;/em&gt; Cheat Sheet&lt;/h2&gt;
+
+&lt;p&gt;Find is one of those under-used powertools in Linux/UNIX that will save you lots of time if you only learn
+how to use it.  It’s tremendously powerful and helpful.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-main-idea&quot;&gt;The Main Idea&lt;/h1&gt;
+
+&lt;p&gt;Find files (everything is a file in UNIX) that meet criteria and then do something with them (or not–just 
+looking at them is doing something with them too).&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find . -type f -iname &quot;*jazz*.mp3&quot; -exec mv &quot;s/ /_/g&quot; {} +
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The above command will find all mp3 files with ‘jazz’ in the title and remove spaces from their filenames.  It
+will work on 20 files or 2000 files.  If you tried to do this with your file manager, this could take
+forever.  But this little one-liner would do it instantly.&lt;/p&gt;
+
+&lt;h1 id=&quot;basic-syntax&quot;&gt;Basic Syntax&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find _pathspec_ argument . . . command {} + (or / or ;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You start with the find command, then provide a place (pathname) to start searching from, and then specify 
+what matches or non-matches you want the returned files to have.  Optionally, you can have each of those
+returned files get a command executed on them (more than one way to do this).  The last item is to terminate the
+statement with a &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; or a &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; or a &lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s perfectly OK to simply find files meeting criteria without executing any commands on them.&lt;/p&gt;
+
+&lt;p&gt;The pathspec &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; means recursively search the current directory structure, but you can specify &lt;code class=&quot;highlighter-rouge&quot;&gt;/var&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc&lt;/code&gt;
+or whatever you want.  You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;-mindepth&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;-maxdepth&lt;/code&gt; arguments to specify how deep you want to
+search the filesystem.&lt;/p&gt;
+
+&lt;p&gt;You can supply more than one pathspec:  &lt;code class=&quot;highlighter-rouge&quot;&gt;find /var /etc -mtime 0&lt;/code&gt; – find all files in both /var and /etc that have been
+modified in the last 24 hours.  (-mtime 0 means less than 1 day)&lt;/p&gt;
+
+&lt;h1 id=&quot;arguments-for-find-how-can-you-find-files&quot;&gt;Arguments for &lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt;: How can you find files?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;name&lt;/strong&gt;:  &lt;code class=&quot;highlighter-rouge&quot;&gt;find . -name &quot;*waldo*&quot;&lt;/code&gt; – find all files with ‘waldo’ in the filename&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;iname&lt;/strong&gt;: (case insensitive): &lt;code class=&quot;highlighter-rouge&quot;&gt;find . -iname &quot;*bogus*txt&quot;&lt;/code&gt; – finds BOGUS.txt and bOgUs.TxT&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;type&lt;/strong&gt;:  &lt;code class=&quot;highlighter-rouge&quot;&gt;find . -type d&lt;/code&gt; – find all directories in the current directory structure&lt;/li&gt;
+  &lt;li&gt;types (c, d, s, l, p, b): files, directories, sockets, symlinks, named pipes, block file.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;permissions&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find . -type f -perm 775&lt;/code&gt; – find all files with permissions of 755. &lt;em&gt;Note&lt;/em&gt;: can also use
+the &lt;code class=&quot;highlighter-rouge&quot;&gt;-perm u=rwx,g=rx,o=rx&lt;/code&gt; type of syntax.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;access&lt;/strong&gt;:  &lt;code class=&quot;highlighter-rouge&quot;&gt;find /etc -atime -3 -name &quot;*conf&quot;&lt;/code&gt; – all files in /etc accessed within last 3 days named “&lt;em&gt;conf&lt;/em&gt;”&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;access/modification/created times&lt;/strong&gt;:  &lt;code class=&quot;highlighter-rouge&quot;&gt;find /var/log -atime -3 -mtime -3 -ctime -3 &lt;/code&gt; – less than 3 days ago
+&lt;em&gt;Note&lt;/em&gt;: Accesstime is the last time the file was read.  Modificationtime is the last time the content of the file was
+changed.  Changetime is the last time the file or its metadata (such as permissions or ownership) were changed&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;min/time&lt;/strong&gt;:  &lt;code class=&quot;highlighter-rouge&quot;&gt;find /etc -cmin -10&lt;/code&gt; – find all files changed in /etc less than 10 min ago.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;user/uname/uid&lt;/strong&gt; (also nouser, nogroup): &lt;code class=&quot;highlighter-rouge&quot;&gt;find /opt -not -group root -type f -executable&lt;/code&gt; – find all executable files (by current user) in /opt not owned by members of root group&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;size&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find ~/Music -size +100M&lt;/code&gt; – find all files in ~/Music larger than 100 Megabytes&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;empty&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find ~/tmp -empty&lt;/code&gt; – find all empty files in your personal tmp directory&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;regex&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find ~/Pictures -iregex '*self*' -ctime -100&lt;/code&gt; – find all selfies newer than 100 days in Pictures&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;readable&lt;/strong&gt; (also -executable, -writeable): &lt;code class=&quot;highlighter-rouge&quot;&gt;find /etc -readable -type f&lt;/code&gt; – find all readable files by current user in /etc&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;newer&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find ~ -newer ~/.bashrc -name &quot;.bash*&quot;&lt;/code&gt; – find bash-related config files newer than your .bashrc in your
+home directory and below.  &lt;em&gt;Note&lt;/em&gt;: You can also use &lt;code class=&quot;highlighter-rouge&quot;&gt;-newer{acm}t&lt;/code&gt; on this.  For example, to find all files modified on
+the July 4th, 2014:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find / -type f -newermt 2014-07-04 ! -newermt 2014-07-05
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;not&lt;/strong&gt; (!): &lt;code class=&quot;highlighter-rouge&quot;&gt;find ~ ! -user username&lt;/code&gt; – find all files and dirs in my home file structure not owned by username. &lt;code class=&quot;highlighter-rouge&quot;&gt;-not&lt;/code&gt;
+and &lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt; are the same&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;and/or&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find / -type d -a -name 'python*'&lt;/code&gt; – find all directories below root that start with python. (-o means
+‘or’). Example: &lt;code class=&quot;highlighter-rouge&quot;&gt;find / -type d -name 'python*' -o -name 'perl*'&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;doing-actions-on-files-found&quot;&gt;Doing Actions on Files Found&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;delete&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find ~/tmp -name '*.sw?*' -mtime +90 -delete ;&lt;/code&gt; – delete swap files older than 90 days&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;exec&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find ~/Music -type f -exec rename -f 'y/A-Z/a-z/' {} +&lt;/code&gt; – rename all music files to have lowercase names
+&lt;em&gt;Note&lt;/em&gt;: The difference between ending with ‘+’ and ‘;’ is that the ‘+’ adds all the files as arguments at once and ‘;’ adds
+each file found and executes the command on &lt;em&gt;each&lt;/em&gt; file sequentially.  Example: &lt;code class=&quot;highlighter-rouge&quot;&gt;find ~ type f -name '*jazz*.mp3' -exec tar -czf
+jazz.tar.gz {} +&lt;/code&gt; will add all mp3 jazz files into a jazz tarball, while &lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt; will overwrite the tarball each time with each
+single mp3 file.  Very different results, so you probably mean to do the ‘+’ rather than the ‘;’ here.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;xargs&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find . -type f -name &quot;*deleteme*&quot; | xargs rm {} +&lt;/code&gt; – delete all files with ‘deleteme’ in name. &lt;em&gt;Note&lt;/em&gt;: you
+need a pipe (‘|’) with xargs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;execdir&lt;/strong&gt;: Executes the command on the directory the file found exists in. Not sure to use this myself&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ls&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find / -type f -size +1G -ls&lt;/code&gt; – Simply lists files largers than 1G so you can view details about the file&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;print&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;find /opt -type f -executable -print&lt;/code&gt; – Show all executable files beneath /opt.  &lt;em&gt;Note&lt;/em&gt;: Sometimes special 
+characters in filenames could cause the terminal some grief.  If the output is going to a terminal rather than a file, you
+may want to choose a formated output, using &lt;code class=&quot;highlighter-rouge&quot;&gt;-fprint&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;-fprintf&lt;/code&gt;.  If you want to disregard any side effects to the
+terminal and print characters regardless of the terminal, you could use &lt;code class=&quot;highlighter-rouge&quot;&gt;-print0&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;-fprint0&lt;/code&gt;.  Read the manpage for more
+information on this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;error-messages&quot;&gt;Error Messages&lt;/h1&gt;
+
+&lt;p&gt;You may or may not want to remove them.  For example, if you are not interested in permissions limitations in your output,
+you could use &lt;code class=&quot;highlighter-rouge&quot;&gt;find /var/log -name &quot;*log*&quot; -type f 2&amp;gt;/dev/null&lt;/code&gt;, which will throw away all errors related to files you don’t have
+permissions to see.&lt;/p&gt;
+
+&lt;h1 id=&quot;creation-dates&quot;&gt;Creation Dates&lt;/h1&gt;
+
+&lt;p&gt;Finding files by creation dates is next to impossible to do.  In fact, I would say it’s a happy accident when you do.  But
+you can check for files that are newer or not newer than a specific file.  For example, if you know the &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mtab&lt;/code&gt; file
+has not changed since the OS was installed, then you could use that as a reference for comparison for a creation date.  But
+would you actually know that the file has not been altered?  Or should not have been?  This is one of the sticky areas of
+find.  I usually just say you can’t find files based on creation dates, but only by when it was last changed/modified or
+accessed.&lt;/p&gt;
+
+&lt;h1 id=&quot;combining-arguments&quot;&gt;Combining Arguments&lt;/h1&gt;
+
+&lt;p&gt;I touched on &lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;-o&lt;/code&gt; above, but you can get creative on how you group the commands by using ‘(‘ and ‘)’.  Also, you
+usually don’t have to use &lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt; because it’s oftentimes implicit.  If you have&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find . -user 'joe' -type f
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;it is implicit that you want only files owned by joe.  You don’t need a &lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt; here.  But, let’s say you wanted to see all files owned by
+‘joe’ that were modified more than 90 days ago but not more than 100 days ago, or only those files that were modified within the last 4
+days?  As the logic becomes a little more complex, the ‘(‘ and ‘)’ can come to the rescue:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find / -user joe '(' -mtime +90 -a ! -mtime +100 ')' -o '(' -mtime -4 ')'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;There are so many options and so much flexibility with &lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt; that you can correctly infer that it’s a daily staple for
+systems admins everywhere.  The more you practice with it, the more indispensible you’ll find it in your day to day work at
+the command line.&lt;/p&gt;</content><author><name></name></author><summary type="html">Find Cheat Sheet</summary></entry><entry><title type="html">Javascript Milestones</title><link href="http://localhost:3050/programming/javascript/2019/07/30/Javascript_Milestones.html" rel="alternate" type="text/html" title="Javascript Milestones" /><published>2019-07-30T18:01:36-04:00</published><updated>2019-07-30T18:01:36-04:00</updated><id>http://localhost:3050/programming/javascript/2019/07/30/Javascript_Milestones</id><content type="html" xml:base="http://localhost:3050/programming/javascript/2019/07/30/Javascript_Milestones.html">&lt;h2 id=&quot;milestones-in-the-javascript-journey&quot;&gt;Milestones in the Javascript Journey&lt;/h2&gt;
+
+&lt;p&gt;It dawned on me as I woke up this morning that there seem to be several common “ah ha!” moments among
+Javascript developers. For example, when you write your first Promise, that’s one of them.  You’re
+first learning about asynchronous programming and how milliseconds matter.  When you first use &lt;code class=&quot;highlighter-rouge&quot;&gt;call()&lt;/code&gt; or 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;apply()&lt;/code&gt;, you might begin to wonder about an execution context.  Or even when you first try to write a
+closure or an IIFE, that would probably be one of those “ah ha!” moments.&lt;/p&gt;
+
+&lt;p&gt;I thought it might be interesting to identify as many of those moments as I could from my own journey
+as a JS developer.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-moment-when-js-first-seems-cool&quot;&gt;The Moment When JS First Seems Cool!&lt;/h1&gt;
+
+&lt;p&gt;I first looked at Javascript in the 90’s, and I thought it was a toy language.  I think a lot of
+people thought that.  But then eventually, something happened.  Smart people started using it and did
+interesting things on the web.  And then more smart people started using it, and pretty soon, lots of
+Javascript’s problems starting getting fixed or improved.  It took a while, but JS no longer was a toy
+language.  In fact, if you said it was, it was you who were not cool.  Javascript was cool all on its
+own.&lt;/p&gt;
+
+&lt;p&gt;From my own Journey, I guess I’m a slow learner, because I thought it was dumb for a long time.  And
+then I started using &lt;code class=&quot;highlighter-rouge&quot;&gt;call()&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;apply()&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;bind()&lt;/code&gt; to pass execution contexts between functions.  I learned how
+React passes these contexts and far more within the application, and it’s subtle and clever.
+Somewhere along the way, I stopped saying “Why can’t I work in Python instead?”  Javascript seemed
+cool all on its own.  My perspective changed.&lt;/p&gt;
+
+&lt;p&gt;At another time, I decided to read the jQuery library as though it were a short story.  That was a
+funny experience, because although I could understand all the words and symbols, I couldn’t understand
+the meaning right away.  It was sort of like reading a Lewis Carrol book.  You think it’s a fairy
+tale, but it’s not.  It just looks that way.  So it was for me and Javascript.  I started waking up to
+the hidden beauty and meanings.&lt;/p&gt;
+
+&lt;h1 id=&quot;each-language-has-a-vibe&quot;&gt;Each Language Has a Vibe&lt;/h1&gt;
+
+&lt;p&gt;I use several languages regularly now: JS, python, bash and some ruby.  I consider JS and Node the
+same language with different toolboxes.  But I would consider using python to be like driving a
+Cadillac or perhaps a BMW SUV type of vibe.  Everything you ever wanted at your fingertips is right
+there, and there are plenty of extra buttons you never thought you needed or even heard of.  But
+they’re right there.  It’s extremely easy to to express your thoughts and can do it without exerting
+yourself.&lt;/p&gt;
+
+&lt;p&gt;Ruby is sort of like driving a Lexus or something.  Lots and lots of convenience and economy and good
+sense.  Occasionally you come upon something that doesn’t make sense.  You scratch your head, but
+there’re are ten other ways of doing what you want, so you just move on with a small question
+lingering in your head.  I would say the Ruby Lexus has buttons that leave you with that feeling.&lt;/p&gt;
+
+&lt;p&gt;Bash and its predicessors have lots of weird symbols and unique attributes, sort of like a Willies
+Jeep in 1944.  Back then, the Jeep was the only thing you had available that would carve through war
+torn Europe where paved roads no longer existed.  Likewise, Bash is clumsy in some ways, but aside
+from Perl and Python, Bash (and other shell languages) are the most direct way to talk to UNIX
+filesystems and handle I/O from other UNIX utilities.  But there are a lot of weird syntax oddities.&lt;/p&gt;
+
+&lt;p&gt;JS/Node is unlike any of those.  It strikes me like a French Citroen or something that I would not
+like at first, because it looks really weird, but once you start driving it around, you wonder where
+it’s been all your life.  I’ve never driven a Citroen, but who knows?  I might get that feeling if I
+started driving one a lot?&lt;/p&gt;
+
+&lt;p&gt;JS/Node is kind of alluring, because being skillful with it can get you a job.  Those skills are in
+demand.  Also, there are shortcuts available that make it appear sexy, such as ASI and bracket
+shortcuts and functions with rocketship operators.  There are ways of making it terse once you become
+fluent in it.  You can eventually say a lot by writing a little, just as in Python and Ruby.&lt;/p&gt;
+
+&lt;p&gt;But the real power of JS/Node is in the functional capabilities.  IIFE’s, closures, &lt;code class=&quot;highlighter-rouge&quot;&gt;call()&lt;/code&gt; and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;apply()&lt;/code&gt;–those are the gateway to the majesty of the language.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Using JS/Node is like driving some kind of exotic car (or vehicle) that looks weird but has unusual
+and powerful technology (like, a warpdrive or something).  But you have to use it for a while before
+you can find the right buttons to push to make it work.  And it still looks weird.  There’s probably
+nothing to be done for that.&lt;/p&gt;</content><author><name></name></author><summary type="html">Milestones in the Javascript Journey</summary></entry><entry><title type="html">Run Length Encoding in Javascript</title><link href="http://localhost:3050/js,programming/2019/06/22/Run_Length_Encoding_in_Javascript.html" rel="alternate" type="text/html" title="Run Length Encoding in Javascript" /><published>2019-06-22T12:33:23-04:00</published><updated>2019-06-22T12:33:23-04:00</updated><id>http://localhost:3050/js,programming/2019/06/22/Run_Length_Encoding_in_Javascript</id><content type="html" xml:base="http://localhost:3050/js,programming/2019/06/22/Run_Length_Encoding_in_Javascript.html">&lt;h1 id=&quot;run-length-encoding-in-javascript&quot;&gt;Run Length Encoding in Javascript&lt;/h1&gt;
+
+&lt;p&gt;I’ve been a fan of Python for several years now, and I’ve loved it for its 
+succinctness and expressiveness.  Likewise, I’ve lamented that Javascript
+is not as succinct or expressive.  But I’m starting to believe I’ve been
+laboring under a misconception.  I simply don’t know Javascript as well as
+I thought I did, and, also, that ES6 in many cases is as succinct as Python.
+I now believe that JS can be the equal of Python in succinct and elegant
+solutions, if only I can use the power of the language by understanding its
+subtleties.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-run-length-encoding--heres-the-readme&quot;&gt;What is Run Length Encoding?  Here’s the README…&lt;/h2&gt;
+
+&lt;p&gt;Implement run-length encoding and decoding.&lt;/p&gt;
+
+&lt;p&gt;Run-length encoding (RLE) is a simple form of data compression, where runs
+(consecutive data elements) are replaced by just one data value and count.&lt;/p&gt;
+
+&lt;p&gt;For example we can represent the original 53 characters with only 13.&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB&quot;  -&amp;gt;  &quot;12WB12W3B24WB&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;RLE allows the original data to be perfectly reconstructed from
+the compressed data, which makes it a lossless data compression.&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;AABCCCDEEEE&quot;  -&amp;gt;  &quot;2AB3CD4E&quot;  -&amp;gt;  &quot;AABCCCDEEEE&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For simplicity, you can assume that the unencoded string will only contain
+the letters A through Z (either lower or upper case) and whitespace. This way
+data to be encoded will never contain any numbers and numbers inside data to
+be decoded always represent the count for the following character.&lt;/p&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Go through the setup instructions for Javascript to install the necessary
+dependencies:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://exercism.io/tracks/javascript/installation&quot;&gt;https://exercism.io/tracks/javascript/installation&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;Install assignment dependencies:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;npm install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;making-the-test-suite-pass&quot;&gt;Making the test suite pass&lt;/h2&gt;
+
+&lt;p&gt;Execute the tests with:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;npm &lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the test suites all tests but the first have been skipped.&lt;/p&gt;
+
+&lt;p&gt;Once you get a test passing, you can enable the next one by changing &lt;code class=&quot;highlighter-rouge&quot;&gt;xtest&lt;/code&gt; to
+&lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
+
+&lt;p&gt;Wikipedia &lt;a href=&quot;https://en.wikipedia.org/wiki/Run-length_encoding&quot;&gt;https://en.wikipedia.org/wiki/Run-length_encoding&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;submitting-incomplete-solutions&quot;&gt;Submitting Incomplete Solutions&lt;/h2&gt;
+
+&lt;p&gt;It’s possible to submit an incomplete solution so you can see how others have
+completed the exercise.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-first-solution&quot;&gt;My First Solution&lt;/h2&gt;
+
+&lt;p&gt;I was delighted when my tests finally passed, even if my solution was less than succinct and elegant:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;decode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;((\d&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)?(\D))&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)\1&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;*/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see, I’m struggling to say what I mean.  My solution in Python was much more succinct:&lt;/p&gt;
+
+&lt;h2 id=&quot;my-solution-in-python&quot;&gt;My Solution in Python&lt;/h2&gt;
+
+&lt;p&gt;I maintain that Python is the Cadillac of scripting languages.  It’s easy to say what you mean:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'(\d+)(\D)'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;
+               &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'(.)\1*'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;
+               &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;final-solution-in-javascript&quot;&gt;Final Solution in Javascript&lt;/h2&gt;
+
+&lt;p&gt;It turns out you can get pretty succinct and expressive simply by using ES6 syntax and picking the right JS method:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;decode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;(\d&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)([&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\w])&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\w])\1&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;+/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, looking at this code, the problem is essentially solved in two lines. I didn’t need to import the re module as I did 
+in Python.  Once I passed a callback function to the &lt;code class=&quot;highlighter-rouge&quot;&gt;replace&lt;/code&gt; method, I was in business.  Beforehand, I thought I had to 
+run a while loop and iterate through the matches in the regex.exec() method.  Turns out, passing a callback to the replace
+method was as expressive and succinct as Python’s lambda expression was!&lt;/p&gt;
+
+&lt;p&gt;I guess you might even say that arrow functions are the equivalent of Python’s lambda functions!  Probably someone thinks
+I’ve just blasphemed, but whatever.  I mean it as a compliment to Javascript!&lt;/p&gt;
+
+&lt;p&gt;I’m not really a language zealot, but I am feeling more comfortable with Javascript.  Not as comfortable as with Python,
+but still pretty comfortable.  It makes me happy that I found a way to be as expressive and concise in Javascript as I was
+in Python.&lt;/p&gt;</content><author><name></name></author><summary type="html">Run Length Encoding in Javascript</summary></entry><entry><title type="html">Grepping Project Files in Vim</title><link href="http://localhost:3050/vim/2019/05/16/Grepping_Project_Files_in_Vim.html" rel="alternate" type="text/html" title="Grepping Project Files in Vim" /><published>2019-05-16T13:54:04-04:00</published><updated>2019-05-16T13:54:04-04:00</updated><id>http://localhost:3050/vim/2019/05/16/Grepping_Project_Files_in_Vim</id><content type="html" xml:base="http://localhost:3050/vim/2019/05/16/Grepping_Project_Files_in_Vim.html">&lt;h2 id=&quot;using-vimgrep-to-find-project-files&quot;&gt;Using Vimgrep To Find Project Files&lt;/h2&gt;
+
+&lt;p&gt;One of the tasks I never got smooth at with Vim is finding project files that contained
+a certain regex match.  I don’t seem to have this problem on the command line, but somehow
+I never got smooth with it in Vim.  When using Atom or Sublime, Ctl-S searches through the
+project easily and finds matches and displays a link to each match in each matching file.
+How handy!  But how does one do this in Vim?&lt;/p&gt;
+
+&lt;p&gt;I think the challenge for me has been to pick a method.  There are so many approaches to 
+solving this problem that I get overwhelmed.  So bearing that in mind (there are many
+approaches or solutions) today I’ll pick what seems for the moment to be my fallback approach:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;vimgrep&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;syntax&quot;&gt;Syntax&lt;/h1&gt;
+
+&lt;p&gt;The basic syntax is:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:vimgrep /pattern/args path_to_files
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;An example that recursively finds all uppercase instances of ‘UNIX’ in a set of configuration 
+files could be:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:vimgrep /UNIX/g **/*.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You could also use this on the current buffer with &lt;code class=&quot;highlighter-rouge&quot;&gt;:vimgrep /UNIX/g %&lt;/code&gt; because ‘%’ is a reserved
+symbol that represents the filepath of the active buffer.  The ‘g’ argument on the regex means to
+include every match on the line, not just the first match in the line.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-quickfix-list&quot;&gt;The Quickfix List&lt;/h1&gt;
+&lt;p&gt;What we’re actually creating behind the scenes is a special list of files we want to fix in Vim.
+Vim calls this the “quickfix” list.  This is one of Vim’s most powerful tools, and there are many
+ways to populate this list.  See &lt;code class=&quot;highlighter-rouge&quot;&gt;:help quickfix&lt;/code&gt; for lots more information on it.&lt;/p&gt;
+
+&lt;p&gt;This is not to be confused with the &lt;code class=&quot;highlighter-rouge&quot;&gt;arglist&lt;/code&gt;, which is the list of files we want to search in
+our project.  That list would be created by the &lt;code class=&quot;highlighter-rouge&quot;&gt;**/*.conf&lt;/code&gt; argument, which is its own regex,
+where &lt;code class=&quot;highlighter-rouge&quot;&gt;**/&lt;/code&gt; says to recursively search, and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.conf&lt;/code&gt; says to just search files ending in ‘conf’.
+To see the arglist at any point in time, simply type &lt;code class=&quot;highlighter-rouge&quot;&gt;:args&lt;/code&gt; in the command buffer.&lt;/p&gt;
+
+&lt;p&gt;Vim is always keeping track of several lists, including the &lt;code class=&quot;highlighter-rouge&quot;&gt;bufferlist&lt;/code&gt; and probably many more 
+I’m not thinking of.  But for the moment, we’re just talking quickfix list, the results of your 
+recursive project search.&lt;/p&gt;
+
+&lt;p&gt;The default behavior is to start at the top of the list, in the first file with a match to your
+regex.  So in your current buffer you would see something like:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Ain't UNIX grand!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;with the cursor blinking in front of the word UNIX.  You would be in the first ‘conf’ file in your
+quickfix list.  You would be in edit mode.  If you did the following in the command buffer&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:cnext
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;you would be magically transported to the next file in your quickfix list, at the next match.  Again in edit mode.  If the
+current buffer has more than one match, &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; will take you to it or give you &lt;code class=&quot;highlighter-rouge&quot;&gt;Search hit BOTTOM, continuing from TOP&lt;/code&gt;
+warning at the bottom of the screen. &lt;code class=&quot;highlighter-rouge&quot;&gt;:cprev&lt;/code&gt; will move you to the previous entry in the quickfix list, if it exists.  If
+you just want to see the list itself, type &lt;code class=&quot;highlighter-rouge&quot;&gt;:clist&lt;/code&gt; in the command buffer.  &lt;code class=&quot;highlighter-rouge&quot;&gt;:cfirst&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:clast&lt;/code&gt; will take you to the
+first and last items in the quickfix list.&lt;/p&gt;
+
+&lt;p&gt;At this point, for me, I like to see the quickfix list first rather than jump to the first 
+match in the first file, so I suppress this behavior by using vimgrep with the &lt;code class=&quot;highlighter-rouge&quot;&gt;/pattern/gj&lt;/code&gt; 
+argument:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:vimgrep /UNIX/gj **/*.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;j&lt;/code&gt; option suppresses the auto jump behavior, and you see the same buffer you had before
+the search.  It is not obvious that the quickfix list has been created, that the vimgrep 
+command was successful.  So to prove that it was, now you type:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:clist
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and now you can see the quickfix list.  To edit the first file, simply type &lt;code class=&quot;highlighter-rouge&quot;&gt;:cfirst&lt;/code&gt;.
+Then you could keep progressing through each file match in the list with &lt;code class=&quot;highlighter-rouge&quot;&gt;:cnext&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;an-example-exercise&quot;&gt;An Example Exercise&lt;/h1&gt;
+&lt;p&gt;Perhaps a simple demonstration is best.  Create the following test directory and file structure
+in your home directory:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mkdir TEST_DIR
+$ touch TEST_DIR/{one,two,three,four}.txt
+$ echo for f in TEST_DIR/*
+&amp;gt; do
+&amp;gt; echo &quot;filename: $f&quot; &amp;gt;&amp;gt; $f
+&amp;gt; echo &quot;this is a second line in $f&quot; &amp;gt;&amp;gt; $f
+&amp;gt; done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Now you have some files to work on in Vim. You can play with this however you like, but open Vim 
+in your home directory and type&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:vimgrep /filename/gj **/*.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and see what happens?  You’ll need to type the &lt;code class=&quot;highlighter-rouge&quot;&gt;:clist&lt;/code&gt; command and then the &lt;code class=&quot;highlighter-rouge&quot;&gt;:cfirst&lt;/code&gt; command.
+You can cycle through files with &lt;code class=&quot;highlighter-rouge&quot;&gt;:cnext&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:cprev&lt;/code&gt;.  You could test the accuracy of the 
+search with just searching for &lt;code class=&quot;highlighter-rouge&quot;&gt;:vimgrep /one/g **/*.txt&lt;/code&gt; which might even include other files
+not included in the exercise.  In short, you can play with this, and just pay attention to what
+you’re doing, since you already know that Vim is powerful and will do exactly what you tell it.&lt;/p&gt;
+
+&lt;h1 id=&quot;other-search-tools&quot;&gt;Other Search Tools&lt;/h1&gt;
+
+&lt;p&gt;Vimgrep is just one option to use for searching your projects.  There are external tools, like 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Ggrep&lt;/code&gt; from Tim Pope’s ‘Fugitive’, &lt;code class=&quot;highlighter-rouge&quot;&gt;Ack.vim&lt;/code&gt; and the &lt;code class=&quot;highlighter-rouge&quot;&gt;:Ack&lt;/code&gt; command and the &lt;code class=&quot;highlighter-rouge&quot;&gt;:Ag&lt;/code&gt; command from 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ag.vim&lt;/code&gt;.  These are widely used tools, but I recommend starting with the built-in &lt;code class=&quot;highlighter-rouge&quot;&gt;:vimgrep&lt;/code&gt;.&lt;br /&gt;
+I have not yet outgrown just using &lt;code class=&quot;highlighter-rouge&quot;&gt;:vimgrep&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also, can also use the entire UNIX toolset for populating your arglist as well with&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:args `find . -type f -name 'pattern'`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;for example, which would probably be too big a list.  You could also simply go&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:args `grep pattern **/*.scss`  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;if you simply wanted to recursively search all your SASS files for ‘pattern’.&lt;/p&gt;
+
+&lt;h1 id=&quot;more-information&quot;&gt;More Information&lt;/h1&gt;
+
+&lt;p&gt;This is a large topic. I would start with Vim’s &lt;code class=&quot;highlighter-rouge&quot;&gt;:help quickfix&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:help :vimgrep&lt;/code&gt; documentation.  Please
+remember Drew Niel’s &lt;em&gt;Practical Vim&lt;/em&gt; and particularly chapters 12, 16 and 17.  With so much information on
+Vimgrep available on the web, you can almost search in any direction and find success!&lt;/p&gt;</content><author><name></name></author><summary type="html">Using Vimgrep To Find Project Files</summary></entry><entry><title type="html">Programming Wisdom, My Lessons</title><link href="http://localhost:3050/programming/2019/01/27/Programming_Wisdom-_My_Take.html" rel="alternate" type="text/html" title="Programming Wisdom, My Lessons" /><published>2019-01-27T16:10:36-05:00</published><updated>2019-01-27T16:10:36-05:00</updated><id>http://localhost:3050/programming/2019/01/27/Programming_Wisdom:_My_Take</id><content type="html" xml:base="http://localhost:3050/programming/2019/01/27/Programming_Wisdom-_My_Take.html">&lt;h1 id=&quot;my-short-journey-my-biggest-lessons&quot;&gt;My Short Journey, My Biggest Lessons&lt;/h1&gt;
+
+&lt;p&gt;Though I’m 63, I haven’t been programming as a career for many years.  For one thing, personal computers
+were very expensive when I first got started.  And they weren’t very powerful.  It’s a totally
+different situation today.  Anyone can program.  Anyone can find an affordable, adquately powerful computer.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Don’t ever let an old man move into your soul.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lesson-1-you-dont-have-to-be-a-genius&quot;&gt;Lesson 1: You Don’t Have to Be a Genius&lt;/h2&gt;
+
+&lt;p&gt;Programming is the New Literacy.  Ages ago, only a small percentage of people could read or write.  Probably
+most people could speak their mother tongue.  But almost no one could read or write in that language.  Today, 
+we have a similar situation with computer language or “coding” as the kids call it.  I’m simply talking about
+the human language we use to speak to a machine and understand what it says back to us.&lt;/p&gt;
+
+&lt;p&gt;Just as not everyone who writes in English is TS Elliot, not everyone who writes in code is John Von Neumann.
+Does that mean everyone else should just quit writing in either English or Code?  Of course not.&lt;/p&gt;
+
+&lt;p&gt;There is no limit of ideas that can be created and processed continually by a computer.  There is no end to
+the services that computers can offer to solve going forward.  These will all be written in code.  Many times
+by people who are not geniuses.  They will most often be written by people who are dedicated to making them
+work correctly and re-written so that they can be refactored and maintained.&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-2-programmers-must-be-resilient-and-persistent&quot;&gt;Lesson 2: Programmers Must Be Resilient and Persistent&lt;/h2&gt;
+
+&lt;p&gt;It helps if you’re a great problem solver, but honestly, even geniuses have bad
+days.  If you have a an IQ of 180 and throw in the towel on a tough problem
+after 6 hours, the person who got it done after 10 hours provided more value to
+his or her company than the genius did, even if that IQ was 125 (and assuming
+the person wasn’t being paid as a genius).&lt;/p&gt;
+
+&lt;p&gt;My point is, it’s not enough to be really smart.  It’s better to be pretty smart
+and persistent and resilient.&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-3-get-really-good-at-the-basics&quot;&gt;Lesson 3: Get Really Good at the Basics&lt;/h2&gt;
+
+&lt;p&gt;There are some things that you do over and over again as a programmer.  You start with a big problem, and you
+have to break it into smaller problems.  And then you figure out what kind of data structures best suit your
+solution, and what kinds of iterations lead most directly to what you need.  Then when you start getting the
+right answers and passing tests, you have to think about not wasting time.  And you think about how you can
+express your solution most clearly to others, so the next guy to come in and read your code can follow you.&lt;/p&gt;
+
+&lt;p&gt;Sometimes when I hear a problem, there’s a voice that shouts in my head about what kind of data structure the
+code needs.  If I’m writing in Python, for example, I’ll hear “Dictionary!” or “List Comprehension!!!”  It’s
+it’s Javascript, then I hear “Object.keys!” or “String Splice!”  Sometimes, I hear a question: “Recursion?”
+“Create class instance?”&lt;/p&gt;
+
+&lt;p&gt;I remember when I very first got started, I had no idea what to try first.  I was like a fish in water who
+didn’t know how to swim.  But then, honestly, since I’m a fish, there must be &lt;em&gt;something&lt;/em&gt; inside me that
+&lt;em&gt;already knows how to swim!&lt;/em&gt;  That’s what I want to listen for.  That’s the voice I know is inside me
+somewhere.&lt;/p&gt;
+
+&lt;p&gt;If you solve enough problems day after day, year after year, this voice begins to get pretty clear.&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-4-enjoy-the-wins&quot;&gt;Lesson 4: Enjoy The Wins&lt;/h2&gt;
+
+&lt;p&gt;Most of the time we’re working with something that doesn’t work.  We got the job because it’s broken.  But
+life is full of jobs like that.  This is what plumbers, handymen, mechanics, and countless other people do.
+Only some jobs give you a payoff right away.  Programming many times is rather stingy about your payoff.  The
+sooner you fix a problem, the sooner you get another problem to fix.&lt;/p&gt;
+
+&lt;p&gt;My advice is to find a way to celebrate those fixes.  They are wins.  They should earn you an “attaboy” or
+“attagirl”.  And you hopefully will find a way to give yourself these wins.  I happen to like chocolate
+covered almonds from Starbucks.  Or I might like to print out a snippet of my favorite code and post in on a
+wall near where I stream a Netflix comedy special, or whatever I happen to enjoy watching.&lt;/p&gt;
+
+&lt;p&gt;Collect your win!  That’s all I’m saying.  Make sure you remind yourself what you accomplished today.  Put
+your code on the refrigerator like your parents used to do with your drawings!&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-5--think-different&quot;&gt;Lesson 5:  Think Different&lt;/h2&gt;
+
+&lt;p&gt;I almost think this idea must have been channelled though Steve Jobs.  It’s the basis for all problem
+solving.  Problems exist as mental constructs.  They’re conceptual.&lt;/p&gt;
+
+&lt;p&gt;So why not alter the construct such that they have a hard time being visible?&lt;/p&gt;
+
+&lt;p&gt;Find different perspectives.  Use your imagination.  Think in cartoons.  Pretend you’re a piece of data
+travelling through the program.  Or imagine the entire program is happening underwater or out in space?  Or
+imagine you’re inside a video game, how would you write a program inside of a video game so it would work in
+your job?  What if you were a program yourself?  What if you weren’t writing a program, but the program was
+writing you as you tried to write a program?&lt;/p&gt;
+
+&lt;p&gt;There’s no end to this type of exercise.  If this is too hard, go take a nap.  You’ll think different while
+your’re asleep.&lt;/p&gt;
+
+&lt;p&gt;Whatever you do, get out of the mindset and perspective that created the problem.  For example, if you’re 
+solving world hunger, let go of your scarcity mindset.  At the very least, pretend that there’s plenty
+for everyone.  If that were true, then how would you go about solving the problem?&lt;/p&gt;
+
+&lt;h2 id=&quot;new-lessons-happen-every-day&quot;&gt;New Lessons Happen Every Day&lt;/h2&gt;
+
+&lt;p&gt;You never learn it all.  Learning is a mindset, a mental.  The eternal child within is always a youngster.  He or
+she knows how to enjoy life as well as how to learn.  Don’t ever let an old guy move into your soul.&lt;/p&gt;</content><author><name></name></author><summary type="html">My Short Journey, My Biggest Lessons</summary></entry></feed>

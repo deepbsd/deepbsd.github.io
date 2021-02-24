@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Manjaro Daily Driver</title>
+  <meta name="description" content="Manjaro Reliability">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:3050/linux/2018/09/23/Manjaro_Daily_Driver.html">
+  <link rel="alternate" type="application/rss+xml" title="DeepBSD&#39;s Blog" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">DeepBSD&#39;s Blog</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Manjaro Daily Driver</h1>
+    <p class="post-meta">
+      <time datetime="2018-09-23T15:42:45-04:00" itemprop="datePublished">
+        
+        Sep 23, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="manjaro-reliability">Manjaro Reliability</h1>
+
+<p>For those of you who have been reading my blog, you know I think highly of Manjaro.  Since I’ve only recently started using
+Arch-based distros (like in the last year or two), I haven’t known quite what to expect with such a rolling distro.  I’ve heard
+stories of unstability and changes being rolled into the distro before they were ready.  And I hadn’t really gotten the details of
+those stories.  I had only heard them on forums or in YouTube videos, and I didn’t have any first-hand experience myself.  My only
+experience using a rolling distro, actually, is with OpenSUSE Tumbleweed.  That hasn’t been bad, but there have been problems with
+vendor repo changes and there being quite a bit of confusion on my part about what repos to use.  The upgrades seem to want to change
+my repos without regard to my choice of vendor.  I don’t really appreciate that.</p>
+
+<p>Anyway, as far as Manjaro goes, I’ve had the the i3 edition installed on several of my laptops that I use a lot.  I haven’t had a
+hint of instability.  I think the worst thing that happened was that pamac would not resolve a conflict as easliy as I thought it
+might, but as soon as I used pacman, it got resolved right away.  So that just tells me that pacman is more mature than pamac.  But
+I’m more of a CLI type of guy anyway.  So no surprise.  Perhaps if I were more open to GUI repo tools like pamac, it wouldn’t even
+have been a problem.  I would have seen how to coax the tool into resolving my problem.</p>
+
+<p>I suspect that in the Linux world, CLI tools turn out to be more mature than the GUI tools.  After all, the GUI tools are just a
+font-end for the same CLI tools anyway, aren’t they?  I guess it shouldn’t bee too big a surprise.</p>
+
+<p>The bottom line is that it appears that rumors of instability with Manjaro simply haven’t materialized in reality.  My experience so
+far has been rock solid.</p>
+
+<h2 id="branches-and-repos">Branches and Repos</h2>
+
+<p>From what I can see, there are three main branches of Manjaro: STABLE, TESTING, and UNSTABLE. STABLE is for production users. If a
+production user is adventurous or wants to contribute bug reports, he/she could switch to the TESTING branch and just resolve to deal
+with whatever instability ensues.  The UNSTABLE branch would be for developers who are working with the rough sources that are not
+ready for prime time yet.  These changes are unstable even for developers.  So these would be for devs or people who want to live on
+the edge.  I would assume this would not be the ragged edge, and that UNSTABLE would be for devs to share with each other.</p>
+
+<p>I think that’s how it is on many other distros too, but I had always thought that updates made it into Arch repos earlier than in LTS
+type of distros.  That if there are any errors in the package builds, that those become evident when the rebuilt packages are
+released into the repos and everyone updates his/her system. But apparently Manjaro’s STABLE branch gets more testing than the pure
+Arch repos.  I guess that means that the Arch repos are not stable enough for Manjaro’s developers.  Or that they want more control
+than what you get with the normal Arch repos.</p>
+
+<p>Perhaps this precaution explains the rock solid experience I’ve been enjoying with Manjaro!</p>
+
+<h2 id="community-editions-and-official-releases">Community Editions and Official Releases</h2>
+
+<p>The official releases are KDE, GNOME 3, and XFCE-centric releases.  There’s also a Manjaro Architect version for designing your own
+custom-rolled distribution, which is probably popular with IT departments.</p>
+
+<p>The Community Editions offer a lot more desktop options.  There are specific editions for several tiling window managers, including
+Awesome, BSPWM, i3.  There are also editions for other popular desktop environments like Budgie, Deepin, Cinnamon, LXDE, Openbox and
+Mate.   I’m sure all the other desktops are available, but these desktops have specific community editions that revolve around them.
+So truly, there are a lot of Manjaro supporters and enthusiasts to support this many specific editions of Manjaro.  Clearly, the
+communities are very active and strong.</p>
+
+<p>I only have personal experience with the i3 and the Cinnamon editions.  Cinnamon was the first one I installed on a new computer
+build perhaps a year or two ago now.  That has been one of my favorite computers to log into.  It’s a gorgeous default theme that is
+highly polished.  All the coloring and fonts are just a little nicer than the defaults on many other default installs.  I can’t even
+put my finger on what the specifics are that make me think this.  It’s sort of like dining at an exclusive restaurant versus dining
+at a nice but budget restaurant.  I’m not a gormand, and much is lost on me, but there’re a lot of subtle differences in the details.
+I think that’s how it is with Manjaro.  Subtle things like fonts, wallpapers, themes, default measurements and small choices have
+been worked on more.  More than what?  I couldn’t say.  But the choices just seem more polished.  I don’t know how else to say it.
+This is just my impression, but I don’t believe I’m mistaken.</p>
+
+<h2 id="an-example">An Example</h2>
+
+<p>So with the default installation of i3wm on another distro, you get some simple colors and a bar that all seem to work.  The only
+choice you will need to make is whether you’ll use the Super key or the Alt key as your default “i3” button.  And the default
+installation is very plain and underwhelming, but it works very well right out of the box.  You just need to give it some love and
+learn how to customize it, because it probably will look too plain to use as it is.</p>
+
+<p>This is not the case with the default installation of Manjaro i3 Edition.  i3Gaps is installed by default.  The Super key (windows
+key) is the default i3 button, and there are many other choices made right out of the box.  There’s a terrific color scheme, some
+small gaps are built in if you’d like to look at wallpaper, of which there are many custom possibilities that work great with
+nitrogen.  In fact, Compton is installed and used right out of the box.  The default install includes a lovely bar with terrific font
+awesome icons and applications.  You really don’t <em>need</em> to change a thing, unless there’s something you just don’t care for.  The
+default install is polished and refined.  So you could live with these defaults and still have a highly polished desktop, unlike the
+the default i3wm install you get on most other distributions.</p>
+
+<h2 id="another-example">Another Example</h2>
+
+<p>I’m a big fan of Linux Mint.  So I actually didn’t expect as polished an install with the Cinnamon edition of Manjaro as I got with
+Linux Mint.  But I was wrong.  Manjaro Cinnamon is highly polished.  Once again, the themes are highly polished and the icons are
+unique and even beautiful.  I actually like the default icon theme with Manjaro Cinnamon better than I like default Mint icon theme.
+Does Manjaro have more artists on their Cinnamon team? The flat icon theme seems modern and sophisticated.</p>
+
+<p>Of course, my Mint installations are so old by now that I have not updated them in a good while, and my original choices have been
+respected by each of numerous upgrades.  Perhaps if I installed a new verison of Mint from scratch, it would look as fresh and lovely
+as a new Manjaro Mint install.  I don’t know.  But the nice thing about Manjaro over Mint is that I don’t have “upgrades” anymore, so
+to speak.  A rolling release gets upgraded in place regularly.  There are no large release cycles per se.  The upgrades are smaller
+and are incremental.</p>
+
+<h2 id="the-package-manager">The Package Manager</h2>
+
+<p>Perhaps Mint and Manjaro Cinnamon is a good comparison.  It seems fair.  So I’ll compare the package managers: apt vs pacman.  There
+are some profound differences.  The largest difference right off the bat is that with Manjaro, you have access to the AUR, or the
+Arch User Repository.  Basically, this has user source trees and custom build scripts for about every obscure or specialized piece of
+software you can think of.  For example, I deploy web apps to Heroku, and the Heroku-cli tools happily lives inside the AUR.
+Likewise Spotify and its custom build script.  There’s a custom build script for GKrellM, too, my favorite little PC performance
+visualizer.  If you use the Slack desktop workgroups app, there is a custom build script for that, even though it’s not officially
+supported on the Arch platform–only Fedora and Debian/Ubuntu.  You would think the AUR could add instability to your distro, but I
+haven’t experience that.  Perhaps my time is coming?  I guess I’ll find out in time, but so far, only happiness and productivity.
+The tool for the AUR I use is <code class="highlighter-rouge">yaourt</code>, which I think stands for “Yet AnOther User Repo Tool”.  There’s support for lots of software
+that often doesn’t make it into the mainstream repos of large distros.  If you cannot find it in a mainstream repo for Arch or
+another distro, you can still probably find it in the AUR.</p>
+
+<p>Pacman is the default package manager.  Yaourt also works on the normal repos too, I think, but I believe Yaourt specializes in the
+AUR.  For my daily upgrade checks, I run pacman from the CLI.  It basically does the same thing that <code class="highlighter-rouge">dnf</code> and <code class="highlighter-rouge">apt</code> and <code class="highlighter-rouge">zypper</code> and
+<code class="highlighter-rouge">eopkg</code> do on other distros.  I use it to search for packages and learn about their dependencies and version numbers.  Pacman is
+simply what you normally use on Arch-based distros.  There are probably more subtle differences, but I only know that pacman seems to
+work for me, just as those other tools I mentioned have worked for me–reliably and with no fanfare.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>Right now, the machine I use the most is running Linux Mint 18.3.  I have not had a problem with this machine or distro, ever.  So
+I’m not inclined to make changes right away.  But I think I could change this machine to Manjaro.  I think it would be just as
+stable.  But I rather hate to nuke a perfectly good and stable Linux installation for no good reason other than the novelty of trying
+something new.</p>
+
+<p>I have to tell you, I recently ran the upgrade from Mint 18.3 to Mint 19 on another machine, and I was surprised to run into an
+error.  The install script did not complete error free.  That was the first time I had ever experienced a hiccup with a Mint major
+version upgrade.  The 19 release had been out for perhaps 3-4 weeks when I ran the upgrade.  The machine in question was a laptop
+without a lot of custom extras.  When the errors happened, I eventually closed my mouth and got on Google to find what the problem
+was.  I eventually solved the problem, or rather, found someone else’s solution.  But my conclusion was that even Linux Mint, the
+most reliable and stable distro in my personal experience, even <em>that</em> distro can have a hiccup during an upgrade.  So, I’m reminded
+to keep my backups current, and I’m also reminded that distros like Manjaro are ready and able to replace Stalwarts like Linux Mint
+whenever the desire arises.  In fact, last time I looked at Distro Watch, Mint and Manjaro were neck and neck for first and second
+place.  I think they swap places on a regular basis.  Manjaro has simply gotten that good!</p>
+
+<p>Also, I must confess that I don’t believe in a perfect distro.  If you use Linux long enough, eventually you will have a problem.
+That applies to any distro, although some distros are more rock-solid stable than others.  But even Linux Mint is capable of having a
+hiccup.  I’m sure Manjaro is capable of that too.  But I tend to regard them as top drawer distros that guarantee stability and
+freshness as far as any Linux distro can.</p>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">DeepBSD&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              DeepBSD&#39;s Blog
+            
+            </li>
+            
+            <li><a href="mailto:deepbsd@yahoo.com">deepbsd@yahoo.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/deepbsd"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/deepbsd"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is my programmer&#39;s blog, where I write about what projects I&#39;m working on and where I share the problems I&#39;m working through.  However, I can also talk about my sysadmin tasks here on dsj.net, my local home network.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

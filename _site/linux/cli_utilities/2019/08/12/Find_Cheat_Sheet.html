@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Find Cheat Sheet</title>
+  <meta name="description" content="Find Cheat Sheet">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:3050/linux/cli_utilities/2019/08/12/Find_Cheat_Sheet.html">
+  <link rel="alternate" type="application/rss+xml" title="DeepBSD&#39;s Blog" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">DeepBSD&#39;s Blog</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Find Cheat Sheet</h1>
+    <p class="post-meta">
+      <time datetime="2019-08-12T11:15:50-04:00" itemprop="datePublished">
+        
+        Aug 12, 2019
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="find-cheat-sheet"><em>Find</em> Cheat Sheet</h2>
+
+<p>Find is one of those under-used powertools in Linux/UNIX that will save you lots of time if you only learn
+how to use it.  It’s tremendously powerful and helpful.</p>
+
+<h1 id="the-main-idea">The Main Idea</h1>
+
+<p>Find files (everything is a file in UNIX) that meet criteria and then do something with them (or not–just 
+looking at them is doing something with them too).</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find . -type f -iname "*jazz*.mp3" -exec mv "s/ /_/g" {} +
+</code></pre></div></div>
+
+<p>The above command will find all mp3 files with ‘jazz’ in the title and remove spaces from their filenames.  It
+will work on 20 files or 2000 files.  If you tried to do this with your file manager, this could take
+forever.  But this little one-liner would do it instantly.</p>
+
+<h1 id="basic-syntax">Basic Syntax</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find _pathspec_ argument . . . command {} + (or / or ;)
+</code></pre></div></div>
+
+<p>You start with the find command, then provide a place (pathname) to start searching from, and then specify 
+what matches or non-matches you want the returned files to have.  Optionally, you can have each of those
+returned files get a command executed on them (more than one way to do this).  The last item is to terminate the
+statement with a <code class="highlighter-rouge">+</code> or a <code class="highlighter-rouge">/</code> or a <code class="highlighter-rouge">;</code>.</p>
+
+<p>It’s perfectly OK to simply find files meeting criteria without executing any commands on them.</p>
+
+<p>The pathspec <code class="highlighter-rouge">.</code> means recursively search the current directory structure, but you can specify <code class="highlighter-rouge">/var</code> or <code class="highlighter-rouge">/etc</code>
+or whatever you want.  You can use the <code class="highlighter-rouge">-mindepth</code> and <code class="highlighter-rouge">-maxdepth</code> arguments to specify how deep you want to
+search the filesystem.</p>
+
+<p>You can supply more than one pathspec:  <code class="highlighter-rouge">find /var /etc -mtime 0</code> – find all files in both /var and /etc that have been
+modified in the last 24 hours.  (-mtime 0 means less than 1 day)</p>
+
+<h1 id="arguments-for-find-how-can-you-find-files">Arguments for <code class="highlighter-rouge">find</code>: How can you find files?</h1>
+
+<ul>
+  <li><strong>name</strong>:  <code class="highlighter-rouge">find . -name "*waldo*"</code> – find all files with ‘waldo’ in the filename</li>
+  <li><strong>iname</strong>: (case insensitive): <code class="highlighter-rouge">find . -iname "*bogus*txt"</code> – finds BOGUS.txt and bOgUs.TxT</li>
+  <li><strong>type</strong>:  <code class="highlighter-rouge">find . -type d</code> – find all directories in the current directory structure</li>
+  <li>types (c, d, s, l, p, b): files, directories, sockets, symlinks, named pipes, block file.</li>
+  <li><strong>permissions</strong>: <code class="highlighter-rouge">find . -type f -perm 775</code> – find all files with permissions of 755. <em>Note</em>: can also use
+the <code class="highlighter-rouge">-perm u=rwx,g=rx,o=rx</code> type of syntax.</li>
+  <li><strong>access</strong>:  <code class="highlighter-rouge">find /etc -atime -3 -name "*conf"</code> – all files in /etc accessed within last 3 days named “<em>conf</em>”</li>
+  <li><strong>access/modification/created times</strong>:  <code class="highlighter-rouge">find /var/log -atime -3 -mtime -3 -ctime -3 </code> – less than 3 days ago
+<em>Note</em>: Accesstime is the last time the file was read.  Modificationtime is the last time the content of the file was
+changed.  Changetime is the last time the file or its metadata (such as permissions or ownership) were changed</li>
+  <li><strong>min/time</strong>:  <code class="highlighter-rouge">find /etc -cmin -10</code> – find all files changed in /etc less than 10 min ago.</li>
+  <li><strong>user/uname/uid</strong> (also nouser, nogroup): <code class="highlighter-rouge">find /opt -not -group root -type f -executable</code> – find all executable files (by current user) in /opt not owned by members of root group</li>
+  <li><strong>size</strong>: <code class="highlighter-rouge">find ~/Music -size +100M</code> – find all files in ~/Music larger than 100 Megabytes</li>
+  <li><strong>empty</strong>: <code class="highlighter-rouge">find ~/tmp -empty</code> – find all empty files in your personal tmp directory</li>
+  <li><strong>regex</strong>: <code class="highlighter-rouge">find ~/Pictures -iregex '*self*' -ctime -100</code> – find all selfies newer than 100 days in Pictures</li>
+  <li><strong>readable</strong> (also -executable, -writeable): <code class="highlighter-rouge">find /etc -readable -type f</code> – find all readable files by current user in /etc</li>
+  <li><strong>newer</strong>: <code class="highlighter-rouge">find ~ -newer ~/.bashrc -name ".bash*"</code> – find bash-related config files newer than your .bashrc in your
+home directory and below.  <em>Note</em>: You can also use <code class="highlighter-rouge">-newer{acm}t</code> on this.  For example, to find all files modified on
+the July 4th, 2014:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / -type f -newermt 2014-07-04 ! -newermt 2014-07-05
+</code></pre></div>    </div>
+  </li>
+  <li><strong>not</strong> (!): <code class="highlighter-rouge">find ~ ! -user username</code> – find all files and dirs in my home file structure not owned by username. <code class="highlighter-rouge">-not</code>
+and <code class="highlighter-rouge">!</code> are the same</li>
+  <li><strong>and/or</strong>: <code class="highlighter-rouge">find / -type d -a -name 'python*'</code> – find all directories below root that start with python. (-o means
+‘or’). Example: <code class="highlighter-rouge">find / -type d -name 'python*' -o -name 'perl*'</code></li>
+</ul>
+
+<h1 id="doing-actions-on-files-found">Doing Actions on Files Found</h1>
+
+<ul>
+  <li><strong>delete</strong>: <code class="highlighter-rouge">find ~/tmp -name '*.sw?*' -mtime +90 -delete ;</code> – delete swap files older than 90 days</li>
+  <li><strong>exec</strong>: <code class="highlighter-rouge">find ~/Music -type f -exec rename -f 'y/A-Z/a-z/' {} +</code> – rename all music files to have lowercase names
+<em>Note</em>: The difference between ending with ‘+’ and ‘;’ is that the ‘+’ adds all the files as arguments at once and ‘;’ adds
+each file found and executes the command on <em>each</em> file sequentially.  Example: <code class="highlighter-rouge">find ~ type f -name '*jazz*.mp3' -exec tar -czf
+jazz.tar.gz {} +</code> will add all mp3 jazz files into a jazz tarball, while <code class="highlighter-rouge">;</code> will overwrite the tarball each time with each
+single mp3 file.  Very different results, so you probably mean to do the ‘+’ rather than the ‘;’ here.</li>
+  <li><strong>xargs</strong>: <code class="highlighter-rouge">find . -type f -name "*deleteme*" | xargs rm {} +</code> – delete all files with ‘deleteme’ in name. <em>Note</em>: you
+need a pipe (‘|’) with xargs.</li>
+  <li><strong>execdir</strong>: Executes the command on the directory the file found exists in. Not sure to use this myself</li>
+  <li><strong>ls</strong>: <code class="highlighter-rouge">find / -type f -size +1G -ls</code> – Simply lists files largers than 1G so you can view details about the file</li>
+  <li><strong>print</strong>: <code class="highlighter-rouge">find /opt -type f -executable -print</code> – Show all executable files beneath /opt.  <em>Note</em>: Sometimes special 
+characters in filenames could cause the terminal some grief.  If the output is going to a terminal rather than a file, you
+may want to choose a formated output, using <code class="highlighter-rouge">-fprint</code> or <code class="highlighter-rouge">-fprintf</code>.  If you want to disregard any side effects to the
+terminal and print characters regardless of the terminal, you could use <code class="highlighter-rouge">-print0</code> or <code class="highlighter-rouge">-fprint0</code>.  Read the manpage for more
+information on this.</li>
+</ul>
+
+<h1 id="error-messages">Error Messages</h1>
+
+<p>You may or may not want to remove them.  For example, if you are not interested in permissions limitations in your output,
+you could use <code class="highlighter-rouge">find /var/log -name "*log*" -type f 2&gt;/dev/null</code>, which will throw away all errors related to files you don’t have
+permissions to see.</p>
+
+<h1 id="creation-dates">Creation Dates</h1>
+
+<p>Finding files by creation dates is next to impossible to do.  In fact, I would say it’s a happy accident when you do.  But
+you can check for files that are newer or not newer than a specific file.  For example, if you know the <code class="highlighter-rouge">/etc/mtab</code> file
+has not changed since the OS was installed, then you could use that as a reference for comparison for a creation date.  But
+would you actually know that the file has not been altered?  Or should not have been?  This is one of the sticky areas of
+find.  I usually just say you can’t find files based on creation dates, but only by when it was last changed/modified or
+accessed.</p>
+
+<h1 id="combining-arguments">Combining Arguments</h1>
+
+<p>I touched on <code class="highlighter-rouge">-a</code> and <code class="highlighter-rouge">-o</code> above, but you can get creative on how you group the commands by using ‘(‘ and ‘)’.  Also, you
+usually don’t have to use <code class="highlighter-rouge">-a</code> because it’s oftentimes implicit.  If you have</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find . -user 'joe' -type f
+</code></pre></div></div>
+<p>it is implicit that you want only files owned by joe.  You don’t need a <code class="highlighter-rouge">-a</code> here.  But, let’s say you wanted to see all files owned by
+‘joe’ that were modified more than 90 days ago but not more than 100 days ago, or only those files that were modified within the last 4
+days?  As the logic becomes a little more complex, the ‘(‘ and ‘)’ can come to the rescue:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find / -user joe '(' -mtime +90 -a ! -mtime +100 ')' -o '(' -mtime -4 ')'
+</code></pre></div></div>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>There are so many options and so much flexibility with <code class="highlighter-rouge">find</code> that you can correctly infer that it’s a daily staple for
+systems admins everywhere.  The more you practice with it, the more indispensible you’ll find it in your day to day work at
+the command line.</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">DeepBSD&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              DeepBSD&#39;s Blog
+            
+            </li>
+            
+            <li><a href="mailto:deepbsd@yahoo.com">deepbsd@yahoo.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/deepbsd"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/deepbsd"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is my programmer&#39;s blog, where I write about what projects I&#39;m working on and where I share the problems I&#39;m working through.  However, I can also talk about my sysadmin tasks here on dsj.net, my local home network.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

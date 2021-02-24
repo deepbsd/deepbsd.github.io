@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Collatz Conjecture</title>
+  <meta name="description" content="The Collatz Conjecture">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:3050/bash/2018/08/11/The_Collatz_Conjecture.html">
+  <link rel="alternate" type="application/rss+xml" title="DeepBSD&#39;s Blog" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">DeepBSD&#39;s Blog</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">The Collatz Conjecture</h1>
+    <p class="post-meta">
+      <time datetime="2018-08-11T13:46:40-04:00" itemprop="datePublished">
+        
+        Aug 11, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="the-collatz-conjecture">The Collatz Conjecture</h2>
+
+<p>Okay, I have no idea if there was a guy named Collatz, or whether he ever conjectured anything.  However, there’s a little math problem also known as the <code class="highlighter-rouge">3x + 1</code> problem, or the <code class="highlighter-rouge">Collatz Conjecture</code>.
+I found this as I was working through the bash problems at <a href="https://exercism.io">https://exercism.io</a>.  It goes like this:</p>
+
+<blockquote>
+  <h1 id="collatz-conjecture">Collatz Conjecture</h1>
+
+  <p>The Collatz Conjecture or 3x+1 problem can be summarized as follows:</p>
+
+  <p>Take any positive integer n. If n is even, divide n by 2 to get n / 2. If n is
+odd, multiply n by 3 and add 1 to get 3n + 1. Repeat the process indefinitely.
+The conjecture states that no matter which number you start with, you will
+always reach 1 eventually.</p>
+
+  <p>Given a number n, return the number of steps required to reach 1.</p>
+
+  <h1 id="examples">Examples</h1>
+
+  <p>Starting with n = 12, the steps would be as follows:</p>
+
+  <ol>
+    <li>12</li>
+    <li>6</li>
+    <li>3</li>
+    <li>10</li>
+    <li>5</li>
+    <li>16</li>
+    <li>8</li>
+    <li>4</li>
+    <li>2</li>
+    <li>1</li>
+  </ol>
+
+  <p>Resulting in 9 steps. So for input n = 12, the return value would be 9.</p>
+
+  <p>Run the tests with:</p>
+
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bats collatz_conjecture_test.sh
+</code></pre></div>  </div>
+
+  <p>After the first test(s) pass, continue by commenting out or removing the <code class="highlighter-rouge">skip</code> annotations prepending other tests.</p>
+
+  <h2 id="source">Source</h2>
+
+  <p>An unsolved problem in mathematics named after mathematician Lothar Collatz [https://en.wikipedia.org/wiki/3x_%2B_1<em>problem](https://en.wikipedia.org/wiki/3x</em>%2B_1_problem)</p>
+
+  <h1 id="external-utilities">External utilities</h1>
+  <p><code class="highlighter-rouge">Bash</code> is a language to write scripts that works closely with various system utilities,
+like <a href="https://www.gnu.org/software/sed/"><code class="highlighter-rouge">sed</code></a>, <a href="https://www.gnu.org/software/gawk/"><code class="highlighter-rouge">awk</code></a>, <a href="https://www.gnu.org/software/coreutils/manual/html_node/date-invocation.html"><code class="highlighter-rouge">date</code></a> and even other programming languages, like <a href="https://www.python.org/"><code class="highlighter-rouge">Python</code></a>.
+This track does not restrict the usage of these utilities, and as long as your solution is portable
+between systems and does not require installing third party applications, feel free to use them to solve the exercise.</p>
+
+  <p>For an extra challenge, if you would like to have a better understanding of the language,
+try to re-implement the solution in pure <code class="highlighter-rouge">Bash</code>, without using any external tools.</p>
+
+  <h1 id="submitting-incomplete-solutions">Submitting Incomplete Solutions</h1>
+  <p>It’s possible to submit an incomplete solution so you can see how others have completed the exercise.</p>
+</blockquote>
+
+<p>This is the README.md lifted from the exercism site on the problem.  It’s kind of like one of those little math tricks that a grade school teachers might show to a class in order to rev up some enthusiasm and curiosity
+for math.  I’m not sure if it works on the kids, but it worked on me!</p>
+
+<h1 id="my-solution">My Solution</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   1	#!/usr/bin/env bash
+   2	
+   3	input=${1}
+   4	
+   5	error(){
+   6	  echo "Error: Only positive numbers are allowed"
+   7	  exit 1
+   8	}
+   9	
+  10	validate(){
+  11	    [[ ${1} =~ ^[0-9]+$ ]] &amp;&amp; [[ ${1} -gt 0 ]] || error
+  12	}
+  13	
+  14	validate ${input} 
+  15	
+  16	posnum=${input}   # input has now been sanitized
+  17	
+  18	count=0   # count iterations...
+  19	
+  20	# must validate input or loop is infinite
+  21	while [[ ${posnum} -ne 1 ]]; do
+  22	  if [ $((posnum % 2)) -eq 0 ]; then
+  23	    ((posnum=posnum/2))
+  24	  else 
+  25	    ((posnum=1+posnum*3))
+  26	  fi
+  27	  ((count+=1))
+  28	done
+  29	
+  30	echo $count
+
+</code></pre></div></div>
+
+<p>This was actually my second refactoring, and while I was looking at some other people’s solutions, I think I may have to refactor again.</p>
+
+<p>My first refactor was to abstract out the validation process, and let the function name describe what was happening.  I’m validating input.  The <code class="highlighter-rouge">error</code> function is called to error out of the program if it gets bad
+input. I decided to change the name of the variable from <code class="highlighter-rouge">input</code> to <code class="highlighter-rouge">posnum</code> after validation to reflect that the input had now been sanitized.  This is important, because the while loop will be infinite unless the
+number is a positive integer.</p>
+
+<p>Lines 21-28 could be handled with a ternary operator, though.  This would reduce the line count, but I’m not sure if the resulting code would be as easy to read.  I’m going to try it.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   1	#!/usr/bin/env bash
+   2	
+   3	input=${1}
+   4	
+   5	error(){
+   6	  echo "Error: Only positive numbers are allowed"
+   7	  exit 1
+   8	}
+   9	
+  10	validate(){
+  11	    [[ ${1} =~ ^[0-9]+$ ]] &amp;&amp; [[ ${1} -gt 0 ]] || error
+  12	}
+  13	
+  14	validate ${input} 
+  15	
+  16	posnum=${input}   # input has now been sanitized
+  17	
+  18	count=0   # count iterations...
+  19	
+  20	# must validate input or loop is infinite
+  21	while [[ ${posnum} -ne 1 ]]; do
+  22	  [ $((posnum % 2)) -eq 0 ] &amp;&amp; ((posnum=posnum/2)) || ((posnum=1+posnum*3))
+  23	  ((count+=1))
+  24	done
+  25	
+  26	echo $count
+</code></pre></div></div>
+
+<p>So I’m not sure.  What do you think?  Does that help?  I guess it’s not really a ternary operator after all; it’s just bash conditional logic on one line, which I love anyway. I think it works, and this is consistent
+with the earlier lines, which also use this same sort of logic.  So I believe this is a good refactoring.  I basically gained 4 lines.  That’s not a lot, but I think it reinforces my chosen style.</p>
+
+<p>By the way, line 22 immediately above would have been written as a ternary after all:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>posnum=`posnum%2 == 0 ? posnum/2 : posnum*3+1`
+</code></pre></div></div>
+
+<p>Actually, I just tried something like this on my command line, and it didn’t work.  I’m going to have to experiment for a minute on that.  Probably has to do with integers and <code class="highlighter-rouge">let</code> I’m guessing.  I’ll figure it out!</p>
+
+<h1 id="my-conclusion">My Conclusion</h1>
+
+<p>The Collatz Conjecture is a terrific student for a slightly experienced to more-advanced student of bash, because: it requires some arithmatic skills at the commandline; it requires ability with conditional logic; and
+it’s not too crazy on math ability, as many other problems are.</p>
+
+<p>The newer versions of bash are capable of so much more than the older versions.  It’s almost like bash has grown into a full-scale scripting language!  Well, it’s not on a par with Python or Ruby yet.  But it’s getting
+closer.  And it still possesses all of the direct ability to communicate directly with the operating system that other scripting languages use external libraries for.  So Bash is still a terrific choice for many of your
+scripting needs.</p>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">DeepBSD&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              DeepBSD&#39;s Blog
+            
+            </li>
+            
+            <li><a href="mailto:deepbsd@yahoo.com">deepbsd@yahoo.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/deepbsd"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/deepbsd"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is my programmer&#39;s blog, where I write about what projects I&#39;m working on and where I share the problems I&#39;m working through.  However, I can also talk about my sysadmin tasks here on dsj.net, my local home network.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

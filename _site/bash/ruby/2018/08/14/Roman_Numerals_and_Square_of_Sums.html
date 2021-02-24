@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Roman Numerals and Square of Sums</title>
+  <meta name="description" content="Today I’m actually going to talk about two problems. I thought the first was interesting because I had to get primitive to solve it in bash. I don’t really k...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:3050/bash/ruby/2018/08/14/Roman_Numerals_and_Square_of_Sums.html">
+  <link rel="alternate" type="application/rss+xml" title="DeepBSD&#39;s Blog" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">DeepBSD&#39;s Blog</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Roman Numerals and Square of Sums</h1>
+    <p class="post-meta">
+      <time datetime="2018-08-14T12:54:02-04:00" itemprop="datePublished">
+        
+        Aug 14, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Today I’m actually going to talk about two problems.  I thought the first was interesting because I had to get primitive to solve it in bash.  I don’t really know how to use hashes yet in Bash, so I just use two arrays.
+The second problem is in Ruby.  I’m just learning Ruby, so I’m figuring out a lot of things as I go.  The Ruby problem is about finding the difference between the difference between the sum of squares of numbers in a
+series versus the square of the sums in that series.</p>
+
+<h2 id="roman-numerals-in-bash">Roman Numerals in Bash</h2>
+
+<p>So I was working on another bash program for Exercism.io, and this one took an arabic number as input and returned the equivalent Roman numeral.  The test was inputting a series of numbers and expecting a corresponding
+set of roman numerals.  Here’s the assignment as it is on Exercism:</p>
+
+<blockquote>
+  <h1 id="roman-numerals">Roman Numerals</h1>
+
+  <p>Write a function to convert from normal numbers to Roman Numerals.</p>
+
+  <p>The Romans were a clever bunch. They conquered most of Europe and ruled
+it for hundreds of years. They invented concrete and straight roads and
+even bikinis. One thing they never discovered though was the number
+zero. This made writing and dating extensive histories of their exploits
+slightly more challenging, but the system of numbers they came up with
+is still in use today. For example the BBC uses Roman numerals to date
+their programmes.</p>
+
+  <p>The Romans wrote numbers using letters - I, V, X, L, C, D, M. (notice
+these letters have lots of straight lines and are hence easy to hack
+into stone tablets).</p>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1  =&gt; I
+10  =&gt; X
+ 7  =&gt; VII
+</code></pre></div>  </div>
+
+  <p>There is no need to be able to convert numbers larger than about 3000.
+(The Romans themselves didn’t tend to go any higher)</p>
+
+  <p>Wikipedia says: Modern Roman numerals … are written by expressing each
+digit separately starting with the left most digit and skipping any
+digit with a value of zero.</p>
+
+  <p>To see this in practice, consider the example of 1990.</p>
+
+  <p>In Roman numerals 1990 is MCMXC:</p>
+
+  <p>1000=M
+900=CM
+90=XC</p>
+
+  <p>2008 is written as MMVIII:</p>
+
+  <p>2000=MM
+8=VIII</p>
+
+  <p>See also: http://www.novaroma.org/via_romana/numbers.html</p>
+
+  <p>Run the tests with:</p>
+
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bats roman_numerals_test.sh
+</code></pre></div>  </div>
+
+  <p>After the first test(s) pass, continue by commenting out or removing the <code class="highlighter-rouge">skip</code> annotations prepending other tests.</p>
+
+  <h2 id="source">Source</h2>
+
+  <p>The Roman Numeral Kata <a href="http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals">http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals</a></p>
+
+  <h2 id="external-utilities">External utilities</h2>
+  <p><code class="highlighter-rouge">Bash</code> is a language to write scripts that works closely with various system utilities,
+like <a href="https://www.gnu.org/software/sed/"><code class="highlighter-rouge">sed</code></a>, <a href="https://www.gnu.org/software/gawk/"><code class="highlighter-rouge">awk</code></a>, <a href="https://www.gnu.org/software/coreutils/manual/html_node/date-invocation.html"><code class="highlighter-rouge">date</code></a> and even other programming languages, like <a href="https://www.python.org/"><code class="highlighter-rouge">Python</code></a>.
+This track does not restrict the usage of these utilities, and as long as your solution is portable
+between systems and does not require installing third party applications, feel free to use them to solve the exercise.</p>
+
+  <p>For an extra challenge, if you would like to have a better understanding of the language,
+try to re-implement the solution in pure <code class="highlighter-rouge">Bash</code>, without using any external tools.</p>
+
+  <h2 id="submitting-incomplete-solutions">Submitting Incomplete Solutions</h2>
+  <p>It’s possible to submit an incomplete solution so you can see how others have completed the exercise.</p>
+</blockquote>
+
+<h1 id="the-process">The Process</h1>
+
+<p>Fortunately, I’ve done this problem before in Python.  So I have a basic strategy.  I wanted to use a hash or associative array to handle it, and fortunately, bash can do those now.  However, I am not sure how to use
+those yet in bash.  So, I used two arrays instead and let the index number of one (the Arabic numeral array) act as a key to the other (the Roman numeral) array.  The trick is to count from the right starting with the
+largest numbers and see what’s left over.  Along the way, I’m building a string of Roman numerals that stops when I run out of values.</p>
+
+<p>One of the tricks here is to have a counter that prints a Roman numeral more than once where appropriate.  For example, the number 30 requires three X’s, and so on.  I cannot just multiply a character by a count as I
+might in some other languages.  Bash is not a language where you can do that.  On line 16 I have to use the <code class="highlighter-rouge">printf</code> command with a format string followed by a range.  It’s a little strange, but hey, that’s programming.</p>
+
+<p>The biggest weirdness here is that you have to count in Roman.  That means you have to check for multiples of 9 and 4 especially.  Those symbols will be unique.</p>
+
+<p>The overall requirement is to start with your input number and divide the biggest number into that you can from the Roman system, as many times as possible, then add those symbols to your resulting string.  Then,
+sumbtract that value from the number.  Next, take the next largest value from the Roman system and divide that in as many times as possible and add the Roman symbols to your result. Remove the values from the number as
+required.  Then repeat this process until you have zero.</p>
+
+<p>Small example:  You start with the number 8.  The largest value from the Roman system that will divide into this is <code class="highlighter-rouge">V</code>.  It only goes once.  So your result string now gets a <code class="highlighter-rouge">V</code>.  Subtract 5 from 8 and you have 3.  The
+largest value that now goes in is <code class="highlighter-rouge">I</code>.  It goes in 3 times, so your result now is <code class="highlighter-rouge">VIII</code>.  Once you subtract 3 from the number, you now have zero, so you’re done.  <code class="highlighter-rouge">VIII</code> is your result.  That’s the basic process.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   1	#!/usr/bin/env bash
+   2	
+   3	num=${1}
+   4	
+   5	romans=( 'M' 'CM' 'D' 'CD' 'C' 'XC' 'L' 'XL' 'X' 'IX' 'V' 'IV' 'I')
+   6	integers=( 1000 900 500 400 100 90 50 40 10 9 5 4 1 )
+   7	
+   8	result=''
+   9	
+  10	for n in $(seq 0 $((${#integers[@]}-1)));
+  11	do
+  12	  count=$((num/integers[n]))
+  13	  if [ ${count} -ge 1 ]; then
+  14	      for ((i=1; i&lt;=${count}; i++))
+  15	      do
+  16	          result+=$(printf "${romans[n]}%.0s" {1..${count}} )
+  17	      done
+  18	  else 
+  19	      result+=''
+  20	  fi
+  21	  ((num-=(integers[n]*count)))
+  22	done
+  23	
+  24	echo ${result}
+</code></pre></div></div>
+
+<h2 id="ruby-square-of-sums-vs-the-sum-of-squares">Ruby: Square of Sums vs The Sum of Squares</h2>
+
+<p>Once again, this problem is from Exercism.io.  Here’s the README.md for the problem:</p>
+
+<blockquote>
+  <h1 id="difference-of-squares">Difference Of Squares</h1>
+
+  <p>Find the difference between the square of the sum and the sum of the squares of the first N natural numbers.</p>
+
+  <p>The square of the sum of the first ten natural numbers is
+(1 + 2 + … + 10)² = 55² = 3025.</p>
+
+  <p>The sum of the squares of the first ten natural numbers is
+1² + 2² + … + 10² = 385.</p>
+
+  <p>Hence the difference between the square of the sum of the first
+ten natural numbers and the sum of the squares of the first ten
+natural numbers is 3025 - 385 = 2640.</p>
+
+  <hr />
+
+  <p>For installation and learning resources, refer to the
+<a href="http://exercism.io/languages/ruby">exercism help page</a>.</p>
+
+  <p>For running the tests provided, you will need the Minitest gem. Open a
+terminal window and run the following command to install minitest:</p>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install minitest
+</code></pre></div>  </div>
+
+  <p>If you would like color output, you can <code class="highlighter-rouge">require 'minitest/pride'</code> in
+the test file, or note the alternative instruction, below, for running
+the test file.</p>
+
+  <p>Run the tests from the exercise directory using the following command:</p>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby difference_of_squares_test.rb
+</code></pre></div>  </div>
+
+  <p>To include color from the command line:</p>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby -r minitest/pride difference_of_squares_test.rb
+</code></pre></div>  </div>
+
+  <h2 id="source-1">Source</h2>
+
+  <p>Problem 6 at Project Euler <a href="http://projecteuler.net/problem=6">http://projecteuler.net/problem=6</a></p>
+
+  <h2 id="submitting-incomplete-solutions-1">Submitting Incomplete Solutions</h2>
+  <p>It’s possible to submit an incomplete solution so you can see how others have completed the exercise.</p>
+</blockquote>
+
+<h1 id="my-approach">My Approach</h1>
+
+<p>With Ruby being a heavily object oriented language, lots of problems are solved by creating a class module.  That class gets instantiated as a new instance in the test file, and then the class methods are run to see if
+they work as expected to produce the required results in the test.  This solution basically took three lines of Ruby code.  The other 10-15 lines were all setup for the class.  Here’s my code:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   1	class Squares
+   2	
+   3	    def initialize(number)
+   4	      @number = number
+   5	    end
+   6	
+   7	    def square_of_sum()
+   8	      (1..@number).reduce(:+)**2
+   9	    end
+  10	
+  11	    def sum_of_squares()
+  12	      (1..@number).inject { |sum, num| sum + num**2 }
+  13	    end
+  14	
+  15	    def difference()
+  16	      square_of_sum() - sum_of_squares()
+  17	    end
+  18	
+  19	end
+  20	
+  21	module Bookkeeping
+  22		VERSION = 4 # Where the version number matches the one in the test
+  23	end
+</code></pre></div></div>
+
+<p>This little bit of code took a lot of research actually, and what you see is at least the second refactoring.  I consolidated 2 lines into 1 line for <code class="highlighter-rouge">square_of_sum</code> and also <code class="highlighter-rouge">sum_of_squares</code>.  I haven’t done much ruby
+code, and most of what I have done has strictly been in Rails.  So I just haven’t used the power of basic Ruby very much.</p>
+
+<p>The range with <code class="highlighter-rouge">reduce</code> is actually sort of <em>Javascriptish</em> for me.  I actually don’t use that idea very much, since I started with Python, and Guido depricated it because it seemed less <em>Pythonic</em> and he wanted
+programmers to get away from using it.  It’s still a part of the <code class="highlighter-rouge">itertools</code> library in Python.  But, consequently, I don’t use <code class="highlighter-rouge">map</code> or <code class="highlighter-rouge">reduce</code> very much in other languages when I probably should.  It may not be
+<em>Pythonic</em>, but it is definitely <em>Rubyistic</em> and also <em>Javascriptish</em>!!</p>
+
+<p><code class="highlighter-rouge">inject</code> is something I’ve never heard of before this exercise.  I’m not sure what the difference is yet between <code class="highlighter-rouge">reduce</code> and <code class="highlighter-rouge">inject</code>.  They seem to be much alike to me.  But I’m just learning, so nevermind.  Still,
+this seems to work, and it’s apparently very <em>Rubyistic</em>.</p>
+
+<p>The <code class="highlighter-rouge">VERSION</code> thing at the bottom is simply part of the Exercism Ruby track; apparently, they like to keep track of test versions.</p>
+
+<h1 id="closing">Closing</h1>
+
+<p>I’ve been working on both of these problems recently. The two languages couldn’t be more different.  However, solving problems is similar in almost any language.  You just have to <em>think</em> in that language.  Fortunately,
+these are simple problems, but simple problems are best when you’re dealing with new languages.  Or even new ways of using languages!</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">DeepBSD&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              DeepBSD&#39;s Blog
+            
+            </li>
+            
+            <li><a href="mailto:deepbsd@yahoo.com">deepbsd@yahoo.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/deepbsd"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/deepbsd"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is my programmer&#39;s blog, where I write about what projects I&#39;m working on and where I share the problems I&#39;m working through.  However, I can also talk about my sysadmin tasks here on dsj.net, my local home network.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

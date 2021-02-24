@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Math With Bash</title>
+  <meta name="description" content="Doing Math in Bash">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:3050/bash/programming/2018/08/07/Math_With_Bash.html">
+  <link rel="alternate" type="application/rss+xml" title="DeepBSD&#39;s Blog" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">DeepBSD&#39;s Blog</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Math With Bash</h1>
+    <p class="post-meta">
+      <time datetime="2018-08-07T14:33:56-04:00" itemprop="datePublished">
+        
+        Aug 7, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="doing-math-in-bash">Doing Math in Bash</h2>
+
+<p>Bash wasn’t really created for doing heavy duty math.  There are lots of limitations in that department.  However,
+there are also some workarounds.  I won’t get to too many of those today, but I will share a couple of projects I did
+recently for the website <code class="highlighter-rouge">exercism.io</code>.</p>
+
+<h1 id="luhn">Luhn</h1>
+
+<blockquote>
+  <p>Given a number determine whether or not it is valid per the Luhn formula.</p>
+
+  <p>The <a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a> is
+a simple checksum formula used to validate a variety of identification
+numbers, such as credit card numbers and Canadian Social Insurance
+Numbers.</p>
+
+  <p>The task is to check if a given string is valid.</p>
+
+  <h2 id="validating-a-number">Validating a Number</h2>
+
+  <p>Strings of length 1 or less are not valid. Spaces are allowed in the input,
+but they should be stripped before checking. All other non-digit characters
+are disallowed.</p>
+
+  <h2 id="example-1-valid-credit-card-number">Example 1: valid credit card number</h2>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4539 1488 0343 6467
+</code></pre></div>  </div>
+
+  <p>The first step of the Luhn algorithm is to double every second digit,
+starting from the right. We will be doubling</p>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4_3_ 1_8_ 0_4_ 6_6_
+</code></pre></div>  </div>
+
+  <p>If doubling the number results in a number greater than 9 then subtract 9
+from the product. The results of our doubling:</p>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8569 2478 0383 3437
+</code></pre></div>  </div>
+
+  <p>Then sum all of the digits:</p>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8+5+6+9+2+4+7+8+0+3+8+3+3+4+3+7 = 80
+</code></pre></div>  </div>
+
+  <p>If the sum is evenly divisible by 10, then the number is valid. This number is valid!</p>
+
+  <h2 id="example-2-invalid-credit-card-number">Example 2: invalid credit card number</h2>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8273 1232 7352 0569
+</code></pre></div>  </div>
+
+  <p>Double the second digits, starting from the right</p>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>7253 2262 5312 0539
+</code></pre></div>  </div>
+
+  <p>Sum the digits</p>
+
+  <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>7+2+5+3+2+2+6+2+5+3+1+2+0+5+3+9 = 57
+</code></pre></div>  </div>
+
+  <p>57 is not evenly divisible by 10, so this number is not valid.</p>
+
+  <p>Run the tests with:</p>
+
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bats luhn_test.sh
+</code></pre></div>  </div>
+
+  <p>After the first test(s) pass, continue by commenting out or removing the <code class="highlighter-rouge">skip</code> annotations prepending other tests.</p>
+
+  <h2 id="source">Source</h2>
+
+  <p>The Luhn Algorithm on Wikipedia <a href="http://en.wikipedia.org/wiki/Luhn_algorithm">http://en.wikipedia.org/wiki/Luhn_algorithm</a></p>
+
+  <h2 id="external-utilities">External utilities</h2>
+  <p><code class="highlighter-rouge">Bash</code> is a language to write scripts that works closely with various system utilities,
+like <a href="https://www.gnu.org/software/sed/"><code class="highlighter-rouge">sed</code></a>, <a href="https://www.gnu.org/software/gawk/"><code class="highlighter-rouge">awk</code></a>, <a href="https://www.gnu.org/software/coreutils/manual/html_node/date-invocation.html"><code class="highlighter-rouge">date</code></a> and even other programming languages, like <a href="https://www.python.org/"><code class="highlighter-rouge">Python</code></a>.
+This track does not restrict the usage of these utilities, and as long as your solution is portable
+between systems and does not require installing third party applications, feel free to use them to solve the exercise.</p>
+
+  <p>For an extra challenge, if you would like to have a better understanding of the language,
+try to re-implement the solution in pure <code class="highlighter-rouge">Bash</code>, without using any external tools.</p>
+
+  <h2 id="submitting-incomplete-solutions">Submitting Incomplete Solutions</h2>
+  <p>It’s possible to submit an incomplete solution so you can see how others have completed the exercise.</p>
+
+  <p>So, that’s the assignment.  Using that recipe described, write a program that will return the number of steps
+required (each step uses the recipe once) to reduced the number passed into the program down to the number 1.  That’s
+it!</p>
+</blockquote>
+
+<h1 id="how-to-solve-it-my-approach-anyway">How To Solve It (my approach, anyway)</h1>
+
+<p>Now, shell scripts can become very long, be what I like about Exercism is that the assignments can be challenging but
+generally only require a couple dozen lines or so.  Sometimes far less.  So, for this problem, I tried to break the
+recipe down into steps:</p>
+
+<ol>
+  <li>
+    <p>Take in a number as an argument.</p>
+  </li>
+  <li>
+    <p>Validate the number; it can have hyphens and spaces, but those must be filtered out.</p>
+  </li>
+  <li>
+    <p>Reverse the numbers so we can proceed from right to left (my preference; it could be done another way).</p>
+  </li>
+  <li>
+    <p>Put this reversed list of numbers into an array.</p>
+  </li>
+  <li>
+    <p>Iterate over the list and double each second number (from the left now.)</p>
+  </li>
+  <li>
+    <p>On each second number that has been doubled, if the number is greater than 9, subtract 9 from that number.
+Otherwise, the number remains doubled from the original.</p>
+  </li>
+  <li>
+    <p>While iterating over the list of numbers, ensure that a sum of each number in the array is calculated</p>
+  </li>
+  <li>
+    <p>When all numbers in the list have been processed, determine if 10 can be divided evenly into that sum.  If so,
+return a ‘true’ (it <em>is</em> a valid Luhn number) or a ‘false’ if not.</p>
+  </li>
+  <li>
+    <p>Return a 0 exit status if the number <em>is</em> a Luhn number and a non-zero exit status if it isn’t.
+Oops!  Nope, whoever wrote the test for this exercise did not follow this convention.  So, always return 0.</p>
+  </li>
+</ol>
+
+<p>Here’s my final draft that passed all the tests:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/env bash</span>
+
+<span class="c"># needs gnu rev to reverse string</span>
+<span class="nv">input</span><span class="o">=</span><span class="k">$(</span> <span class="nb">echo</span> <span class="k">${</span><span class="nv">1</span><span class="k">}</span> | rev | tr <span class="nt">-d</span> <span class="s1">' '</span><span class="k">)</span>
+
+<span class="c"># DRY (don't repeat yourself...)</span>
+error<span class="o">(){</span>
+    <span class="c"># why does test look for 0 return status on failure????</span>
+    <span class="nb">echo</span> <span class="s2">"false"</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>0
+<span class="o">}</span>
+
+<span class="c"># validate input</span>
+<span class="o">(</span> <span class="o">[[</span> <span class="k">${</span><span class="nv">input</span><span class="k">}</span> <span class="o">=</span>~ ^[0-9]+<span class="nv">$ </span><span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="k">${#</span><span class="nv">input</span><span class="k">}</span> <span class="nt">-gt</span> 1 <span class="o">]</span> <span class="o">)</span> <span class="o">||</span> error
+
+<span class="c"># create an iterator</span>
+<span class="nv">arr</span><span class="o">=(</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$input</span> | <span class="nb">grep</span> <span class="nt">-o</span> .<span class="k">)</span><span class="o">)</span>
+
+<span class="nv">sum</span><span class="o">=</span>0
+<span class="nv">n</span><span class="o">=</span>0   <span class="c"># index number for arr</span>
+
+<span class="c"># iterate through the list of numbers</span>
+<span class="k">for </span>num <span class="k">in</span> <span class="k">${</span><span class="nv">arr</span><span class="p">[@]</span><span class="k">}</span><span class="p">;</span>
+<span class="k">do
+  if</span> <span class="o">[</span> <span class="k">$((</span>n%2<span class="k">))</span> <span class="nt">-ne</span> 0 <span class="o">]</span><span class="p">;</span> <span class="k">then</span>  <span class="c"># each uneven index number; even index numbers are unchanged</span>
+    <span class="o">((</span>arr[n]<span class="o">=</span>2<span class="k">*</span>num<span class="o">))</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="k">${</span><span class="nv">arr</span><span class="p">[n]</span><span class="k">}</span> <span class="nt">-gt</span> 9 <span class="o">]</span><span class="p">;</span> <span class="k">then</span>  <span class="c"># still on uneven index numbers</span>
+      <span class="o">((</span>arr[n]<span class="o">=</span>arr[n]-9<span class="o">))</span>
+    <span class="k">fi
+  fi</span>
+  <span class="o">((</span>sum+<span class="o">=</span>arr[n]<span class="o">))</span>   <span class="c"># sum both even and odd index numbered elements of the list</span>
+  <span class="o">((</span>n++<span class="o">))</span>           <span class="c"># increment the index number</span>
+<span class="k">done</span>
+
+<span class="c"># Finally, return "true" or "false"</span>
+<span class="o">(</span> <span class="o">[</span> <span class="k">$((</span>sum%10<span class="k">))</span> <span class="nt">-eq</span> 0 <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"true"</span> <span class="o">)</span> <span class="o">||</span> error
+</code></pre></div></div>
+
+<h1 id="notes-on-solution">Notes on Solution</h1>
+
+<p>Another nice thing about Exercism.io is that you can look at other people’s solutions.  Most of the other solutions I
+looked at were some variation on this one.  People still have semantic preferences.  I have mine.  You can probably
+notice several of them.</p>
+
+<ol>
+  <li>
+    <p>If I can avoid three lines for an entire <code class="highlighter-rouge">if</code> statement, I’ll often use an ‘||’ statement instead.  Logically it
+usually works out to the same thing.  In this case, however, brace expansion happens after square bracket
+evaluation, so I had to break out this solution into an <code class="highlighter-rouge">if</code> statement to ensure the arithmatic turned out
+correctly.</p>
+  </li>
+  <li>
+    <p>I often use an error function to exit with a non-zero exit status.  Otherwise, the program completes with 0
+status.</p>
+  </li>
+  <li>
+    <p>I try to use more than enough comments so it’s impossible to not see what I was thinking.  Hopefully it’s
+possible to make that impossible!</p>
+  </li>
+  <li>
+    <p>I prefer to say an expression on one line if it’s not that complicated.  Otherwise, I’ll break it out into more
+than one line.  Clarity first.</p>
+  </li>
+  <li>
+    <p>I generally will write <code class="highlighter-rouge">${name}</code> instead of <code class="highlighter-rouge">$name</code>.  I think it’s a good habit, usually.</p>
+  </li>
+</ol>
+
+<p>At the very beginning, I mention in the note you need to have gnu <code class="highlighter-rouge">rev</code> installed.  If you’re on a Mac, I’m not sure
+how to make this happen.  Perhaps you can load it in through <code class="highlighter-rouge">homebrew</code>?  Not sure.  It was already on my Mint box.
+But lots of Bashers use Macs these days.  The environments can be quite different.</p>
+
+<p>Also, Bash has loads of useful symbols: <code class="highlighter-rouge">@?</code> <code class="highlighter-rouge">#!</code> ‘#?’ <code class="highlighter-rouge">!^</code> and so on.  I only know a small subset of them, and I
+assume others don’t know them all either.  So I use them somewhat sparingly.</p>
+
+<p>Otherwise, I think I’m rather mainstream, nothing too special.  Hopefully, when someone looks at my code, it’s pretty
+straightforward what the hell I’m talking about.  That’s what I strive for, anyway.</p>
+
+<h1 id="more-complexity">More Complexity</h1>
+
+<p>When it comes to more complicated math, there are other tools.  You can use tools like <code class="highlighter-rouge">awk</code> or better yet, <code class="highlighter-rouge">bc</code>.
+At your command line now, try this: <code class="highlighter-rouge">echo '0.5*88.4' | bc</code>.  If you have <code class="highlighter-rouge">bc</code> installed, you should see the answer
+<code class="highlighter-rouge">44.2</code> coming back to you.  So another option is to use <code class="highlighter-rouge">bc</code> in your scripts where you need more precision than with
+simple integers that I’ve used in this Luhn example above.</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">DeepBSD&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              DeepBSD&#39;s Blog
+            
+            </li>
+            
+            <li><a href="mailto:deepbsd@yahoo.com">deepbsd@yahoo.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/deepbsd"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/deepbsd"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">deepbsd</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is my programmer&#39;s blog, where I write about what projects I&#39;m working on and where I share the problems I&#39;m working through.  However, I can also talk about my sysadmin tasks here on dsj.net, my local home network.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
