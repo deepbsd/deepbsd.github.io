@@ -93,7 +93,7 @@ use my `install_x.sh` script if you need ideas.
 36	###  START SCRIPT HERE
 37	###############################
    
-38	### Check of reflector is done
+38	### Check that reflector is done
 39	clear
 40	echo "Waiting until reflector has finished updating mirrorlist..."
 41	while true; do
