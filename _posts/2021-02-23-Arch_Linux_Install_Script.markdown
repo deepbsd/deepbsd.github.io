@@ -258,7 +258,7 @@ to a newer motherboard or BIOS.
 
 The first thing to do is set up my variable names as preferences.  Things like partition
 names and sizes, hostname, wifi driver, video chipset driver, swap space size, root partition
-size (I assume a 30G VM disk to start with), timezone, keyboard layout (us is assumed), and 
+size (I assume a 30G VM disk to start with), timezone, keyboard layout (US is assumed), and 
 locale and filesystem format (I assume ext4).
 
 I normally include a few extra packages with dependencies, like printing and networking
@@ -267,12 +267,12 @@ and an appropriate display manager and desktop environment or window manager.  I
 like Cinnamon, but I normally install XFCE and i3wm as well, just to have options (sometimes
 I like to switch things up!).  For this script, I opted out of installing X, but you can
 check out my Farchi script or my Darchi script.  You can see how I branch conditionally from
-preferences.  I figure you'll want to just see if the script works, first of all.  
+preferences.  I figure you'll want to just see if the script works for you.
 
 If you want to modify the script to create create GPT partitions, you could use `sgdisk`.  
 That's what I use in the Farchi and Darchi scripts.  You could create all the partitions with
 simply using `cfdisk`, but I think it's a good exercise to automate it.  Plus, `sfdisk` and
-`sgdisk` are really fast.  You can create volume groups and partitions in 2 or 3 seconds.
+`sgdisk` are really fast.  You can create partitions and volume groups in 3 seconds or less!
 It's wicked fast!
 
 You could use a phrase something like this to create partitions using sgdisk:
@@ -284,7 +284,7 @@ You could use a phrase something like this to create partitions using sgdisk:
  4	     sgdisk -n 2::+"$ROOT_SIZE" -t 2:8300 -c 2:ROOT "$IN_DEVICE"
  5	     sgdisk -n 3::+"$SWAP_SIZE" -t 3:8200 -c 3:SWAP "$IN_DEVICE"
  6	     sgdisk -n 4 -c 4:HOME "$IN_DEVICE"
- 7   ...
+ 7   fi
 ```
 
 Of course, these variables would have to be defined, and so on.  You'd have to define the
@@ -292,9 +292,10 @@ efi\_boot\_mode function something like I did in the `simplest.sh` script.  And 
 complete the rest of the conditional accordingly.
 
 Further, you'd need to install the EFI boot manager instead of a normal non-efi boot loader.
-I typically use GRUB with the `efi-bootmanager` package.  Works fine for me.  
+I typically use GRUB with the `efi-bootmanager` package and the `--target` and
+`--efi-directory` flags.  Works fine for me so far. 
 
-When you're installing packages and their dependencies, you'll want to pause at certains
+When you're installing packages and their dependencies, you'll want to pause at certain
 times to see if any packages installed with a non-zero exit status.  You'll want to take note
 of any errors and determine whether they are significant. Normally they are not.  For
 example, sometimes a package gets installed twice, but this is not a problem.  Pacman is
@@ -302,19 +303,20 @@ happy to reinstall packages usually.  But I've included some `read` statements t
 seeing the final notes of a process before the screen clears and any errors or information
 scrolls past, away from your notice.
 
-I like to use 'here' documents.  You'll see me using arrays and associative arrays in bash.  
+I like to use 'here' documents.  You'll see me using arrays and associative arrays in bash.
 Also I use `&&` instead of `if/then` where it saves time and doesn't obscure readability.  I
 like to pipe unneccesary output to `/dev/null` when I'm checking exit statuses for functions.
 Finally, I'm still experimenting with `systemd-homed` and `pambase`.  I've had some problems
-when installing X, I have trouble using `sudo` from an X terminal.  Not sure why that is, but
-reinstalling `pambase` and `systemd-homed` solved the problem.  I'm still not sure why this
-problem got started in the first place, but I assumed there was a package change somewhere.
-You should probably experiement with this and see what works best for you.  
+when installing X: I have trouble using `sudo` from an X terminal.  Not sure why that is, but
+reinstalling `pambase` and `systemd-homed` solved the problem.  I'm still not sure how this
+problem got started in the first place, but I assumed there was a package change by the
+maintainers.  You should probably experiement with this and see what works best for
+you.  
 
 ## Conclusion
 
 Hopefully this will get you started with installing Arch linux automatically.  When I first
-started, I simply used `cfdisk /dev/sda` to create my partitions.  So even `simplest.sh` has
-evolved.  Feel free to check out the Farchi and Darchi scripts.  The idea is to create a
-script that works for you and your needs.  Enjoy!
+started, I simply used `cfdisk /dev/sda` to create my partitions.  This script was much
+rougher and more ragged.  But it evolved.  The Farchi and Darchi scripts are more evolved.
+But I'm hoping you'll borrow this to get started on your own journey.  Bon voyage!
 
