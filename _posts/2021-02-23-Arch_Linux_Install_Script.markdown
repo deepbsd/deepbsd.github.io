@@ -19,11 +19,11 @@ a list of preferred applications and ways of installing Arch.  This script will 
 the simplest possible steps that are automated yet easily comprehended by someone not
 totally brand new to bash scripting.
 
-This script, named `simplest.sh`, is mainly a skeleton that you can modify and that can
-grow with your growing scripting skills.  WARNING: I'm using an MBR disk label here.  This 
-will probably not work with a UEFI Motherboard or EFI bios.  For that you should really
-use a GPT disk label with an EFI partition formatted with FAT-32.  My other install scripts
-use this format, or they are capable of branching to install with GPT disk label and EFI 
+This script, named `simplest.sh`, is mainly a skeleton that you can modify and that can grow
+with your growing scripting skills.  WARNING: I'm using an MBR disk label here.  This will
+probably not work with a UEFI Motherboard or EFI bios.  For that you should really use a GPT
+disk label with an EFI partition formatted with FAT-32.  My other install scripts use this
+format, or they are capable of branching to install with GPT disk label and EFI-friendly
 partitioning scheme according to whether a fully compliant EFI bios exists.  I'll revisit
 this later.
 
@@ -32,18 +32,18 @@ fetch this script.  From a terminal, you can get it by typing
 `curl -O https://raw.githubusercontent.com/deepbsd/farchi/master/simplest.sh`
 The `simplest.sh` file will appear in your root directory.  You should edit the variables to
 conform to your preferences.  For example, if you have a 20G virtual drive (or hard drive)
-and 4G of RAM, you'll perhaps want 10G of root partition and 8G of swap partition.  You'll
+and 2G of RAM, you'll perhaps want 10G of root partition and 4G of swap partition.  You'll
 want your own hostname and so on.  You'll need to edit the script before you run it,
-obviously.
+obviously.  For testing on a VM I usually create a 30G virtual disk with 1G of RAM.
 
-The same applies to the Farchi script.  
+You can grab the Farchi script like this:  
 `curl -O https://raw.githubusercontent.com/deepbsd/farchi/master/farchi.sh`
 Obviously, my username on Github is deepbsd.  The name of the repo is farchi. And you'll want
 to snag the master branch of that repo.
 
 Here's my `simplest.sh` script, which should just give you a starting place for your own
 script.  This script does not install X.  You can have that as a future exercise!  Or you can
-use my `install_x.sh` script if you need ideas.
+use my `install_x.sh` script at the same location if you need ideas.
 
 ```
  1	#!/usr/bin/env bash
@@ -78,7 +78,7 @@ use my `install_x.sh` script if you need ideas.
    
 25	devel_stuff=( git nodejs npm npm-check-updates ruby )
 26	printing_stuff=( system-config-printer foomatic-db foomatic-db-engine gutenprint cups cups-pdf cups-filters cups-pk-helper ghostscript gsfonts )
-27	multimedia_stuff=( brasero sox cheese eog shotwell imagemagick sox cmus mpg123 alsa-utils cheese )
+27	multimedia_stuff=( brasero sox eog shotwell imagemagick sox cmus mpg123 alsa-utils cheese )
    
 28	# VERIFY BOOT MODE
 29	efi_boot_mode(){
@@ -105,7 +105,7 @@ use my `install_x.sh` script if you need ideas.
 46	### Test internet connection
 47	clear
 48	echo "Testing internet connection..."
-49	$(ping -c 3 archlinux.org &>/dev/null) || (echo "Not Connected to Network!!!" && exit 1)
+49	$(ping -c 3 archlinux.org &>/dev/null) || (error "Not Connected to Network!!!")
 50	echo "Good!  We're connected!!!" && sleep 3
    
 51	## Check time and date before installation
