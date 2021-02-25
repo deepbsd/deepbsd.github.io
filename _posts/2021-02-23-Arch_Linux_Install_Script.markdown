@@ -318,5 +318,8 @@ situation and see what works best for you.
 Hopefully this will get you started with installing Arch linux automatically.  When I first
 started, I simply used `cfdisk /dev/sda` to create my partitions.  This script was much
 rougher and more ragged.  But it evolved.  The Farchi and Darchi scripts are more evolved.
-But I'm hoping you'll borrow this to get started on your own journey.  Bon voyage!
+You can see that in just more than 150 lines of Bash, an entire system get installed. If you
+wanted to install X, that's probably another 50-75 lines.  So you can see it doesn't take a
+whole lot of scripting to get your basic Arch system up and running!  I'm hoping you'll be
+able to borrow this script to get started on your own journey.  Bon voyage!
 
