@@ -310,8 +310,8 @@ Finally, I'm still experimenting with `systemd-homed` and `pambase`.  I've had s
 when installing X: I have trouble using `sudo` from an X terminal.  Not sure why that is, but
 reinstalling `pambase` and `systemd-homed` solved the problem.  I'm still not sure how this
 problem got started in the first place, but I assumed there was a package change by the
-maintainers.  You should probably experiement with this and see what works best for
-you.  
+maintainers. More study for me in the future! You should probably experiement with this
+situation and see what works best for you.  
 
 ## Conclusion
 
