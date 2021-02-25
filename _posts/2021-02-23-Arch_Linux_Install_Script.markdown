@@ -278,7 +278,7 @@ It's wicked fast!
 You could use a phrase something like this to create partitions using sgdisk:
 
 ```
- 1	 if $(efi_boot_mode); then
+ 1   if $(efi_boot_mode); then
  2	     sgdisk -Z "$IN_DEVICE"
  3	     sgdisk -n 1::+"$EFI_SIZE" -t 1:ef00 -c 1:EFI "$IN_DEVICE"
  4	     sgdisk -n 2::+"$ROOT_SIZE" -t 2:8300 -c 2:ROOT "$IN_DEVICE"
