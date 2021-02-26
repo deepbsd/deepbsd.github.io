@@ -43,7 +43,10 @@ to snag the master branch of that repo.
 
 Here's my `simplest.sh` script, which should just give you a starting place for your own
 script.  This script does not install X.  You can have that as a future exercise!  Or you can
-use my `install_x.sh` script at the same location if you need ideas.
+use my `install_x.sh` script at the same location if you need ideas.  But if you just want 
+to install a basic, vanilla Arch system, this script takes about 5-7 minutes on my 
+i5-4690k with 32G of RAM and an NVME SSD, depending on network speed, mostly.  Because of
+the number of dependencies for X, installing X takes about twice that long.
 
 ```
  1	#!/usr/bin/env bash
