@@ -106,7 +106,7 @@ the process drops out of the PID table.  We get a guaranteed number stream up to
 set `num` to whatever you want.  You can also make the sleep period longer by offering larger numbers
 for the start and end values.  So one advantage of this approach is that it is flexible.  
 
-This type of approach works for short processes and long processes.  You can longer sleep times in
+This type of approach works for short processes and long processes.  You can set longer sleep times in
 process gauge (The Caller) for a longer process or shorter sleep times.  You can make consistent
 sleep times if you like.  Unfortunately, `shuf` will not accept decimal arguments.  They must be
 integers, even though `sleep` will accept decimal arguments.  You could probably find another way
