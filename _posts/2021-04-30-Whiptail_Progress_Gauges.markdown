@@ -36,7 +36,7 @@ to read up more on that redirection elsewhere, because I'm going to focus on the
 As I mentioned, you need to solve the problem of displaying a stream of numbers between 1 and 100
 that meaningfully show the progress a UNIX process is making.  The `--gauge` switch has no built-in
 way of doing that.  That means that whatever process you're measuring, you need to find a way of
-providing `--gauge` a way of doing that.  
+providing `--gauge` a way of knowing its progress.
 
 In most tutorials for whiptail I see something like the following:
 
