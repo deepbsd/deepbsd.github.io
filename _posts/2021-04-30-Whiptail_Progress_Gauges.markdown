@@ -106,10 +106,10 @@ processgauge(){                                         ## The Caller:  Start th
 
 ```
 
-This idea relies on capturing the PID of the process to measure.  Then producing numbers up until
-the process drops out of the PID table.  We get a guaranteed number stream up to 25, but you can 
-set `num` to whatever you want.  You can also make the sleep period longer by offering larger numbers
-for the start and end values.  So one advantage of this approach is that it is flexible.  
+This idea relies on capturing the PID of the process to measure.  Then producing numbers up until the process drops out
+of the PID table.  We get a guaranteed number stream up to 25, but you can set `num` to whatever you want.  You can
+also make the sleep period longer by offering larger numbers for the shortest and longest sleep values.  So one
+advantage of this approach is that it is flexible.  
 
 This type of approach works for short processes and long processes.  You can set longer sleep times in
 process gauge (The Caller) for a longer process or shorter sleep times.  You can make consistent
