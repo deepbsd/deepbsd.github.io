@@ -5,7 +5,7 @@ date: 2021-04-30 11:16:27-04:00
 categories: bash
 ---
 
-# Creating Progress Gauges with Whiptail
+## Creating Progress Gauges with Whiptail
 
 Whiptail is a dandy TUI (terminal user interface) toolkit that helps you make bash scripts
 for non-technical users.  Or for people who just don't like terminals.  The terminal is
