@@ -59,7 +59,7 @@ capture its PID, then watch for the process to disappear from the PID table.  Ho
 happen?
 
 Well, I would recommend passing the name of the function to execute in the background as a parameter to
-the `showprogress` function.  So that would mean something like this:
+the `processgauge` function.  So that would mean something like this:
 
 ## The Calculator, The Caller and the Gauge
 
