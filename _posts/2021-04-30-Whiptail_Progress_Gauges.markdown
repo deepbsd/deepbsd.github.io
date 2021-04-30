@@ -59,10 +59,9 @@ gauge just needs to measure a shrinking differential between two physical object
 calculation is simple.  But what if all you have is a process that doesn't easily lend itself to 
 being measured?  Where all you have is a PID?
 
-First, we'll have to launch the process in the background which means spawning a subshell.  Otherwise, we
-couldn't measure the process in the script.  So, remember that!  We need to launch the process and 
-capture its PID, then watch for the process to disappear from the PID table.  How on Earth do we make that 
-happen?
+First, we'll have to launch the process in the background which means spawning a subshell.  Otherwise, we couldn't
+measure the process in the same script.  So, remember that!  We need to launch the process to the background and
+capture its PID, then watch for the process to disappear from the PID table.  How on Earth do we make that happen?
 
 Well, I would recommend passing the name of the function to execute in the background as a parameter to
 the `processgauge` function.  So that would mean something like this:
