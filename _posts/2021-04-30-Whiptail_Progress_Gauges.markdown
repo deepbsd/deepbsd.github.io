@@ -65,12 +65,12 @@ the `processgauge` function.  So that would mean something like this:
 
 
 ```
-calculate(){
+calculate(){                                                    ## The Calculator! 'How many angels on a pidhead?'
     echo `Highly technical, time-consuming process here...`
     sleep 600  # sleep for 10 minutes
 }
 
-showprogress(){                                        ## The Gauge:  Produce the progress numbers
+showprogress(){                                        ## The Gauge:  Produce the number stream
     start=$1; end=$2; shortest=$3; longest=$4
 
     for n in $(seq $start $end); do
