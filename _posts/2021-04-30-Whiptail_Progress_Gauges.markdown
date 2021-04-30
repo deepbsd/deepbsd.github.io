@@ -139,7 +139,9 @@ calculate(){
 
 ```
 
+Now for longer processes in the background you can watch a logfile to see how it's doing.
+
 ## Conclusion
 
 This is only one beginning.  I'm sure there are lots more approaches to creating a progress gauge
-with Whiptail.  
+with Whiptail.  But this approach got me going for today.  I'm back in business with Whiptail!
