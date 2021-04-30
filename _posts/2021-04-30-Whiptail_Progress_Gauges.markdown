@@ -64,7 +64,7 @@ measure the process in the same script.  So, remember that!  We need to launch t
 capture its PID, then watch for the process to disappear from the PID table.  How on Earth do we make that happen?
 
 Well, I would recommend passing the name of the function to execute in the background as a parameter to
-the `processgauge` function.  So that would mean something like this:
+the `processgauge` function.  We need three workers here.  So that would mean something like this:
 
 ## The Calculator, The Caller and the Gauge
 
@@ -120,7 +120,7 @@ generate shorter sleep times than one second.
 
 So, from a menu to run `calculate`, you could call 
 ```
-processgauge calculate "Calculating Maximum Beer Intake" "Calculating Max Beers"
+processgauge calculate "Calculating Maximum Beer Intake" "Calculating MAXBEERS..."
 ```
 You'll have to experiment with different calculations to see how you like the progress bar with 
 different scenarios.  On shorter processes, the progress bar may jump from 25 to 100 percent
