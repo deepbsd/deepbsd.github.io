@@ -53,6 +53,12 @@ This will work.  It will display a progress bar while some process has been exec
 probably be no correlation between the process's progress and the gauge.  What are some other
 possibilities?
 
+Let's assume for now that our process is abstract enough that we cannot measure the physical size of a 
+target file and a destination file.  That would be easy enough to show in a progress bar.  And if your
+gauge just needs to measure a shrinking differential between two physical objects like that, then your
+calculation is simple.  But what if all you have is a process that doesn't easily lend itself to 
+being measured?  Where all you have is a PID?
+
 First, we'll have to launch the process in the background which means spawning a subshell.  Otherwise, we
 couldn't measure the process in the script.  So, remember that!  We need to launch the process and 
 capture its PID, then watch for the process to disappear from the PID table.  How on Earth do we make that 
