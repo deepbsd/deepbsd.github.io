@@ -143,5 +143,6 @@ Now for longer processes in the background you can watch a logfile to see how it
 
 ## Conclusion
 
-This is only one beginning.  I'm sure there are lots more approaches to creating a progress gauge
-with Whiptail.  But this approach got me going for today.  I'm back in business with Whiptail!
+This is only one beginning.  I'm sure there are lots more approaches to creating a progress gauge with Whiptail. I like
+the flexibility.  I like how easily I can adapt it.  But this approach got me going for today.  I'm back in business
+with Whiptail!
