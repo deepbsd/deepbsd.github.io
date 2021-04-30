@@ -50,7 +50,7 @@ In most tutorials for whiptail I see something like the following:
 ```
 
 This will work.  It will display a progress bar while some process has been executed, but there will
-probably  be no correlation between the processes progress and the gauge.  What are some other
+probably be no correlation between the processes progress and the gauge.  What are some other
 possibilities?
 
 First, we'll have to launch the process in the background which means spawning a subshell.  Otherwise, we
