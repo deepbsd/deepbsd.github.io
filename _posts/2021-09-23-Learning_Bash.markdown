@@ -17,7 +17,7 @@ when 64k is hardly any memory.
 By the way, "UNIX" is a copyrighted product, but for many of us, "Unix" is a way of life. So 
 I frequently use "Unix" to mean "Unix-like operating system" such as Linux.
 
-## The Terminal (Working In Your Head, Not the Display)
+# The Terminal (Working In Your Head, Not the Display)
 
 In this modern day and age, most people are used to graphical interfaces or GUIs.
 The terminal feels like a foreign planet to most computer users nowadays.  But
@@ -40,7 +40,7 @@ article assumes you have that.  If you don't know what a network connection or m
 card or disk drive is, you probably are not yet ready for Linux or Bash.  (Even the
 term "card" and "disk" is starting to sound rather old.)
 
-## Keep Pieces Small, But Small Pieces Together Can Form Big Pieces
+# Keep Pieces Small, But Small Pieces Together Can Form Big Pieces
 
 One of the first principles of Unix is that programs are designed to do small, very
 specific things, but that these small programs can be joined together to do large,
@@ -84,7 +84,7 @@ pipe symbol is just one.  The point is, we're using very small things to accompl
 large tasks by gluing the small things together.  This idea is fundamental to Bash
 and Unix/Linux.
 
-## Reusing Small and Useful Tools
+# Reusing Small and Useful Tools
 
 The plumbing examples above show off another very important principle:  reusing
 common tools.  
@@ -111,7 +111,7 @@ result.
 When you start using Bash, you may easily underestimate how flexible and re-usable
 each of the simple commands can be in your day-to-day work.
 
-## Pre-eminance of Text
+# Pre-eminance of Text
 
 You'll notice that each of these commands uses text in STD\_OUT and STD\_IN.  That's
 by intention.  Linux/Unix depends on text files, not binary files so much.  There can
@@ -130,9 +130,9 @@ been one of the most beloved aspects of Unix:  text files are key.
 
 This implies another of the fundamental princples:  Keep it simple.  Text is simple.
 
-## Silence is Golden
+# Silence is Golden
 
-With Bash, if everything went okay, it will not say anything extra.  When a Bash
+With Bash, if everything went okay, the terminal will not say anything extra.  When a Bash
 program has nothing surprising to report, it stays mum.  If you type
 `echo 'Hello World'` and execute it, there's not notice that your command succeeded.
 You'll probably only notice that it didn't do what you want if you specifically trap
