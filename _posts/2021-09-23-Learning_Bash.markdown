@@ -40,7 +40,7 @@ article assumes you have that.  If you don't know what a network connection or m
 card or disk drive is, you probably are not yet ready for Linux or Bash.  (Even the
 term "card" and "disk" is starting to sound rather old.)
 
-## Keep Pieces Small, But Small Pieces Can Form Big Pieces
+## Keep Pieces Small, But Small Pieces Together Can Form Big Pieces
 
 One of the first principles of Unix is that programs are designed to do small, very
 specific things, but that these small programs can be joined together to do large,
@@ -94,4 +94,53 @@ use the same screwdriver on slot head screws as well as phillips head screws as 
 as Torx head screw as well as anything else.  These small Unix/Linux tools are very
 much like that.  
 
+Let's use some plumbing together with the `tr` command and show how flexible small
+and reusable tools can be when used together:
+`echo 'I Love Linux' | tr a-z A-Z | tr -s ' ' '\n' | tr -d 'X' > ~/ilike.txt` 
+
+This example reuses the `tr` command to uppercase a string, to substitute newlines
+for blank spaces, and to remove a character from the final string, before redirecting
+the output to a filename in the user's home directory (which is another example of
+Unix/Linux plumbing).
+
+When you use this command, you won't see anything on STD\_OUT, because that output
+has been redirected to a filename.  if you type `cat ~/ilike.txt` then you'll see the
+output.  `tr` has been reused three times in the same command, each with a unique
+result.  
+
+When you start using Bash, you may easily underestimate how flexible and re-usable
+each of the simple commands can be in your day-to-day work.
+
+## Pre-eminance of Text
+
+You'll notice that each of these commands uses text in STD\_OUT and STD\_IN.  That's
+by intention.  Linux/Unix depends on text files, not binary files so much.  There can
+be individual programs in Linux/Unix that use binary files, but most of Linux/Unix
+just use plain old text files.  You'll edit your Bash programs with a simple text
+editor.  It will create simple, flat text files.  The advantage to this is you can
+easily fix things by altering text files.  
+
+There are many times in computing when computers break.  Even when just doing routine
+maintenance, your system will be in some sort of broken or semi-broken state.  If you
+depend on flat text files to reconfigure and fix things, those are easy to accomplish
+even with a broken system.  If you depend on binary programs to fix things, those
+binary programs may not work on a broken system.  Text files can almost always be
+edited, even under severe breakage of a system.  No special tools required.  This has
+been one of the most beloved aspects of Unix:  text files are key.
+
+This implies another of the fundamental princples:  Keep it simple.  Text is simple.
+
+## Silence is Golden
+
+With Bash, if everything went okay, it will not say anything extra.  When a Bash
+program has nothing surprising to report, it stays mum.  If you type
+`echo 'Hello World'` and execute it, there's not notice that your command succeeded.
+You'll probably only notice that it didn't do what you want if you specifically trap
+for an error of some kind.  
+
+Beyond that, you can see if you got a non-zero or a zero
+exit status: `echo $?`.  Basically, if there's a problem, Linux/Unix will probably
+tell you.  It assumes you know what you're doing.  It will only throw some kind of
+error if you did a syntax error or something.  Otherwise, Bash will simply try to
+give you exactly what you asked for.  And this is consistent with Linux/Unix design.
 
