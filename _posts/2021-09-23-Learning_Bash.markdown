@@ -11,8 +11,8 @@ When you set out to "Learn Linux" you're actually embarking on a long journey of
 mastery.  You're joining a group of geeks whose ancestry goes back to the 1960's, and
 perhaps even before, if you consider that UNIX didn't grow out of nothing.  Learning
 the Bourne Again SHell will teach you long-standing principles that have served
-programmers, admins, and geeks well from when 64k was a lot of memory up until now,
-when 64k is hardly any memory.
+programmers, admins, and geeks well since before 64k was a lot of memory up until
+now.
 
 By the way, "UNIX" is a copyrighted product, but for many of us, "Unix" is a way of life. So 
 I frequently use "Unix" to mean "Unix-like operating system" such as Linux.
@@ -22,7 +22,7 @@ I frequently use "Unix" to mean "Unix-like operating system" such as Linux.
 In this modern day and age, most people are used to graphical interfaces or GUIs.
 The terminal feels like a foreign planet to most computer users nowadays.  But
 graphical layers depend on many other programs and devices working correctly.  If any
-of those go wrong, only a console or terminal can be available.  Even very simple
+of those go wrong, only a console or terminal might be available.  Even very simple
 problems can cause a graphical layer to go away.  If you depend on only the graphical
 layer, you will experience more downtime and won't be able to fix many
 not-so-difficult problems.
@@ -31,7 +31,7 @@ The early computers didn't have the horsepower to show graphical layers.  The fi
 computers didn't even have keyboards or monitors, let alone mice.  Computer programs
 used to be stored on perforated paper.  Even large floppy disks were an improvement.
 And people got lots of work done in those days by doing mental work in their heads
-instead of on the screen.
+instead of on the screen. So really, a terminal is a luxury!
 
 To make sense of the terminal, you have to understand how computers are built and how
 they work.  You won't be seeing pictures of a hard disk or power supply or keyboard.
@@ -42,9 +42,9 @@ term "card" and "disk" is starting to sound rather old.)
 
 # Keep Pieces Small, But Small Pieces Together Can Form Big Pieces
 
-One of the first principles of Unix is that programs are designed to do small, very
-specific things, but that these small programs can be joined together to do large,
-sophisticated jobs using Unix plumbing.
+One of the first principles of Unix is that programs are designed to be small and do
+very specific things, but that these small programs can be joined together to do
+large, sophisticated jobs using Unix plumbing.
 
 UNIX plumbing is a way of talking about redirecting input and output on the terminal.
 The notion of data flowing in a direction from one thing to another thing is not new.
@@ -57,7 +57,7 @@ create a simple command at the terminal and print the word "Linux" to the displa
 `echo 'Linux'` at the terminal will cause the STD\_OUT to be "Linux".  
 
 To see an example of STD\_IN you could take the STD\_OUT of this command and "pipe"
-it (UNIX plumbing term) so it becomes the STD\_IN of another term:
+it (UNIX plumbing term) so it becomes the STD\_IN of another program (we'll use `tr`):
 `echo 'Linux' | tr a-z A-Z`
 
 The end result of this is 'LINUX' at the prompt.  `echo` produces and STD\_OUT of
@@ -104,12 +104,13 @@ the output to a filename in the user's home directory (which is another example 
 Unix/Linux plumbing).
 
 When you use this command, you won't see anything on STD\_OUT, because that output
-has been redirected to a filename.  if you type `cat ~/ilike.txt` then you'll see the
+has been redirected to a filename.  If you type `cat ~/ilike.txt` then you'll see the
 output.  `tr` has been reused three times in the same command, each with a unique
 result.  
 
 When you start using Bash, you may easily underestimate how flexible and re-usable
-each of the simple commands can be in your day-to-day work.
+each of the simple commands can be in your day-to-day work.  Many of these small
+commands will become indispensible tools you cannot live without each day.
 
 # Pre-eminance of Text
 
@@ -120,13 +121,12 @@ just use plain old text files.  You'll edit your Bash programs with a simple tex
 editor.  It will create simple, flat text files.  The advantage to this is you can
 easily fix things by altering text files.  
 
-There are many times in computing when computers break.  Even when just doing routine
-maintenance, your system will be in some sort of broken or semi-broken state.  If you
-depend on flat text files to reconfigure and fix things, those are easy to accomplish
-even with a broken system.  If you depend on binary programs to fix things, those
-binary programs may not work on a broken system.  Text files can almost always be
-edited, even under severe breakage of a system.  No special tools required.  This has
-been one of the most beloved aspects of Unix:  text files are key.
+Computers break rather often.  Even when just doing routine maintenance, your system
+will be in some sort of broken or semi-broken state.  If you depend on flat text
+files to reconfigure and fix things, those are easy to repair even with a broken
+system.  Text files can almost always be edited, even under severe breakage of a
+system.  No special tools required.  This has been one of the most beloved aspects of
+Unix:  text files are key.
 
 This implies another of the fundamental princples:  Keep it simple.  Text is simple.
 
@@ -134,13 +134,24 @@ This implies another of the fundamental princples:  Keep it simple.  Text is sim
 
 With Bash, if everything went okay, the terminal will not say anything extra.  When a Bash
 program has nothing surprising to report, it stays mum.  If you type
-`echo 'Hello World'` and execute it, there's not notice that your command succeeded.
-You'll probably only notice that it didn't do what you want if you specifically trap
-for an error of some kind.  
+`echo 'Hello World'` and execute it, there's no notice that your command succeeded.
+There's only the output your program created.
 
-Beyond that, you can see if you got a non-zero or a zero
-exit status: `echo $?`.  Basically, if there's a problem, Linux/Unix will probably
-tell you.  It assumes you know what you're doing.  It will only throw some kind of
-error if you did a syntax error or something.  Otherwise, Bash will simply try to
-give you exactly what you asked for.  And this is consistent with Linux/Unix design.
+Beyond that, you can see if you got a non-zero or a zero exit status: `echo $?`.
+Basically, if there's a problem, Linux/Unix will probably tell you.  It just assumes
+you know what you're doing.  It will only throw some kind of error if you made a
+syntax error or something.  Otherwise, Bash will simply try to give you exactly what
+you asked for.  And this is consistent with Linux/Unix design.
 
+
+# Keep it Simple
+
+Cleaverness kills in programming.  Just be clear.  Not only will you be following
+Unix philosophy, but people will be able to read your Bash scripts.  Also, whenever
+you're ready to put a script into production, ask yourself if you could understand
+what you're doing even if you have a really bad hangover.  
+
+It's easy to indulge our egos when we're feeling cleaver and show off how smart we
+were that day in our script.  But that "successful" feeling can turn into annoyance
+as soon as you stop feeling very cleaver.  Write the script so you can follow your
+own work on your dumb days too, not just your cleaver days.
